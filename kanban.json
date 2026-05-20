@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T12:20:48.795162+00:00",
-  "generated_unix": 1779279648,
+  "generated_at": "2026-05-20T12:24:24.588657+00:00",
+  "generated_unix": 1779279864,
   "note": "Read-only public-safe Kanban snapshot. Bodies, comments, local paths, secrets, results, and errors are intentionally excluded.",
   "boards": [
     {
@@ -276,13 +276,32 @@
         "todo": 0,
         "scheduled": 0,
         "ready": 0,
-        "running": 0,
+        "running": 1,
         "blocked": 1,
         "review": 0,
         "done": 0,
         "archived": 0
       },
       "tasks": [
+        {
+          "id": "t_456db264",
+          "title": "Tonight: Vercel/GitHub/Namecheap preservation audit",
+          "assignee": "opsworker",
+          "status": "running",
+          "priority": 0,
+          "created_by": "user",
+          "created_at": 1779279848,
+          "started_at": 1779279849,
+          "completed_at": null,
+          "tenant": null,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T12:24:08+00:00",
+          "started_at_iso": "2026-05-20T12:24:09+00:00",
+          "completed_at_iso": null,
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false
+        },
         {
           "id": "t_eeec3698",
           "title": "App build and deployment lane",
@@ -304,6 +323,26 @@
         }
       ],
       "events": [
+        {
+          "task_id": "t_456db264",
+          "kind": "promoted",
+          "created_at_iso": "2026-05-20T12:24:09+00:00"
+        },
+        {
+          "task_id": "t_456db264",
+          "kind": "claimed",
+          "created_at_iso": "2026-05-20T12:24:09+00:00"
+        },
+        {
+          "task_id": "t_456db264",
+          "kind": "spawned",
+          "created_at_iso": "2026-05-20T12:24:09+00:00"
+        },
+        {
+          "task_id": "t_456db264",
+          "kind": "created",
+          "created_at_iso": "2026-05-20T12:24:08+00:00"
+        },
         {
           "task_id": "t_eeec3698",
           "kind": "blocked",
