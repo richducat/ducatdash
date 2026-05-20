@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T12:11:48.544169+00:00",
-  "generated_unix": 1779279108,
+  "generated_at": "2026-05-20T12:12:54.623427+00:00",
+  "generated_unix": 1779279174,
   "note": "Read-only public-safe Kanban snapshot. Bodies, comments, local paths, secrets, results, and errors are intentionally excluded.",
   "boards": [
     {
@@ -408,12 +408,50 @@
         "scheduled": 0,
         "ready": 0,
         "running": 0,
-        "blocked": 1,
+        "blocked": 3,
         "review": 0,
         "done": 1,
         "archived": 0
       },
       "tasks": [
+        {
+          "id": "t_40f00692",
+          "title": "Pending: GitHub Pages HTTPS certificate for DucatDash",
+          "assignee": "codeworker",
+          "status": "blocked",
+          "priority": 0,
+          "created_by": "user",
+          "created_at": 1779279174,
+          "started_at": null,
+          "completed_at": null,
+          "tenant": null,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T12:12:54+00:00",
+          "started_at_iso": null,
+          "completed_at_iso": null,
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false
+        },
+        {
+          "id": "t_6af2973e",
+          "title": "Optional blocker: Vercel account suspended",
+          "assignee": "opsworker",
+          "status": "blocked",
+          "priority": 0,
+          "created_by": "user",
+          "created_at": 1779279173,
+          "started_at": null,
+          "completed_at": null,
+          "tenant": null,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T12:12:53+00:00",
+          "started_at_iso": null,
+          "completed_at_iso": null,
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false
+        },
         {
           "id": "t_32fdda4d",
           "title": "Access blocker: Voice Memos / iMessage / Slack context",
@@ -454,6 +492,16 @@
         }
       ],
       "events": [
+        {
+          "task_id": "t_40f00692",
+          "kind": "created",
+          "created_at_iso": "2026-05-20T12:12:54+00:00"
+        },
+        {
+          "task_id": "t_6af2973e",
+          "kind": "created",
+          "created_at_iso": "2026-05-20T12:12:53+00:00"
+        },
         {
           "task_id": "t_c12f137f",
           "kind": "completed",
