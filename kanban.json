@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T20:58:53.662928+00:00",
-  "generated_unix": 1779310733,
+  "generated_at": "2026-05-20T21:00:46.167802+00:00",
+  "generated_unix": 1779310846,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,51 +1258,13 @@
   ],
   "jobs": [
     {
-      "id": "e37aea919737",
-      "name": "DucatDash \u2014 enable HTTPS when cert ready",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-20T16:59:02.216640-04:00",
-      "last_run_at": "2026-05-20T16:29:02.216640-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "ducatdash_enable_https.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 48,
-        "completed": 16
-      }
-    },
-    {
-      "id": "b32b76d59eff",
-      "name": "Content Machine \u2014 10 Research Agent",
-      "category": "Content Machine",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "0 17 * * 1-5",
-      "next_run_at": "2026-05-20T17:00:00-04:00",
-      "last_run_at": null,
-      "last_status": null,
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": null,
-      "no_agent": false,
-      "repeat": {
-        "times": 365,
-        "completed": 0
-      }
-    },
-    {
       "id": "126bd65ee907",
       "name": "DucatDash \u2014 publish Kanban snapshot",
       "category": "DucatDash / Systems",
       "enabled": true,
       "state": "scheduled",
       "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-20T17:00:00-04:00",
+      "next_run_at": "2026-05-20T17:10:00-04:00",
       "last_run_at": "2026-05-20T16:50:16.876843-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
@@ -1312,25 +1274,6 @@
       "repeat": {
         "times": 3650,
         "completed": 52
-      }
-    },
-    {
-      "id": "10c0e8234c93",
-      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-      "category": "Communications",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "0 * * * *",
-      "next_run_at": "2026-05-20T17:00:00-04:00",
-      "last_run_at": "2026-05-20T16:01:01.741671-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "hourly_comms_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 234
       }
     },
     {
@@ -1410,6 +1353,25 @@
       }
     },
     {
+      "id": "e37aea919737",
+      "name": "DucatDash \u2014 enable HTTPS when cert ready",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-20T17:29:45.780007-04:00",
+      "last_run_at": "2026-05-20T16:59:45.780007-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ducatdash_enable_https.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 48,
+        "completed": 17
+      }
+    },
+    {
       "id": "34794ddb0837",
       "name": "Personal Assistant \u2014 End-of-Day Closeout",
       "category": "Personal Assistant",
@@ -1445,6 +1407,25 @@
       "repeat": {
         "times": 365,
         "completed": 12
+      }
+    },
+    {
+      "id": "10c0e8234c93",
+      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+      "category": "Communications",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 * * * *",
+      "next_run_at": "2026-05-20T18:00:00-04:00",
+      "last_run_at": "2026-05-20T16:01:01.741671-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "hourly_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 234
       }
     },
     {
@@ -1771,6 +1752,25 @@
       }
     },
     {
+      "id": "b32b76d59eff",
+      "name": "Content Machine \u2014 10 Research Agent",
+      "category": "Content Machine",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 17 * * 1-5",
+      "next_run_at": "2026-05-21T17:00:00-04:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": null,
+      "no_agent": false,
+      "repeat": {
+        "times": 365,
+        "completed": 0
+      }
+    },
+    {
       "id": "979207ea6fcc",
       "name": "Personal Assistant \u2014 Weekly Systems Audit",
       "category": "Personal Assistant",
@@ -1986,51 +1986,13 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "e37aea919737",
-        "name": "DucatDash \u2014 enable HTTPS when cert ready",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-20T16:59:02.216640-04:00",
-        "last_run_at": "2026-05-20T16:29:02.216640-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "ducatdash_enable_https.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 48,
-          "completed": 16
-        }
-      },
-      {
-        "id": "b32b76d59eff",
-        "name": "Content Machine \u2014 10 Research Agent",
-        "category": "Content Machine",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "0 17 * * 1-5",
-        "next_run_at": "2026-05-20T17:00:00-04:00",
-        "last_run_at": null,
-        "last_status": null,
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": null,
-        "no_agent": false,
-        "repeat": {
-          "times": 365,
-          "completed": 0
-        }
-      },
-      {
         "id": "126bd65ee907",
         "name": "DucatDash \u2014 publish Kanban snapshot",
         "category": "DucatDash / Systems",
         "enabled": true,
         "state": "scheduled",
         "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-20T17:00:00-04:00",
+        "next_run_at": "2026-05-20T17:10:00-04:00",
         "last_run_at": "2026-05-20T16:50:16.876843-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
@@ -2040,25 +2002,6 @@
         "repeat": {
           "times": 3650,
           "completed": 52
-        }
-      },
-      {
-        "id": "10c0e8234c93",
-        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-        "category": "Communications",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "0 * * * *",
-        "next_run_at": "2026-05-20T17:00:00-04:00",
-        "last_run_at": "2026-05-20T16:01:01.741671-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "hourly_comms_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 234
         }
       },
       {
@@ -2135,6 +2078,63 @@
         "repeat": {
           "times": 365,
           "completed": 100
+        }
+      },
+      {
+        "id": "e37aea919737",
+        "name": "DucatDash \u2014 enable HTTPS when cert ready",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-20T17:29:45.780007-04:00",
+        "last_run_at": "2026-05-20T16:59:45.780007-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "ducatdash_enable_https.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 48,
+          "completed": 17
+        }
+      },
+      {
+        "id": "34794ddb0837",
+        "name": "Personal Assistant \u2014 End-of-Day Closeout",
+        "category": "Personal Assistant",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "30 17 * * 1-5",
+        "next_run_at": "2026-05-20T17:30:00-04:00",
+        "last_run_at": "2026-05-19T17:35:10.871083-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": null,
+        "no_agent": false,
+        "repeat": {
+          "times": null,
+          "completed": 17
+        }
+      },
+      {
+        "id": "f1c502409ab1",
+        "name": "Content Machine \u2014 08 Clip Factory",
+        "category": "Content Machine",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "0 */2 * * 1-5",
+        "next_run_at": "2026-05-20T18:00:00-04:00",
+        "last_run_at": "2026-05-20T16:04:17.506441-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": null,
+        "no_agent": false,
+        "repeat": {
+          "times": 365,
+          "completed": 12
         }
       }
     ],
