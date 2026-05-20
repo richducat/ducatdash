@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T20:50:15.412215+00:00",
-  "generated_unix": 1779310215,
+  "generated_at": "2026-05-20T20:58:53.662928+00:00",
+  "generated_unix": 1779310733,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -85,10 +85,10 @@
   "ugc_project": {
     "project": "UGC Academy \u2014 Content Creation System + PIP Stats",
     "owner": "Richard Ducat",
-    "last_updated": "2026-05-20 16:47 ET",
+    "last_updated": "2026-05-20 16:55 ET",
     "status": "active / fight-mode",
     "target": "Recover toward 4x ROAS by improving lead quality, booked-call intent, show rate, close readiness, and cash ROAS.",
-    "pip_format_source": "Fathom recap from Ludovic Bantzhaff meeting on 2026-05-20 + owners call action brief. No separate local file named PIP was found yet.",
+    "pip_format_source": "Formal attached PIP PDF: Paid Media | Tactical Action Plan & Performance Improvement Plan, issued by Jamaal Hudson, CMO, week May 19\u2013May 23 2026. Extracted locally and now used as source of truth for daily PIP reporting.",
     "posture": [
       {
         "title": "Primary bottleneck",
@@ -163,6 +163,10 @@
         "note": "Live/Webinar/DM/Google/creative-system status when source data is available; GetInsights verified where possible."
       },
       {
+        "title": "5PM PIP accountability comment",
+        "note": "Slack-ready comment: completed today / in progress / blockers, aligned with Jamaal PIP doc. Screenshot proof attached when available."
+      },
+      {
         "title": "Sydney creative assignments",
         "note": "Specific hooks, points, CTA, visual/editor notes."
       },
@@ -201,6 +205,50 @@
         "note": "Gmail can be read and replied to inside the delegated boundary; non-simple replies are drafted for approval."
       }
     ],
+    "source_health": [
+      {
+        "source": "GetInsights / UGC CRM MCP",
+        "status": "live",
+        "note": "Available through ugc_main_crm MCP tools for Sydney Mohni and Nate Flake KPIs, analytics, deals, performance, and contact drill-downs."
+      },
+      {
+        "source": "Gmail / Fathom signals",
+        "status": "live",
+        "note": "PIP context and comms-watch scripts now resolve the real Hermes root/profile paths before Gmail search."
+      },
+      {
+        "source": "Slack / UGC Academy",
+        "status": "blocked",
+        "note": "Needs Slack token/workspace target before Hermes can monitor or respond in Slack."
+      },
+      {
+        "source": "Meta live ads platform",
+        "status": "partial",
+        "note": "No confirmed live platform access inside Hermes; use uploaded exports and verified user-provided data for ad-level reads."
+      },
+      {
+        "source": "DucatDash snapshot",
+        "status": "live",
+        "note": "generate_kanban_snapshot.py reads this project_state.json and publishes public-safe dashboard data."
+      }
+    ],
+    "visible_blockers": [
+      {
+        "title": "Slack monitoring/responding blocked",
+        "status": "blocked",
+        "note": "Provide Slack token or connected Hermes Slack target to turn on live UGC Slack monitoring."
+      },
+      {
+        "title": "Meta live platform access not confirmed",
+        "status": "partial",
+        "note": "Ad-level creative decisions need exports or live access; do not guess from memory."
+      },
+      {
+        "title": "Campaign/spend decisions require approval",
+        "status": "approval_required",
+        "note": "Hermes can draft KPI-backed recommendations, but Richard approves spend/campaign/customer-impacting moves."
+      }
+    ],
     "docs": [
       {
         "title": "SOP / Playbook PDF",
@@ -233,6 +281,18 @@
       {
         "title": "UGC Academy reply/action queue",
         "path": "/Users/ducatllm/.hermes/ugc-academy-ops/reply_queue.md"
+      },
+      {
+        "title": "Formal Paid Media PIP PDF \u2014 Jamaal Hudson",
+        "path": "/Users/ducatllm/.hermes/cache/documents/doc_0ad0ebd8d4cb_Paid Media_PIP_Richard.docx.pdf"
+      },
+      {
+        "title": "Formal Paid Media PIP extracted text",
+        "path": "/Users/ducatllm/.hermes/ugc-academy-ops/pip_doc/Paid_Media_PIP_Richard_extracted.txt"
+      },
+      {
+        "title": "PIP completion receipt screenshot",
+        "path": "/Users/ducatllm/.hermes/ugc-academy-ops/pip_doc/PIP_completion_receipt.png"
       }
     ],
     "pip_update_template": [
@@ -246,6 +306,121 @@
       "8. Creative system: target, shipped, blocked, next asks.",
       "9. Google Ads / form qualifier / attribution status.",
       "10. Decisions/blockers needing Richard or team input."
+    ],
+    "formal_pip_doc": {
+      "title": "Paid Media | Tactical Action Plan & Performance Improvement Plan",
+      "issued_by": "Jamaal Hudson, CMO",
+      "week": "May 19\u2013May 23, 2026",
+      "business_units": [
+        "BU1 \u2014 Sydney",
+        "BU2 \u2014 Nate"
+      ],
+      "north_star": "4x ROAS across both business units",
+      "plan_status": "ACTIVE \u2014 Execution begins Wednesday, May 20th",
+      "source_pdf": "/Users/ducatllm/.hermes/cache/documents/doc_0ad0ebd8d4cb_Paid Media_PIP_Richard.docx.pdf",
+      "extracted_text": "/Users/ducatllm/.hermes/ugc-academy-ops/pip_doc/Paid_Media_PIP_Richard_extracted.txt",
+      "rendered_pages_dir": "/Users/ducatllm/.hermes/ugc-academy-ops/pip_doc",
+      "pages": 6
+    },
+    "weekly_targets": [
+      {
+        "metric": "Overall ROAS",
+        "bu1_sydney": "2.27x baseline",
+        "bu2_nate": "1.09x baseline",
+        "target": "Directional progress toward 4x"
+      },
+      {
+        "metric": "Webinar Show Rate",
+        "bu1_sydney": "Needs improvement",
+        "bu2_nate": "Declining",
+        "target": "5%+ improvement WoW each BU"
+      },
+      {
+        "metric": "Cost Per Lead",
+        "bu1_sydney": "11.80 baseline",
+        "bu2_nate": "15.61 baseline",
+        "target": "Reduce 5\u20137%+ WoW each BU"
+      },
+      {
+        "metric": "Call Book Rate",
+        "bu1_sydney": "Below target",
+        "bu2_nate": "Below target",
+        "target": "Lift driven by show-rate gains"
+      },
+      {
+        "metric": "Meta Pixel Signal",
+        "bu1_sydney": "Misfiring",
+        "bu2_nate": "Misfiring",
+        "target": "Verified clean by EOD Wed 5/20"
+      },
+      {
+        "metric": "Google Ads Status",
+        "bu1_sydney": "Not live",
+        "bu2_nate": "Not live",
+        "target": "Built and live Thu 5/22"
+      }
+    ],
+    "formal_pip_execution_checklist": [
+      {
+        "lane": "Meta pixel / tracking",
+        "items": [
+          "Audit BU1 and BU2 pixels separately on all landing + webinar opt-in pages",
+          "Verify Page View, Lead, Complete Registration fire correctly with no double-fires in GA4/GHL",
+          "Document Events Manager / Pixel Helper proof screenshots",
+          "Confirm BU1 and BU2 Meta UTMs pass into GHL CRM"
+        ]
+      },
+      {
+        "lane": "Meta restructure / creative",
+        "items": [
+          "Document cold-audience rebuild/optimization needs for BU1 and BU2 separately",
+          "Exclude retargeting pools where needed and use clean conversion data for lookalikes",
+          "Pause ad sets above acceptable CPL threshold",
+          "Swap creatives on ad sets running 7+ days without improvement",
+          "Test at least two new creative angles this week for each BU"
+        ]
+      },
+      {
+        "lane": "Show-rate recovery",
+        "items": [
+          "Audit ad copy/creative for false-promise signals and message mismatch",
+          "Tighten audience targeting when cheap leads produce weak show rate",
+          "Review time-of-day delivery / dayparting",
+          "Confirm optimization event is Complete Registration or best event tag, not just Lead",
+          "Confirm GHL reminder sequences fire correctly and pull show rate segmented by traffic source"
+        ]
+      },
+      {
+        "lane": "Google Ads build + launch",
+        "items": [
+          "Build separate Search + Remarketing campaigns for BU1 and BU2",
+          "Write 3\u20135 RSAs per BU, aligned with offer/brand voice",
+          "Set conversion tracking to webinar registration / appointments after pixel verification",
+          "Verify landing-page UTMs pass into GHL",
+          "Launch conservative test budgets; scale only after 48 hours of conversion data",
+          "Add launch negative keywords: free, jobs, careers, DIY, template, tutorial, etc.",
+          "Build remarketing for visitors who did not register"
+        ]
+      },
+      {
+        "lane": "Landing page QA",
+        "items": [
+          "Mobile page load under 3 seconds",
+          "Opt-in form submits correctly and triggers correct GHL workflow",
+          "Thank-you page / confirmation next-step CTA works",
+          "UTM source/medium/campaign/content appear on GHL contact record",
+          "Mobile QA on iOS and Android",
+          "Complete Registration fires on submit with screenshot proof"
+        ]
+      },
+      {
+        "lane": "Reporting / accountability",
+        "items": [
+          "Daily Slack check-in by 5:00 PM ET: completed, in progress, blockers",
+          "EOW report due Friday 5/23 by 5:00 PM ET covering BU1 and BU2 separately",
+          "EOW must include ROAS, CPL, webinar show rate, call book rate, pixel screenshots, Google Ads live screenshots, top 3 wins, top 3 blockers/issues, next-week priority adjustments"
+        ]
+      }
     ]
   },
   "comm_sources": [
@@ -309,37 +484,18 @@
         "todo": 0,
         "scheduled": 0,
         "ready": 0,
-        "running": 3,
-        "blocked": 0,
+        "running": 0,
+        "blocked": 2,
         "review": 0,
-        "done": 4,
+        "done": 5,
         "archived": 0
       },
       "tasks": [
         {
-          "id": "t_78307607",
-          "title": "UGC Academy \u2014 Production blocker watch",
-          "assignee": "opsworker",
-          "status": "running",
-          "priority": 80,
-          "created_by": "user",
-          "created_at": 1779309910,
-          "started_at": 1779309918,
-          "completed_at": null,
-          "last_heartbeat_at": null,
-          "created_at_iso": "2026-05-20T20:45:10+00:00",
-          "started_at_iso": "2026-05-20T20:45:18+00:00",
-          "completed_at_iso": null,
-          "last_heartbeat_at_iso": null,
-          "has_result": false,
-          "has_error": false,
-          "public_summary": "Hermes is working this now \u2014 opsworker"
-        },
-        {
           "id": "t_147f5aa8",
           "title": "UGC Academy \u2014 Reply/action queue",
           "assignee": "opsworker",
-          "status": "running",
+          "status": "blocked",
           "priority": 78,
           "created_by": "user",
           "created_at": 1779309911,
@@ -352,13 +508,13 @@
           "last_heartbeat_at_iso": null,
           "has_result": false,
           "has_error": false,
-          "public_summary": "Hermes is working this now \u2014 opsworker"
+          "public_summary": "Needs unblock / decision path \u2014 opsworker"
         },
         {
           "id": "t_343e9e54",
           "title": "UGC Academy \u2014 Dashboard lane/source health",
           "assignee": "opsworker",
-          "status": "running",
+          "status": "blocked",
           "priority": 70,
           "created_by": "user",
           "created_at": 1779309912,
@@ -371,7 +527,7 @@
           "last_heartbeat_at_iso": null,
           "has_result": false,
           "has_error": false,
-          "public_summary": "Hermes is working this now \u2014 opsworker"
+          "public_summary": "Needs unblock / decision path \u2014 opsworker"
         },
         {
           "id": "t_10e0680d",
@@ -406,6 +562,25 @@
           "created_at_iso": "2026-05-20T20:45:09+00:00",
           "started_at_iso": "2026-05-20T20:45:18+00:00",
           "completed_at_iso": "2026-05-20T20:48:48+00:00",
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false,
+          "public_summary": "Completed / receipt available in Hermes"
+        },
+        {
+          "id": "t_78307607",
+          "title": "UGC Academy \u2014 Production blocker watch",
+          "assignee": "opsworker",
+          "status": "done",
+          "priority": 80,
+          "created_by": "user",
+          "created_at": 1779309910,
+          "started_at": 1779309918,
+          "completed_at": 1779310222,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T20:45:10+00:00",
+          "started_at_iso": "2026-05-20T20:45:18+00:00",
+          "completed_at_iso": "2026-05-20T20:50:22+00:00",
           "last_heartbeat_at_iso": null,
           "has_result": false,
           "has_error": false,
@@ -451,6 +626,31 @@
         }
       ],
       "events": [
+        {
+          "task_id": "t_343e9e54",
+          "kind": "blocked",
+          "created_at_iso": "2026-05-20T20:54:57+00:00"
+        },
+        {
+          "task_id": "t_343e9e54",
+          "kind": "commented",
+          "created_at_iso": "2026-05-20T20:54:53+00:00"
+        },
+        {
+          "task_id": "t_147f5aa8",
+          "kind": "blocked",
+          "created_at_iso": "2026-05-20T20:51:04+00:00"
+        },
+        {
+          "task_id": "t_147f5aa8",
+          "kind": "commented",
+          "created_at_iso": "2026-05-20T20:50:53+00:00"
+        },
+        {
+          "task_id": "t_78307607",
+          "kind": "completed",
+          "created_at_iso": "2026-05-20T20:50:22+00:00"
+        },
         {
           "task_id": "t_8daaa56c",
           "kind": "completed",
@@ -525,34 +725,9 @@
           "task_id": "t_78307607",
           "kind": "created",
           "created_at_iso": "2026-05-20T20:45:10+00:00"
-        },
-        {
-          "task_id": "t_8daaa56c",
-          "kind": "created",
-          "created_at_iso": "2026-05-20T20:45:09+00:00"
-        },
-        {
-          "task_id": "t_10e0680d",
-          "kind": "created",
-          "created_at_iso": "2026-05-20T20:45:08+00:00"
-        },
-        {
-          "task_id": "t_5a92483f",
-          "kind": "completed",
-          "created_at_iso": "2026-05-20T12:05:39+00:00"
-        },
-        {
-          "task_id": "t_5a92483f",
-          "kind": "commented",
-          "created_at_iso": "2026-05-20T12:05:26+00:00"
-        },
-        {
-          "task_id": "t_482296c6",
-          "kind": "completed",
-          "created_at_iso": "2026-05-20T12:03:57+00:00"
         }
       ],
-      "active_total": 3
+      "active_total": 2
     },
     {
       "slug": "lisa-el-world",
@@ -1083,44 +1258,6 @@
   ],
   "jobs": [
     {
-      "id": "a4f58658bf81",
-      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-      "category": "Communications",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-20T16:52:55.223192-04:00",
-      "last_run_at": "2026-05-20T16:22:55.223192-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "gmail_junk_sweeper.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 99
-      }
-    },
-    {
-      "id": "93e52af74678",
-      "name": "Lisa / EL World email watchdog",
-      "category": "Client \u2014 Lisa / EL World",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 15m",
-      "next_run_at": "2026-05-20T16:57:14.048201-04:00",
-      "last_run_at": "2026-05-20T16:42:14.048201-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "lisa_el_world_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 214
-      }
-    },
-    {
       "id": "e37aea919737",
       "name": "DucatDash \u2014 enable HTTPS when cert ready",
       "category": "DucatDash / Systems",
@@ -1166,7 +1303,7 @@
       "state": "scheduled",
       "schedule": "*/10 * * * *",
       "next_run_at": "2026-05-20T17:00:00-04:00",
-      "last_run_at": "2026-05-20T16:40:07.656473-04:00",
+      "last_run_at": "2026-05-20T16:50:16.876843-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -1174,7 +1311,7 @@
       "no_agent": true,
       "repeat": {
         "times": 3650,
-        "completed": 51
+        "completed": 52
       }
     },
     {
@@ -1194,6 +1331,25 @@
       "repeat": {
         "times": null,
         "completed": 234
+      }
+    },
+    {
+      "id": "93e52af74678",
+      "name": "Lisa / EL World email watchdog",
+      "category": "Client \u2014 Lisa / EL World",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 15m",
+      "next_run_at": "2026-05-20T17:12:43.623486-04:00",
+      "last_run_at": "2026-05-20T16:57:43.623486-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "lisa_el_world_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 215
       }
     },
     {
@@ -1232,6 +1388,25 @@
       "repeat": {
         "times": 365,
         "completed": 0
+      }
+    },
+    {
+      "id": "a4f58658bf81",
+      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+      "category": "Communications",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-20T17:23:37.114555-04:00",
+      "last_run_at": "2026-05-20T16:53:37.114555-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "gmail_junk_sweeper.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 100
       }
     },
     {
@@ -1618,6 +1793,48 @@
   "focus": {
     "blocked": [
       {
+        "board": "ugc-academy",
+        "board_name": "UGC Academy Content + Ads",
+        "id": "t_147f5aa8",
+        "title": "UGC Academy \u2014 Reply/action queue",
+        "assignee": "opsworker",
+        "status": "blocked",
+        "priority": 78,
+        "created_by": "user",
+        "created_at": 1779309911,
+        "started_at": 1779309918,
+        "completed_at": null,
+        "last_heartbeat_at": null,
+        "created_at_iso": "2026-05-20T20:45:11+00:00",
+        "started_at_iso": "2026-05-20T20:45:18+00:00",
+        "completed_at_iso": null,
+        "last_heartbeat_at_iso": null,
+        "has_result": false,
+        "has_error": false,
+        "public_summary": "Needs unblock / decision path \u2014 opsworker"
+      },
+      {
+        "board": "ugc-academy",
+        "board_name": "UGC Academy Content + Ads",
+        "id": "t_343e9e54",
+        "title": "UGC Academy \u2014 Dashboard lane/source health",
+        "assignee": "opsworker",
+        "status": "blocked",
+        "priority": 70,
+        "created_by": "user",
+        "created_at": 1779309912,
+        "started_at": 1779309918,
+        "completed_at": null,
+        "last_heartbeat_at": null,
+        "created_at_iso": "2026-05-20T20:45:12+00:00",
+        "started_at_iso": "2026-05-20T20:45:18+00:00",
+        "completed_at_iso": null,
+        "last_heartbeat_at_iso": null,
+        "has_result": false,
+        "has_error": false,
+        "public_summary": "Needs unblock / decision path \u2014 opsworker"
+      },
+      {
         "board": "lisa-el-world",
         "board_name": "Lisa / EL World",
         "id": "t_a39461da",
@@ -1765,111 +1982,9 @@
         "public_summary": "Needs unblock / decision path \u2014 opsworker"
       }
     ],
-    "running": [
-      {
-        "board": "ugc-academy",
-        "board_name": "UGC Academy Content + Ads",
-        "id": "t_78307607",
-        "title": "UGC Academy \u2014 Production blocker watch",
-        "assignee": "opsworker",
-        "status": "running",
-        "priority": 80,
-        "created_by": "user",
-        "created_at": 1779309910,
-        "started_at": 1779309918,
-        "completed_at": null,
-        "last_heartbeat_at": null,
-        "created_at_iso": "2026-05-20T20:45:10+00:00",
-        "started_at_iso": "2026-05-20T20:45:18+00:00",
-        "completed_at_iso": null,
-        "last_heartbeat_at_iso": null,
-        "has_result": false,
-        "has_error": false,
-        "public_summary": "Hermes is working this now \u2014 opsworker"
-      },
-      {
-        "board": "ugc-academy",
-        "board_name": "UGC Academy Content + Ads",
-        "id": "t_147f5aa8",
-        "title": "UGC Academy \u2014 Reply/action queue",
-        "assignee": "opsworker",
-        "status": "running",
-        "priority": 78,
-        "created_by": "user",
-        "created_at": 1779309911,
-        "started_at": 1779309918,
-        "completed_at": null,
-        "last_heartbeat_at": null,
-        "created_at_iso": "2026-05-20T20:45:11+00:00",
-        "started_at_iso": "2026-05-20T20:45:18+00:00",
-        "completed_at_iso": null,
-        "last_heartbeat_at_iso": null,
-        "has_result": false,
-        "has_error": false,
-        "public_summary": "Hermes is working this now \u2014 opsworker"
-      },
-      {
-        "board": "ugc-academy",
-        "board_name": "UGC Academy Content + Ads",
-        "id": "t_343e9e54",
-        "title": "UGC Academy \u2014 Dashboard lane/source health",
-        "assignee": "opsworker",
-        "status": "running",
-        "priority": 70,
-        "created_by": "user",
-        "created_at": 1779309912,
-        "started_at": 1779309918,
-        "completed_at": null,
-        "last_heartbeat_at": null,
-        "created_at_iso": "2026-05-20T20:45:12+00:00",
-        "started_at_iso": "2026-05-20T20:45:18+00:00",
-        "completed_at_iso": null,
-        "last_heartbeat_at_iso": null,
-        "has_result": false,
-        "has_error": false,
-        "public_summary": "Hermes is working this now \u2014 opsworker"
-      }
-    ],
+    "running": [],
     "queued": [],
     "next_jobs": [
-      {
-        "id": "a4f58658bf81",
-        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-        "category": "Communications",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-20T16:52:55.223192-04:00",
-        "last_run_at": "2026-05-20T16:22:55.223192-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "gmail_junk_sweeper.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 99
-        }
-      },
-      {
-        "id": "93e52af74678",
-        "name": "Lisa / EL World email watchdog",
-        "category": "Client \u2014 Lisa / EL World",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 15m",
-        "next_run_at": "2026-05-20T16:57:14.048201-04:00",
-        "last_run_at": "2026-05-20T16:42:14.048201-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "lisa_el_world_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 214
-        }
-      },
       {
         "id": "e37aea919737",
         "name": "DucatDash \u2014 enable HTTPS when cert ready",
@@ -1916,7 +2031,7 @@
         "state": "scheduled",
         "schedule": "*/10 * * * *",
         "next_run_at": "2026-05-20T17:00:00-04:00",
-        "last_run_at": "2026-05-20T16:40:07.656473-04:00",
+        "last_run_at": "2026-05-20T16:50:16.876843-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -1924,7 +2039,7 @@
         "no_agent": true,
         "repeat": {
           "times": 3650,
-          "completed": 51
+          "completed": 52
         }
       },
       {
@@ -1944,6 +2059,25 @@
         "repeat": {
           "times": null,
           "completed": 234
+        }
+      },
+      {
+        "id": "93e52af74678",
+        "name": "Lisa / EL World email watchdog",
+        "category": "Client \u2014 Lisa / EL World",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 15m",
+        "next_run_at": "2026-05-20T17:12:43.623486-04:00",
+        "last_run_at": "2026-05-20T16:57:43.623486-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "lisa_el_world_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 215
         }
       },
       {
@@ -1982,6 +2116,25 @@
         "repeat": {
           "times": 365,
           "completed": 0
+        }
+      },
+      {
+        "id": "a4f58658bf81",
+        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+        "category": "Communications",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-20T17:23:37.114555-04:00",
+        "last_run_at": "2026-05-20T16:53:37.114555-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "gmail_junk_sweeper.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 365,
+          "completed": 100
         }
       }
     ],
