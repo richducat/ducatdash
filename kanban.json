@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T12:01:27.683952+00:00",
-  "generated_unix": 1779278487,
+  "generated_at": "2026-05-20T12:11:48.544169+00:00",
+  "generated_unix": 1779279108,
   "note": "Read-only public-safe Kanban snapshot. Bodies, comments, local paths, secrets, results, and errors are intentionally excluded.",
   "boards": [
     {
@@ -28,10 +28,10 @@
         "todo": 0,
         "scheduled": 0,
         "ready": 0,
-        "running": 2,
+        "running": 0,
         "blocked": 0,
         "review": 0,
-        "done": 0,
+        "done": 2,
         "archived": 0
       },
       "tasks": [
@@ -39,17 +39,17 @@
           "id": "t_482296c6",
           "title": "Review daily content machine outputs before external publishing",
           "assignee": "reviewworker",
-          "status": "running",
+          "status": "done",
           "priority": 0,
           "created_by": "user",
           "created_at": 1779278394,
           "started_at": 1779278405,
-          "completed_at": null,
+          "completed_at": 1779278637,
           "tenant": null,
           "last_heartbeat_at": null,
           "created_at_iso": "2026-05-20T11:59:54+00:00",
           "started_at_iso": "2026-05-20T12:00:05+00:00",
-          "completed_at_iso": null,
+          "completed_at_iso": "2026-05-20T12:03:57+00:00",
           "last_heartbeat_at_iso": null,
           "has_result": false,
           "has_error": false
@@ -58,23 +58,38 @@
           "id": "t_5a92483f",
           "title": "Daily Sydney/Nate UGC content manager",
           "assignee": "crmworker",
-          "status": "running",
+          "status": "done",
           "priority": 0,
           "created_by": "user",
           "created_at": 1779278393,
           "started_at": 1779278405,
-          "completed_at": null,
+          "completed_at": 1779278739,
           "tenant": null,
           "last_heartbeat_at": null,
           "created_at_iso": "2026-05-20T11:59:53+00:00",
           "started_at_iso": "2026-05-20T12:00:05+00:00",
-          "completed_at_iso": null,
+          "completed_at_iso": "2026-05-20T12:05:39+00:00",
           "last_heartbeat_at_iso": null,
           "has_result": false,
           "has_error": false
         }
       ],
       "events": [
+        {
+          "task_id": "t_5a92483f",
+          "kind": "completed",
+          "created_at_iso": "2026-05-20T12:05:39+00:00"
+        },
+        {
+          "task_id": "t_5a92483f",
+          "kind": "commented",
+          "created_at_iso": "2026-05-20T12:05:26+00:00"
+        },
+        {
+          "task_id": "t_482296c6",
+          "kind": "completed",
+          "created_at_iso": "2026-05-20T12:03:57+00:00"
+        },
         {
           "task_id": "t_5a92483f",
           "kind": "promoted",
@@ -125,8 +140,8 @@
         "todo": 0,
         "scheduled": 0,
         "ready": 0,
-        "running": 1,
-        "blocked": 0,
+        "running": 0,
+        "blocked": 1,
         "review": 0,
         "done": 0,
         "archived": 0
@@ -136,7 +151,7 @@
           "id": "t_a39461da",
           "title": "Manage Lisa Schmitt / EL World email + website edit requests",
           "assignee": "opsworker",
-          "status": "running",
+          "status": "blocked",
           "priority": 0,
           "created_by": "user",
           "created_at": 1779278394,
@@ -153,6 +168,16 @@
         }
       ],
       "events": [
+        {
+          "task_id": "t_a39461da",
+          "kind": "blocked",
+          "created_at_iso": "2026-05-20T12:10:10+00:00"
+        },
+        {
+          "task_id": "t_a39461da",
+          "kind": "commented",
+          "created_at_iso": "2026-05-20T12:10:05+00:00"
+        },
         {
           "task_id": "t_a39461da",
           "kind": "promoted",
@@ -183,8 +208,8 @@
         "todo": 0,
         "scheduled": 0,
         "ready": 0,
-        "running": 1,
-        "blocked": 0,
+        "running": 0,
+        "blocked": 1,
         "review": 0,
         "done": 0,
         "archived": 0
@@ -194,7 +219,7 @@
           "id": "t_08343134",
           "title": "RingCentral / Zoho / OpenClaw watchdog lane",
           "assignee": "opsworker",
-          "status": "running",
+          "status": "blocked",
           "priority": 0,
           "created_by": "user",
           "created_at": 1779278395,
@@ -211,6 +236,16 @@
         }
       ],
       "events": [
+        {
+          "task_id": "t_08343134",
+          "kind": "blocked",
+          "created_at_iso": "2026-05-20T12:05:49+00:00"
+        },
+        {
+          "task_id": "t_08343134",
+          "kind": "commented",
+          "created_at_iso": "2026-05-20T12:05:45+00:00"
+        },
         {
           "task_id": "t_08343134",
           "kind": "promoted",
@@ -309,10 +344,10 @@
         "todo": 0,
         "scheduled": 0,
         "ready": 0,
-        "running": 1,
+        "running": 0,
         "blocked": 0,
         "review": 0,
-        "done": 0,
+        "done": 1,
         "archived": 0
       },
       "tasks": [
@@ -320,23 +355,28 @@
           "id": "t_24b6712e",
           "title": "Private assistant morning/midday/EOD command lane",
           "assignee": "opsworker",
-          "status": "running",
+          "status": "done",
           "priority": 0,
           "created_by": "user",
           "created_at": 1779278397,
           "started_at": 1779278405,
-          "completed_at": null,
+          "completed_at": 1779278821,
           "tenant": null,
           "last_heartbeat_at": null,
           "created_at_iso": "2026-05-20T11:59:57+00:00",
           "started_at_iso": "2026-05-20T12:00:05+00:00",
-          "completed_at_iso": null,
+          "completed_at_iso": "2026-05-20T12:07:01+00:00",
           "last_heartbeat_at_iso": null,
           "has_result": false,
           "has_error": false
         }
       ],
       "events": [
+        {
+          "task_id": "t_24b6712e",
+          "kind": "completed",
+          "created_at_iso": "2026-05-20T12:07:01+00:00"
+        },
         {
           "task_id": "t_24b6712e",
           "kind": "promoted",
@@ -367,10 +407,10 @@
         "todo": 0,
         "scheduled": 0,
         "ready": 0,
-        "running": 2,
-        "blocked": 0,
+        "running": 0,
+        "blocked": 1,
         "review": 0,
-        "done": 0,
+        "done": 1,
         "archived": 0
       },
       "tasks": [
@@ -378,7 +418,7 @@
           "id": "t_32fdda4d",
           "title": "Access blocker: Voice Memos / iMessage / Slack context",
           "assignee": "opsworker",
-          "status": "running",
+          "status": "blocked",
           "priority": 0,
           "created_by": "user",
           "created_at": 1779278398,
@@ -397,23 +437,43 @@
           "id": "t_c12f137f",
           "title": "Hermes platform health and blocker cleanup",
           "assignee": "codeworker",
-          "status": "running",
+          "status": "done",
           "priority": 0,
           "created_by": "user",
           "created_at": 1779278397,
           "started_at": 1779278405,
-          "completed_at": null,
+          "completed_at": 1779278892,
           "tenant": null,
-          "last_heartbeat_at": null,
+          "last_heartbeat_at": 1779278491,
           "created_at_iso": "2026-05-20T11:59:57+00:00",
           "started_at_iso": "2026-05-20T12:00:05+00:00",
-          "completed_at_iso": null,
-          "last_heartbeat_at_iso": null,
+          "completed_at_iso": "2026-05-20T12:08:12+00:00",
+          "last_heartbeat_at_iso": "2026-05-20T12:01:31+00:00",
           "has_result": false,
           "has_error": false
         }
       ],
       "events": [
+        {
+          "task_id": "t_c12f137f",
+          "kind": "completed",
+          "created_at_iso": "2026-05-20T12:08:12+00:00"
+        },
+        {
+          "task_id": "t_32fdda4d",
+          "kind": "blocked",
+          "created_at_iso": "2026-05-20T12:06:42+00:00"
+        },
+        {
+          "task_id": "t_32fdda4d",
+          "kind": "commented",
+          "created_at_iso": "2026-05-20T12:06:38+00:00"
+        },
+        {
+          "task_id": "t_c12f137f",
+          "kind": "heartbeat",
+          "created_at_iso": "2026-05-20T12:01:31+00:00"
+        },
         {
           "task_id": "t_c12f137f",
           "kind": "promoted",
