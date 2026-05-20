@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T12:12:54.623427+00:00",
-  "generated_unix": 1779279174,
+  "generated_at": "2026-05-20T12:14:02.839613+00:00",
+  "generated_unix": 1779279242,
   "note": "Read-only public-safe Kanban snapshot. Bodies, comments, local paths, secrets, results, and errors are intentionally excluded.",
   "boards": [
     {
@@ -422,12 +422,12 @@
           "priority": 0,
           "created_by": "user",
           "created_at": 1779279174,
-          "started_at": null,
+          "started_at": 1779279188,
           "completed_at": null,
           "tenant": null,
           "last_heartbeat_at": null,
           "created_at_iso": "2026-05-20T12:12:54+00:00",
-          "started_at_iso": null,
+          "started_at_iso": "2026-05-20T12:13:08+00:00",
           "completed_at_iso": null,
           "last_heartbeat_at_iso": null,
           "has_result": false,
@@ -441,12 +441,12 @@
           "priority": 0,
           "created_by": "user",
           "created_at": 1779279173,
-          "started_at": null,
+          "started_at": 1779279188,
           "completed_at": null,
           "tenant": null,
           "last_heartbeat_at": null,
           "created_at_iso": "2026-05-20T12:12:53+00:00",
-          "started_at_iso": null,
+          "started_at_iso": "2026-05-20T12:13:08+00:00",
           "completed_at_iso": null,
           "last_heartbeat_at_iso": null,
           "has_result": false,
@@ -492,6 +492,56 @@
         }
       ],
       "events": [
+        {
+          "task_id": "t_40f00692",
+          "kind": "commented",
+          "created_at_iso": "2026-05-20T12:13:55+00:00"
+        },
+        {
+          "task_id": "t_40f00692",
+          "kind": "blocked",
+          "created_at_iso": "2026-05-20T12:13:55+00:00"
+        },
+        {
+          "task_id": "t_6af2973e",
+          "kind": "commented",
+          "created_at_iso": "2026-05-20T12:13:54+00:00"
+        },
+        {
+          "task_id": "t_6af2973e",
+          "kind": "blocked",
+          "created_at_iso": "2026-05-20T12:13:54+00:00"
+        },
+        {
+          "task_id": "t_6af2973e",
+          "kind": "promoted",
+          "created_at_iso": "2026-05-20T12:13:08+00:00"
+        },
+        {
+          "task_id": "t_40f00692",
+          "kind": "promoted",
+          "created_at_iso": "2026-05-20T12:13:08+00:00"
+        },
+        {
+          "task_id": "t_6af2973e",
+          "kind": "claimed",
+          "created_at_iso": "2026-05-20T12:13:08+00:00"
+        },
+        {
+          "task_id": "t_6af2973e",
+          "kind": "spawned",
+          "created_at_iso": "2026-05-20T12:13:08+00:00"
+        },
+        {
+          "task_id": "t_40f00692",
+          "kind": "claimed",
+          "created_at_iso": "2026-05-20T12:13:08+00:00"
+        },
+        {
+          "task_id": "t_40f00692",
+          "kind": "spawned",
+          "created_at_iso": "2026-05-20T12:13:08+00:00"
+        },
         {
           "task_id": "t_40f00692",
           "kind": "created",
