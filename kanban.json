@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T22:20:52.750063+00:00",
-  "generated_unix": 1779315652,
+  "generated_at": "2026-05-20T22:30:19.564140+00:00",
+  "generated_unix": 1779316219,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,82 +1258,6 @@
   ],
   "jobs": [
     {
-      "id": "a4f58658bf81",
-      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-      "category": "Communications",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-20T18:26:11.743397-04:00",
-      "last_run_at": "2026-05-20T17:56:11.743397-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "gmail_junk_sweeper.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 102
-      }
-    },
-    {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-20T18:30:00-04:00",
-      "last_run_at": "2026-05-20T18:10:45.674088-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 60
-      }
-    },
-    {
-      "id": "b38b179ec9a9",
-      "name": "TYFYS RingCentral Recording Watchdog",
-      "category": "TYFYS / OpenClaw",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "30 18 * * 1-5",
-      "next_run_at": "2026-05-20T18:30:00-04:00",
-      "last_run_at": "2026-05-19T18:30:41.549505-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "ringcentral_recording_watchdog.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 5
-      }
-    },
-    {
-      "id": "e37aea919737",
-      "name": "DucatDash \u2014 enable HTTPS when cert ready",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-20T18:30:13.934592-04:00",
-      "last_run_at": "2026-05-20T18:00:13.934592-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "ducatdash_enable_https.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 48,
-        "completed": 19
-      }
-    },
-    {
       "id": "93e52af74678",
       "name": "Lisa / EL World email watchdog",
       "category": "Client \u2014 Lisa / EL World",
@@ -1350,6 +1274,25 @@
       "repeat": {
         "times": null,
         "completed": 220
+      }
+    },
+    {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-20T18:40:00-04:00",
+      "last_run_at": "2026-05-20T18:20:54.151961-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 61
       }
     },
     {
@@ -1372,6 +1315,25 @@
       }
     },
     {
+      "id": "a4f58658bf81",
+      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+      "category": "Communications",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-20T18:57:19.076176-04:00",
+      "last_run_at": "2026-05-20T18:27:19.076176-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "gmail_junk_sweeper.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 103
+      }
+    },
+    {
       "id": "10c0e8234c93",
       "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
       "category": "Communications",
@@ -1388,6 +1350,25 @@
       "repeat": {
         "times": null,
         "completed": 236
+      }
+    },
+    {
+      "id": "e37aea919737",
+      "name": "DucatDash \u2014 enable HTTPS when cert ready",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-20T19:00:19.405370-04:00",
+      "last_run_at": "2026-05-20T18:00:13.934592-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ducatdash_enable_https.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 48,
+        "completed": 19
       }
     },
     {
@@ -1771,6 +1752,25 @@
       }
     },
     {
+      "id": "b38b179ec9a9",
+      "name": "TYFYS RingCentral Recording Watchdog",
+      "category": "TYFYS / OpenClaw",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "30 18 * * 1-5",
+      "next_run_at": "2026-05-21T18:30:00-04:00",
+      "last_run_at": "2026-05-19T18:30:41.549505-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ringcentral_recording_watchdog.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 5
+      }
+    },
+    {
       "id": "979207ea6fcc",
       "name": "Personal Assistant \u2014 Weekly Systems Audit",
       "category": "Personal Assistant",
@@ -1986,82 +1986,6 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "a4f58658bf81",
-        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-        "category": "Communications",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-20T18:26:11.743397-04:00",
-        "last_run_at": "2026-05-20T17:56:11.743397-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "gmail_junk_sweeper.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 102
-        }
-      },
-      {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-20T18:30:00-04:00",
-        "last_run_at": "2026-05-20T18:10:45.674088-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 60
-        }
-      },
-      {
-        "id": "b38b179ec9a9",
-        "name": "TYFYS RingCentral Recording Watchdog",
-        "category": "TYFYS / OpenClaw",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "30 18 * * 1-5",
-        "next_run_at": "2026-05-20T18:30:00-04:00",
-        "last_run_at": "2026-05-19T18:30:41.549505-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "ringcentral_recording_watchdog.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 5
-        }
-      },
-      {
-        "id": "e37aea919737",
-        "name": "DucatDash \u2014 enable HTTPS when cert ready",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-20T18:30:13.934592-04:00",
-        "last_run_at": "2026-05-20T18:00:13.934592-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "ducatdash_enable_https.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 48,
-          "completed": 19
-        }
-      },
-      {
         "id": "93e52af74678",
         "name": "Lisa / EL World email watchdog",
         "category": "Client \u2014 Lisa / EL World",
@@ -2078,6 +2002,25 @@
         "repeat": {
           "times": null,
           "completed": 220
+        }
+      },
+      {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-20T18:40:00-04:00",
+        "last_run_at": "2026-05-20T18:20:54.151961-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 61
         }
       },
       {
@@ -2100,6 +2043,25 @@
         }
       },
       {
+        "id": "a4f58658bf81",
+        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+        "category": "Communications",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-20T18:57:19.076176-04:00",
+        "last_run_at": "2026-05-20T18:27:19.076176-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "gmail_junk_sweeper.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 365,
+          "completed": 103
+        }
+      },
+      {
         "id": "10c0e8234c93",
         "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
         "category": "Communications",
@@ -2119,6 +2081,25 @@
         }
       },
       {
+        "id": "e37aea919737",
+        "name": "DucatDash \u2014 enable HTTPS when cert ready",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-20T19:00:19.405370-04:00",
+        "last_run_at": "2026-05-20T18:00:13.934592-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "ducatdash_enable_https.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 48,
+          "completed": 19
+        }
+      },
+      {
         "id": "f1c502409ab1",
         "name": "Content Machine \u2014 08 Clip Factory",
         "category": "Content Machine",
@@ -2135,6 +2116,25 @@
         "repeat": {
           "times": 365,
           "completed": 13
+        }
+      },
+      {
+        "id": "2232462e96f6",
+        "name": "Tonight \u2014 Vercel/GitHub/Namecheap Project Preservation Audit",
+        "category": "Apps / Deployments",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "once at 2026-05-20 21:00",
+        "next_run_at": "2026-05-20T21:00:00-04:00",
+        "last_run_at": null,
+        "last_status": null,
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": null,
+        "no_agent": false,
+        "repeat": {
+          "times": 1,
+          "completed": 0
         }
       }
     ],
