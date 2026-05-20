@@ -1,11 +1,123 @@
 {
-  "generated_at": "2026-05-20T12:30:57.122096+00:00",
-  "generated_unix": 1779280257,
-  "note": "Read-only public-safe Kanban snapshot. Bodies, comments, local paths, secrets, results, and errors are intentionally excluded.",
+  "generated_at": "2026-05-20T12:36:20.155967+00:00",
+  "generated_unix": 1779280580,
+  "version": "lifeos-v1",
+  "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
+  "posture": {
+    "deployment": "GitHub + Namecheap first. Avoid Vercel going forward.",
+    "approval_guardrails": "External sends, publishing, DNS/production/destructive actions, customer/lead-impacting automation require explicit approval.",
+    "command_channel": "Telegram to Hermes remains the write/approval path; this public site is read-only plus command composer."
+  },
+  "board_groups": {
+    "Operate": [
+      "personal-ops",
+      "lisa-el-world",
+      "tyfys-openclaw"
+    ],
+    "Grow": [
+      "ugc-academy",
+      "app-builds"
+    ],
+    "System": [
+      "hermes-systems",
+      "default"
+    ]
+  },
+  "life_areas": [
+    {
+      "area": "Today",
+      "desc": "What needs attention now: blocked cards, decisions, scheduled jobs."
+    },
+    {
+      "area": "Work / Clients",
+      "desc": "Lisa, UGC Academy, TYFYS/OpenClaw, client commitments, website/email edits."
+    },
+    {
+      "area": "Content / Growth",
+      "desc": "Content Machine, Sydney/Nate ad creative, newsletters, outreach drafts."
+    },
+    {
+      "area": "Apps / Assets",
+      "desc": "GitHub + Namecheap deploy lane, Vercel preservation audit, product builds."
+    },
+    {
+      "area": "Personal / Family",
+      "desc": "Private reminders, calendar, family/admin items \u2014 add via Command Composer until deeper calendar sync is wired."
+    },
+    {
+      "area": "Comms",
+      "desc": "Email, Telegram, iMessage, Slack, voice notes; blocked sources are visible until access is fixed."
+    }
+  ],
+  "clients": [
+    {
+      "name": "Lisa Schmitt / EL World",
+      "board": "lisa-el-world",
+      "coverage": [
+        "Email/watchdog",
+        "Website edit requests",
+        "Client ops"
+      ],
+      "guardrail": "Escalate decisions, pricing, legal, financial, customer-impacting commitments."
+    },
+    {
+      "name": "UGC Academy \u2014 Sydney + Nate",
+      "board": "ugc-academy",
+      "coverage": [
+        "CRM KPIs",
+        "Facebook ad content direction",
+        "Daily creative briefs"
+      ],
+      "guardrail": "Draft/coach only unless explicitly approved to publish or send."
+    },
+    {
+      "name": "TYFYS / OpenClaw",
+      "board": "tyfys-openclaw",
+      "coverage": [
+        "RingCentral audits",
+        "Zoho/OpenClaw ops",
+        "Simmer/reporting checks"
+      ],
+      "guardrail": "Customer/lead-impacting automation changes require approval."
+    }
+  ],
+  "comm_sources": [
+    {
+      "source": "Telegram",
+      "status": "live",
+      "note": "Primary command channel / approvals."
+    },
+    {
+      "source": "Gmail",
+      "status": "live",
+      "note": "Read/send/modify + Calendar OAuth configured."
+    },
+    {
+      "source": "Lisa EL World watchdog",
+      "status": "live",
+      "note": "Runs every 15m."
+    },
+    {
+      "source": "iMessage",
+      "status": "blocked",
+      "note": "Needs macOS Full Disk Access / repaired Messages access."
+    },
+    {
+      "source": "Voice Memos",
+      "status": "blocked",
+      "note": "Needs macOS Full Disk Access/transcript access."
+    },
+    {
+      "source": "Slack / Jaamal",
+      "status": "blocked",
+      "note": "Needs Slack token/workspace read access."
+    }
+  ],
   "boards": [
     {
       "slug": "default",
       "name": "Default",
+      "description": "General capture lane",
       "counts": {
         "triage": 0,
         "todo": 0,
@@ -18,11 +130,13 @@
         "archived": 0
       },
       "tasks": [],
-      "events": []
+      "events": [],
+      "active_total": 0
     },
     {
       "slug": "ugc-academy",
       "name": "UGC Academy Content + Ads",
+      "description": "Sydney/Nate content, CRM receipts, Facebook ad creative direction",
       "counts": {
         "triage": 0,
         "todo": 0,
@@ -45,14 +159,14 @@
           "created_at": 1779278394,
           "started_at": 1779278405,
           "completed_at": 1779278637,
-          "tenant": null,
           "last_heartbeat_at": null,
           "created_at_iso": "2026-05-20T11:59:54+00:00",
           "started_at_iso": "2026-05-20T12:00:05+00:00",
           "completed_at_iso": "2026-05-20T12:03:57+00:00",
           "last_heartbeat_at_iso": null,
           "has_result": false,
-          "has_error": false
+          "has_error": false,
+          "public_summary": "Completed / receipt available in Hermes"
         },
         {
           "id": "t_5a92483f",
@@ -64,14 +178,14 @@
           "created_at": 1779278393,
           "started_at": 1779278405,
           "completed_at": 1779278739,
-          "tenant": null,
           "last_heartbeat_at": null,
           "created_at_iso": "2026-05-20T11:59:53+00:00",
           "started_at_iso": "2026-05-20T12:00:05+00:00",
           "completed_at_iso": "2026-05-20T12:05:39+00:00",
           "last_heartbeat_at_iso": null,
           "has_result": false,
-          "has_error": false
+          "has_error": false,
+          "public_summary": "Completed / receipt available in Hermes"
         }
       ],
       "events": [
@@ -130,11 +244,13 @@
           "kind": "created",
           "created_at_iso": "2026-05-20T11:59:53+00:00"
         }
-      ]
+      ],
+      "active_total": 0
     },
     {
       "slug": "lisa-el-world",
       "name": "Lisa / EL World",
+      "description": "Lisa Schmitt account, websites, email, edits, and client ops",
       "counts": {
         "triage": 0,
         "todo": 0,
@@ -157,14 +273,14 @@
           "created_at": 1779278394,
           "started_at": 1779278405,
           "completed_at": null,
-          "tenant": null,
           "last_heartbeat_at": null,
           "created_at_iso": "2026-05-20T11:59:54+00:00",
           "started_at_iso": "2026-05-20T12:00:05+00:00",
           "completed_at_iso": null,
           "last_heartbeat_at_iso": null,
           "has_result": false,
-          "has_error": false
+          "has_error": false,
+          "public_summary": "Needs unblock / decision path \u2014 opsworker"
         }
       ],
       "events": [
@@ -198,11 +314,13 @@
           "kind": "created",
           "created_at_iso": "2026-05-20T11:59:54+00:00"
         }
-      ]
+      ],
+      "active_total": 1
     },
     {
       "slug": "tyfys-openclaw",
-      "name": "TYFYS OpenClaw Ops",
+      "name": "TYFYS / OpenClaw Ops",
+      "description": "Zoho, RingCentral, OpenClaw, Simmer, reporting, and systems health",
       "counts": {
         "triage": 0,
         "todo": 0,
@@ -225,14 +343,14 @@
           "created_at": 1779278395,
           "started_at": 1779278405,
           "completed_at": null,
-          "tenant": null,
           "last_heartbeat_at": null,
           "created_at_iso": "2026-05-20T11:59:55+00:00",
           "started_at_iso": "2026-05-20T12:00:05+00:00",
           "completed_at_iso": null,
           "last_heartbeat_at_iso": null,
           "has_result": false,
-          "has_error": false
+          "has_error": false,
+          "public_summary": "Needs unblock / decision path \u2014 opsworker"
         }
       ],
       "events": [
@@ -266,11 +384,13 @@
           "kind": "created",
           "created_at_iso": "2026-05-20T11:59:55+00:00"
         }
-      ]
+      ],
+      "active_total": 1
     },
     {
       "slug": "app-builds",
       "name": "App Builds / Codex",
+      "description": "Apps, repos, GitHub, Namecheap, deployments, release QA \u2014 no Vercel default",
       "counts": {
         "triage": 0,
         "todo": 0,
@@ -293,14 +413,14 @@
           "created_at": 1779279848,
           "started_at": 1779279849,
           "completed_at": null,
-          "tenant": null,
           "last_heartbeat_at": null,
           "created_at_iso": "2026-05-20T12:24:08+00:00",
           "started_at_iso": "2026-05-20T12:24:09+00:00",
           "completed_at_iso": null,
           "last_heartbeat_at_iso": null,
           "has_result": false,
-          "has_error": false
+          "has_error": false,
+          "public_summary": "Needs unblock / decision path \u2014 opsworker"
         },
         {
           "id": "t_eeec3698",
@@ -312,17 +432,22 @@
           "created_at": 1779278396,
           "started_at": 1779278405,
           "completed_at": null,
-          "tenant": null,
           "last_heartbeat_at": null,
           "created_at_iso": "2026-05-20T11:59:56+00:00",
           "started_at_iso": "2026-05-20T12:00:05+00:00",
           "completed_at_iso": null,
           "last_heartbeat_at_iso": null,
           "has_result": false,
-          "has_error": false
+          "has_error": false,
+          "public_summary": "Needs unblock / decision path \u2014 codeworker"
         }
       ],
       "events": [
+        {
+          "task_id": "t_456db264",
+          "kind": "commented",
+          "created_at_iso": "2026-05-20T12:34:53+00:00"
+        },
         {
           "task_id": "t_456db264",
           "kind": "commented",
@@ -383,11 +508,13 @@
           "kind": "created",
           "created_at_iso": "2026-05-20T11:59:56+00:00"
         }
-      ]
+      ],
+      "active_total": 2
     },
     {
       "slug": "personal-ops",
       "name": "Personal Assistant / Admin",
+      "description": "Your private command lane: admin, family, reminders, comms, attention protection",
       "counts": {
         "triage": 0,
         "todo": 0,
@@ -410,14 +537,14 @@
           "created_at": 1779278397,
           "started_at": 1779278405,
           "completed_at": 1779278821,
-          "tenant": null,
           "last_heartbeat_at": null,
           "created_at_iso": "2026-05-20T11:59:57+00:00",
           "started_at_iso": "2026-05-20T12:00:05+00:00",
           "completed_at_iso": "2026-05-20T12:07:01+00:00",
           "last_heartbeat_at_iso": null,
           "has_result": false,
-          "has_error": false
+          "has_error": false,
+          "public_summary": "Completed / receipt available in Hermes"
         }
       ],
       "events": [
@@ -446,11 +573,13 @@
           "kind": "created",
           "created_at_iso": "2026-05-20T11:59:57+00:00"
         }
-      ]
+      ],
+      "active_total": 0
     },
     {
       "slug": "hermes-systems",
       "name": "Hermes Systems",
+      "description": "Hermes gateway, cron, MCP, Kanban, dashboards, memory, blockers",
       "counts": {
         "triage": 0,
         "todo": 0,
@@ -473,14 +602,14 @@
           "created_at": 1779279174,
           "started_at": 1779279188,
           "completed_at": null,
-          "tenant": null,
           "last_heartbeat_at": null,
           "created_at_iso": "2026-05-20T12:12:54+00:00",
           "started_at_iso": "2026-05-20T12:13:08+00:00",
           "completed_at_iso": null,
           "last_heartbeat_at_iso": null,
           "has_result": false,
-          "has_error": false
+          "has_error": false,
+          "public_summary": "Needs unblock / decision path \u2014 codeworker"
         },
         {
           "id": "t_6af2973e",
@@ -492,14 +621,14 @@
           "created_at": 1779279173,
           "started_at": 1779279188,
           "completed_at": null,
-          "tenant": null,
           "last_heartbeat_at": null,
           "created_at_iso": "2026-05-20T12:12:53+00:00",
           "started_at_iso": "2026-05-20T12:13:08+00:00",
           "completed_at_iso": null,
           "last_heartbeat_at_iso": null,
           "has_result": false,
-          "has_error": false
+          "has_error": false,
+          "public_summary": "Needs unblock / decision path \u2014 opsworker"
         },
         {
           "id": "t_32fdda4d",
@@ -511,14 +640,14 @@
           "created_at": 1779278398,
           "started_at": 1779278405,
           "completed_at": null,
-          "tenant": null,
           "last_heartbeat_at": null,
           "created_at_iso": "2026-05-20T11:59:58+00:00",
           "started_at_iso": "2026-05-20T12:00:05+00:00",
           "completed_at_iso": null,
           "last_heartbeat_at_iso": null,
           "has_result": false,
-          "has_error": false
+          "has_error": false,
+          "public_summary": "Needs unblock / decision path \u2014 opsworker"
         },
         {
           "id": "t_c12f137f",
@@ -530,14 +659,14 @@
           "created_at": 1779278397,
           "started_at": 1779278405,
           "completed_at": 1779278892,
-          "tenant": null,
           "last_heartbeat_at": 1779278491,
           "created_at_iso": "2026-05-20T11:59:57+00:00",
           "started_at_iso": "2026-05-20T12:00:05+00:00",
           "completed_at_iso": "2026-05-20T12:08:12+00:00",
           "last_heartbeat_at_iso": "2026-05-20T12:01:31+00:00",
           "has_result": false,
-          "has_error": false
+          "has_error": false,
+          "public_summary": "Completed / receipt available in Hermes"
         }
       ],
       "events": [
@@ -640,38 +769,585 @@
           "task_id": "t_32fdda4d",
           "kind": "promoted",
           "created_at_iso": "2026-05-20T12:00:05+00:00"
-        },
-        {
-          "task_id": "t_c12f137f",
-          "kind": "claimed",
-          "created_at_iso": "2026-05-20T12:00:05+00:00"
-        },
-        {
-          "task_id": "t_c12f137f",
-          "kind": "spawned",
-          "created_at_iso": "2026-05-20T12:00:05+00:00"
-        },
-        {
-          "task_id": "t_32fdda4d",
-          "kind": "claimed",
-          "created_at_iso": "2026-05-20T12:00:05+00:00"
-        },
-        {
-          "task_id": "t_32fdda4d",
-          "kind": "spawned",
-          "created_at_iso": "2026-05-20T12:00:05+00:00"
-        },
-        {
-          "task_id": "t_32fdda4d",
-          "kind": "created",
-          "created_at_iso": "2026-05-20T11:59:58+00:00"
-        },
-        {
-          "task_id": "t_c12f137f",
-          "kind": "created",
-          "created_at_iso": "2026-05-20T11:59:57+00:00"
         }
-      ]
+      ],
+      "active_total": 3
     }
-  ]
+  ],
+  "jobs": [
+    {
+      "id": "a4f58658bf81",
+      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-20T08:38:41.545026-04:00",
+      "last_status": "ok",
+      "deliver": "origin",
+      "script": "gmail_junk_sweeper.py"
+    },
+    {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-20T08:40:00-04:00",
+      "last_status": "ok",
+      "deliver": "local",
+      "script": "ducatdash_publish.py"
+    },
+    {
+      "id": "5b8410485496",
+      "name": "Lisa / EL World inbox watchdog",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 15m",
+      "next_run_at": "2026-05-20T08:41:53.697831-04:00",
+      "last_status": "ok",
+      "deliver": "origin",
+      "script": "client_watch_lisa_el_world.py"
+    },
+    {
+      "id": "93e52af74678",
+      "name": "Lisa / EL World email watchdog",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 15m",
+      "next_run_at": "2026-05-20T08:41:56.667231-04:00",
+      "last_status": "ok",
+      "deliver": "origin",
+      "script": "lisa_el_world_watch.py"
+    },
+    {
+      "id": "e37aea919737",
+      "name": "DucatDash \u2014 enable HTTPS when cert ready",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-20T08:47:03.678607-04:00",
+      "last_status": null,
+      "deliver": "origin",
+      "script": "ducatdash_enable_https.py"
+    },
+    {
+      "id": "10c0e8234c93",
+      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 * * * *",
+      "next_run_at": "2026-05-20T09:00:00-04:00",
+      "last_status": "ok",
+      "deliver": "origin",
+      "script": "hourly_comms_watch.py"
+    },
+    {
+      "id": "60a83d6a6ecb",
+      "name": "Content Machine \u2014 UGC Academy Facebook Ads Coach",
+      "enabled": false,
+      "state": "paused",
+      "schedule": "0 9 * * 1,3,5",
+      "next_run_at": "2026-05-20T09:00:00-04:00",
+      "last_status": null,
+      "deliver": "local",
+      "script": null
+    },
+    {
+      "id": "0d37847feb8d",
+      "name": "UGC Academy \u2014 Daily Content Manager",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "15 9 * * *",
+      "next_run_at": "2026-05-20T09:15:00-04:00",
+      "last_status": "ok",
+      "deliver": "origin",
+      "script": "ugc_academy_daily_context.py"
+    },
+    {
+      "id": "f1c502409ab1",
+      "name": "Content Machine \u2014 08 Clip Factory",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 */2 * * 1-5",
+      "next_run_at": "2026-05-20T10:00:00-04:00",
+      "last_status": "ok",
+      "deliver": "local",
+      "script": null
+    },
+    {
+      "id": "26614aaee14c",
+      "name": "Personal Assistant \u2014 Midday Exception Check",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "30 12 * * 1-5",
+      "next_run_at": "2026-05-20T12:30:00-04:00",
+      "last_status": "ok",
+      "deliver": "origin",
+      "script": null
+    },
+    {
+      "id": "b32b76d59eff",
+      "name": "Content Machine \u2014 10 Research Agent",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 17 * * 1-5",
+      "next_run_at": "2026-05-20T17:00:00-04:00",
+      "last_status": null,
+      "deliver": "local",
+      "script": null
+    },
+    {
+      "id": "34794ddb0837",
+      "name": "Personal Assistant \u2014 End-of-Day Closeout",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "30 17 * * 1-5",
+      "next_run_at": "2026-05-20T17:30:00-04:00",
+      "last_status": "ok",
+      "deliver": "origin",
+      "script": null
+    },
+    {
+      "id": "b38b179ec9a9",
+      "name": "TYFYS RingCentral Recording Watchdog",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "30 18 * * 1-5",
+      "next_run_at": "2026-05-20T18:30:00-04:00",
+      "last_status": "ok",
+      "deliver": "origin",
+      "script": "ringcentral_recording_watchdog.py"
+    },
+    {
+      "id": "2232462e96f6",
+      "name": "Tonight \u2014 Vercel/GitHub/Namecheap Project Preservation Audit",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "once at 2026-05-20 21:00",
+      "next_run_at": "2026-05-20T21:00:00-04:00",
+      "last_status": null,
+      "deliver": "origin",
+      "script": null
+    },
+    {
+      "id": "972534dc408e",
+      "name": "Content Machine \u2014 01 Scout",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 5 * * 1-5",
+      "next_run_at": "2026-05-21T05:00:00-04:00",
+      "last_status": "ok",
+      "deliver": "local",
+      "script": null
+    },
+    {
+      "id": "61b1db095c3b",
+      "name": "Content Machine \u2014 02 Script Writer",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 6 * * 1-5",
+      "next_run_at": "2026-05-21T06:00:00-04:00",
+      "last_status": "ok",
+      "deliver": "local",
+      "script": null
+    },
+    {
+      "id": "fc845f886952",
+      "name": "Content Machine \u2014 04 Social Posts",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 6 * * 1-5",
+      "next_run_at": "2026-05-21T06:00:00-04:00",
+      "last_status": "ok",
+      "deliver": "local",
+      "script": null
+    },
+    {
+      "id": "fbbd45043af9",
+      "name": "Content Machine \u2014 03 Script Writer 2",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "15 6 * * 1-5",
+      "next_run_at": "2026-05-21T06:15:00-04:00",
+      "last_status": "ok",
+      "deliver": "local",
+      "script": null
+    },
+    {
+      "id": "33c1b4ea3d23",
+      "name": "Content Machine \u2014 05 Thumbnail Agent",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "30 6 * * 1-5",
+      "next_run_at": "2026-05-21T06:30:00-04:00",
+      "last_status": "ok",
+      "deliver": "local",
+      "script": null
+    },
+    {
+      "id": "a83a580aca39",
+      "name": "Content Machine \u2014 06 Blog Writer",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 7 * * 1-5",
+      "next_run_at": "2026-05-21T07:00:00-04:00",
+      "last_status": "ok",
+      "deliver": "local",
+      "script": null
+    },
+    {
+      "id": "dd26905a195a",
+      "name": "Content Machine \u2014 07 Outreach Agent",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 7 * * 1-5",
+      "next_run_at": "2026-05-21T07:00:00-04:00",
+      "last_status": "ok",
+      "deliver": "local",
+      "script": null
+    },
+    {
+      "id": "208ab9502c3a",
+      "name": "Personal Assistant \u2014 Morning Command Brief",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 8 * * 1-5",
+      "next_run_at": "2026-05-21T08:00:00-04:00",
+      "last_status": "ok",
+      "deliver": "origin",
+      "script": null
+    },
+    {
+      "id": "a7632feefe93",
+      "name": "Content Machine \u2014 09 Newsletter",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 8 * * 1,4",
+      "next_run_at": "2026-05-21T08:00:00-04:00",
+      "last_status": null,
+      "deliver": "local",
+      "script": null
+    },
+    {
+      "id": "5cd72b7d9f3d",
+      "name": "Content Machine \u2014 Daily Review Ping",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "30 8 * * 1-5",
+      "next_run_at": "2026-05-21T08:30:00-04:00",
+      "last_status": "ok",
+      "deliver": "origin",
+      "script": "content_machine_review_ping.py"
+    },
+    {
+      "id": "979207ea6fcc",
+      "name": "Personal Assistant \u2014 Weekly Systems Audit",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "15 8 * * 1",
+      "next_run_at": "2026-05-25T08:15:00-04:00",
+      "last_status": "ok",
+      "deliver": "origin",
+      "script": null
+    }
+  ],
+  "focus": {
+    "blocked": [
+      {
+        "board": "lisa-el-world",
+        "board_name": "Lisa / EL World",
+        "id": "t_a39461da",
+        "title": "Manage Lisa Schmitt / EL World email + website edit requests",
+        "assignee": "opsworker",
+        "status": "blocked",
+        "priority": 0,
+        "created_by": "user",
+        "created_at": 1779278394,
+        "started_at": 1779278405,
+        "completed_at": null,
+        "last_heartbeat_at": null,
+        "created_at_iso": "2026-05-20T11:59:54+00:00",
+        "started_at_iso": "2026-05-20T12:00:05+00:00",
+        "completed_at_iso": null,
+        "last_heartbeat_at_iso": null,
+        "has_result": false,
+        "has_error": false,
+        "public_summary": "Needs unblock / decision path \u2014 opsworker"
+      },
+      {
+        "board": "tyfys-openclaw",
+        "board_name": "TYFYS / OpenClaw Ops",
+        "id": "t_08343134",
+        "title": "RingCentral / Zoho / OpenClaw watchdog lane",
+        "assignee": "opsworker",
+        "status": "blocked",
+        "priority": 0,
+        "created_by": "user",
+        "created_at": 1779278395,
+        "started_at": 1779278405,
+        "completed_at": null,
+        "last_heartbeat_at": null,
+        "created_at_iso": "2026-05-20T11:59:55+00:00",
+        "started_at_iso": "2026-05-20T12:00:05+00:00",
+        "completed_at_iso": null,
+        "last_heartbeat_at_iso": null,
+        "has_result": false,
+        "has_error": false,
+        "public_summary": "Needs unblock / decision path \u2014 opsworker"
+      },
+      {
+        "board": "app-builds",
+        "board_name": "App Builds / Codex",
+        "id": "t_456db264",
+        "title": "Tonight: Vercel/GitHub/Namecheap preservation audit",
+        "assignee": "opsworker",
+        "status": "blocked",
+        "priority": 0,
+        "created_by": "user",
+        "created_at": 1779279848,
+        "started_at": 1779279849,
+        "completed_at": null,
+        "last_heartbeat_at": null,
+        "created_at_iso": "2026-05-20T12:24:08+00:00",
+        "started_at_iso": "2026-05-20T12:24:09+00:00",
+        "completed_at_iso": null,
+        "last_heartbeat_at_iso": null,
+        "has_result": false,
+        "has_error": false,
+        "public_summary": "Needs unblock / decision path \u2014 opsworker"
+      },
+      {
+        "board": "app-builds",
+        "board_name": "App Builds / Codex",
+        "id": "t_eeec3698",
+        "title": "App build and deployment lane",
+        "assignee": "codeworker",
+        "status": "blocked",
+        "priority": 0,
+        "created_by": "user",
+        "created_at": 1779278396,
+        "started_at": 1779278405,
+        "completed_at": null,
+        "last_heartbeat_at": null,
+        "created_at_iso": "2026-05-20T11:59:56+00:00",
+        "started_at_iso": "2026-05-20T12:00:05+00:00",
+        "completed_at_iso": null,
+        "last_heartbeat_at_iso": null,
+        "has_result": false,
+        "has_error": false,
+        "public_summary": "Needs unblock / decision path \u2014 codeworker"
+      },
+      {
+        "board": "hermes-systems",
+        "board_name": "Hermes Systems",
+        "id": "t_40f00692",
+        "title": "Pending: GitHub Pages HTTPS certificate for DucatDash",
+        "assignee": "codeworker",
+        "status": "blocked",
+        "priority": 0,
+        "created_by": "user",
+        "created_at": 1779279174,
+        "started_at": 1779279188,
+        "completed_at": null,
+        "last_heartbeat_at": null,
+        "created_at_iso": "2026-05-20T12:12:54+00:00",
+        "started_at_iso": "2026-05-20T12:13:08+00:00",
+        "completed_at_iso": null,
+        "last_heartbeat_at_iso": null,
+        "has_result": false,
+        "has_error": false,
+        "public_summary": "Needs unblock / decision path \u2014 codeworker"
+      },
+      {
+        "board": "hermes-systems",
+        "board_name": "Hermes Systems",
+        "id": "t_6af2973e",
+        "title": "Optional blocker: Vercel account suspended",
+        "assignee": "opsworker",
+        "status": "blocked",
+        "priority": 0,
+        "created_by": "user",
+        "created_at": 1779279173,
+        "started_at": 1779279188,
+        "completed_at": null,
+        "last_heartbeat_at": null,
+        "created_at_iso": "2026-05-20T12:12:53+00:00",
+        "started_at_iso": "2026-05-20T12:13:08+00:00",
+        "completed_at_iso": null,
+        "last_heartbeat_at_iso": null,
+        "has_result": false,
+        "has_error": false,
+        "public_summary": "Needs unblock / decision path \u2014 opsworker"
+      },
+      {
+        "board": "hermes-systems",
+        "board_name": "Hermes Systems",
+        "id": "t_32fdda4d",
+        "title": "Access blocker: Voice Memos / iMessage / Slack context",
+        "assignee": "opsworker",
+        "status": "blocked",
+        "priority": 0,
+        "created_by": "user",
+        "created_at": 1779278398,
+        "started_at": 1779278405,
+        "completed_at": null,
+        "last_heartbeat_at": null,
+        "created_at_iso": "2026-05-20T11:59:58+00:00",
+        "started_at_iso": "2026-05-20T12:00:05+00:00",
+        "completed_at_iso": null,
+        "last_heartbeat_at_iso": null,
+        "has_result": false,
+        "has_error": false,
+        "public_summary": "Needs unblock / decision path \u2014 opsworker"
+      }
+    ],
+    "running": [],
+    "queued": [],
+    "next_jobs": [
+      {
+        "id": "a4f58658bf81",
+        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-20T08:38:41.545026-04:00",
+        "last_status": "ok",
+        "deliver": "origin",
+        "script": "gmail_junk_sweeper.py"
+      },
+      {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-20T08:40:00-04:00",
+        "last_status": "ok",
+        "deliver": "local",
+        "script": "ducatdash_publish.py"
+      },
+      {
+        "id": "5b8410485496",
+        "name": "Lisa / EL World inbox watchdog",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 15m",
+        "next_run_at": "2026-05-20T08:41:53.697831-04:00",
+        "last_status": "ok",
+        "deliver": "origin",
+        "script": "client_watch_lisa_el_world.py"
+      },
+      {
+        "id": "93e52af74678",
+        "name": "Lisa / EL World email watchdog",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 15m",
+        "next_run_at": "2026-05-20T08:41:56.667231-04:00",
+        "last_status": "ok",
+        "deliver": "origin",
+        "script": "lisa_el_world_watch.py"
+      },
+      {
+        "id": "e37aea919737",
+        "name": "DucatDash \u2014 enable HTTPS when cert ready",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-20T08:47:03.678607-04:00",
+        "last_status": null,
+        "deliver": "origin",
+        "script": "ducatdash_enable_https.py"
+      },
+      {
+        "id": "10c0e8234c93",
+        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "0 * * * *",
+        "next_run_at": "2026-05-20T09:00:00-04:00",
+        "last_status": "ok",
+        "deliver": "origin",
+        "script": "hourly_comms_watch.py"
+      },
+      {
+        "id": "0d37847feb8d",
+        "name": "UGC Academy \u2014 Daily Content Manager",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "15 9 * * *",
+        "next_run_at": "2026-05-20T09:15:00-04:00",
+        "last_status": "ok",
+        "deliver": "origin",
+        "script": "ugc_academy_daily_context.py"
+      },
+      {
+        "id": "f1c502409ab1",
+        "name": "Content Machine \u2014 08 Clip Factory",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "0 */2 * * 1-5",
+        "next_run_at": "2026-05-20T10:00:00-04:00",
+        "last_status": "ok",
+        "deliver": "local",
+        "script": null
+      }
+    ],
+    "your_moves": [
+      {
+        "task_id": "t_456db264",
+        "board": "app-builds",
+        "title": "Tonight: Vercel/GitHub/Namecheap preservation audit",
+        "move": "Approve/unblock/provide access or confirm direction in Telegram."
+      },
+      {
+        "task_id": "t_40f00692",
+        "board": "hermes-systems",
+        "title": "Pending: GitHub Pages HTTPS certificate for DucatDash",
+        "move": "Approve/unblock/provide access or confirm direction in Telegram."
+      },
+      {
+        "task_id": "t_6af2973e",
+        "board": "hermes-systems",
+        "title": "Optional blocker: Vercel account suspended",
+        "move": "Approve/unblock/provide access or confirm direction in Telegram."
+      },
+      {
+        "task_id": "t_32fdda4d",
+        "board": "hermes-systems",
+        "title": "Access blocker: Voice Memos / iMessage / Slack context",
+        "move": "Approve/unblock/provide access or confirm direction in Telegram."
+      }
+    ]
+  },
+  "actions": {
+    "types": [
+      "add_task",
+      "comment",
+      "minor_adjustment",
+      "idea",
+      "decision",
+      "client_update",
+      "calendar_item",
+      "crm_note"
+    ],
+    "boards": [
+      "default",
+      "ugc-academy",
+      "lisa-el-world",
+      "tyfys-openclaw",
+      "app-builds",
+      "personal-ops",
+      "hermes-systems"
+    ],
+    "assignees": [
+      "opsworker",
+      "contentworker",
+      "codeworker",
+      "researchworker",
+      "reviewworker",
+      "crmworker"
+    ],
+    "instructions": "Use the composer on the dashboard. It creates a clean Telegram command for Hermes; paste/send it to the Hermes chat. Direct write-back is intentionally disabled on the public site until authenticated API access is built."
+  }
 }
