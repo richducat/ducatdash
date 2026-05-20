@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T18:51:01.435482+00:00",
-  "generated_unix": 1779303061,
+  "generated_at": "2026-05-20T19:00:09.751359+00:00",
+  "generated_unix": 1779303609,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -782,8 +782,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 15m",
-      "next_run_at": "2026-05-20T14:53:37.133733-04:00",
-      "last_run_at": "2026-05-20T14:38:37.133733-04:00",
+      "next_run_at": "2026-05-20T15:09:07.587160-04:00",
+      "last_run_at": "2026-05-20T14:54:07.587160-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -791,26 +791,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 206
-      }
-    },
-    {
-      "id": "e37aea919737",
-      "name": "DucatDash \u2014 enable HTTPS when cert ready",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-20T14:56:29.380518-04:00",
-      "last_run_at": "2026-05-20T14:26:29.380518-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "ducatdash_enable_https.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 48,
-        "completed": 12
+        "completed": 207
       }
     },
     {
@@ -820,8 +801,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-20T15:00:00-04:00",
-      "last_run_at": "2026-05-20T14:40:38.900877-04:00",
+      "next_run_at": "2026-05-20T15:10:00-04:00",
+      "last_run_at": "2026-05-20T14:51:02.838782-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -829,26 +810,7 @@
       "no_agent": true,
       "repeat": {
         "times": 3650,
-        "completed": 39
-      }
-    },
-    {
-      "id": "10c0e8234c93",
-      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-      "category": "Communications",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "0 * * * *",
-      "next_run_at": "2026-05-20T15:00:00-04:00",
-      "last_run_at": "2026-05-20T14:01:18.897775-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "hourly_comms_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 232
+        "completed": 40
       }
     },
     {
@@ -871,6 +833,25 @@
       }
     },
     {
+      "id": "e37aea919737",
+      "name": "DucatDash \u2014 enable HTTPS when cert ready",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-20T15:27:09.548323-04:00",
+      "last_run_at": "2026-05-20T14:57:09.548323-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ducatdash_enable_https.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 48,
+        "completed": 13
+      }
+    },
+    {
       "id": "f1c502409ab1",
       "name": "Content Machine \u2014 08 Clip Factory",
       "category": "Content Machine",
@@ -887,6 +868,25 @@
       "repeat": {
         "times": 365,
         "completed": 11
+      }
+    },
+    {
+      "id": "10c0e8234c93",
+      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+      "category": "Communications",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 * * * *",
+      "next_run_at": "2026-05-20T16:00:00-04:00",
+      "last_run_at": "2026-05-20T14:01:18.897775-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "hourly_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 232
       }
     },
     {
@@ -1411,8 +1411,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 15m",
-        "next_run_at": "2026-05-20T14:53:37.133733-04:00",
-        "last_run_at": "2026-05-20T14:38:37.133733-04:00",
+        "next_run_at": "2026-05-20T15:09:07.587160-04:00",
+        "last_run_at": "2026-05-20T14:54:07.587160-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -1420,26 +1420,7 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 206
-        }
-      },
-      {
-        "id": "e37aea919737",
-        "name": "DucatDash \u2014 enable HTTPS when cert ready",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-20T14:56:29.380518-04:00",
-        "last_run_at": "2026-05-20T14:26:29.380518-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "ducatdash_enable_https.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 48,
-          "completed": 12
+          "completed": 207
         }
       },
       {
@@ -1449,8 +1430,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-20T15:00:00-04:00",
-        "last_run_at": "2026-05-20T14:40:38.900877-04:00",
+        "next_run_at": "2026-05-20T15:10:00-04:00",
+        "last_run_at": "2026-05-20T14:51:02.838782-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -1458,26 +1439,7 @@
         "no_agent": true,
         "repeat": {
           "times": 3650,
-          "completed": 39
-        }
-      },
-      {
-        "id": "10c0e8234c93",
-        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-        "category": "Communications",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "0 * * * *",
-        "next_run_at": "2026-05-20T15:00:00-04:00",
-        "last_run_at": "2026-05-20T14:01:18.897775-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "hourly_comms_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 232
+          "completed": 40
         }
       },
       {
@@ -1500,6 +1462,25 @@
         }
       },
       {
+        "id": "e37aea919737",
+        "name": "DucatDash \u2014 enable HTTPS when cert ready",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-20T15:27:09.548323-04:00",
+        "last_run_at": "2026-05-20T14:57:09.548323-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "ducatdash_enable_https.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 48,
+          "completed": 13
+        }
+      },
+      {
         "id": "f1c502409ab1",
         "name": "Content Machine \u2014 08 Clip Factory",
         "category": "Content Machine",
@@ -1516,6 +1497,25 @@
         "repeat": {
           "times": 365,
           "completed": 11
+        }
+      },
+      {
+        "id": "10c0e8234c93",
+        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+        "category": "Communications",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "0 * * * *",
+        "next_run_at": "2026-05-20T16:00:00-04:00",
+        "last_run_at": "2026-05-20T14:01:18.897775-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "hourly_comms_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 232
         }
       },
       {
