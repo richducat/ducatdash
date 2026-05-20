@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T20:47:04.974358+00:00",
-  "generated_unix": 1779310024,
+  "generated_at": "2026-05-20T20:50:15.412215+00:00",
+  "generated_unix": 1779310215,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -309,51 +309,13 @@
         "todo": 0,
         "scheduled": 0,
         "ready": 0,
-        "running": 5,
+        "running": 3,
         "blocked": 0,
         "review": 0,
-        "done": 2,
+        "done": 4,
         "archived": 0
       },
       "tasks": [
-        {
-          "id": "t_10e0680d",
-          "title": "UGC Academy \u2014 Daily PIP stats reporter",
-          "assignee": "crmworker",
-          "status": "running",
-          "priority": 90,
-          "created_by": "user",
-          "created_at": 1779309908,
-          "started_at": 1779309918,
-          "completed_at": null,
-          "last_heartbeat_at": null,
-          "created_at_iso": "2026-05-20T20:45:08+00:00",
-          "started_at_iso": "2026-05-20T20:45:18+00:00",
-          "completed_at_iso": null,
-          "last_heartbeat_at_iso": null,
-          "has_result": false,
-          "has_error": false,
-          "public_summary": "Hermes is working this now \u2014 crmworker"
-        },
-        {
-          "id": "t_8daaa56c",
-          "title": "UGC Academy \u2014 Creative direction agent",
-          "assignee": "contentworker",
-          "status": "running",
-          "priority": 85,
-          "created_by": "user",
-          "created_at": 1779309909,
-          "started_at": 1779309918,
-          "completed_at": null,
-          "last_heartbeat_at": null,
-          "created_at_iso": "2026-05-20T20:45:09+00:00",
-          "started_at_iso": "2026-05-20T20:45:18+00:00",
-          "completed_at_iso": null,
-          "last_heartbeat_at_iso": null,
-          "has_result": false,
-          "has_error": false,
-          "public_summary": "Hermes is working this now \u2014 contentworker"
-        },
         {
           "id": "t_78307607",
           "title": "UGC Academy \u2014 Production blocker watch",
@@ -412,6 +374,44 @@
           "public_summary": "Hermes is working this now \u2014 opsworker"
         },
         {
+          "id": "t_10e0680d",
+          "title": "UGC Academy \u2014 Daily PIP stats reporter",
+          "assignee": "crmworker",
+          "status": "done",
+          "priority": 90,
+          "created_by": "user",
+          "created_at": 1779309908,
+          "started_at": 1779309918,
+          "completed_at": 1779310088,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T20:45:08+00:00",
+          "started_at_iso": "2026-05-20T20:45:18+00:00",
+          "completed_at_iso": "2026-05-20T20:48:08+00:00",
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false,
+          "public_summary": "Completed / receipt available in Hermes"
+        },
+        {
+          "id": "t_8daaa56c",
+          "title": "UGC Academy \u2014 Creative direction agent",
+          "assignee": "contentworker",
+          "status": "done",
+          "priority": 85,
+          "created_by": "user",
+          "created_at": 1779309909,
+          "started_at": 1779309918,
+          "completed_at": 1779310128,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T20:45:09+00:00",
+          "started_at_iso": "2026-05-20T20:45:18+00:00",
+          "completed_at_iso": "2026-05-20T20:48:48+00:00",
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false,
+          "public_summary": "Completed / receipt available in Hermes"
+        },
+        {
           "id": "t_482296c6",
           "title": "Review daily content machine outputs before external publishing",
           "assignee": "reviewworker",
@@ -451,6 +451,16 @@
         }
       ],
       "events": [
+        {
+          "task_id": "t_8daaa56c",
+          "kind": "completed",
+          "created_at_iso": "2026-05-20T20:48:48+00:00"
+        },
+        {
+          "task_id": "t_10e0680d",
+          "kind": "completed",
+          "created_at_iso": "2026-05-20T20:48:08+00:00"
+        },
         {
           "task_id": "t_10e0680d",
           "kind": "claimed",
@@ -540,19 +550,9 @@
           "task_id": "t_482296c6",
           "kind": "completed",
           "created_at_iso": "2026-05-20T12:03:57+00:00"
-        },
-        {
-          "task_id": "t_5a92483f",
-          "kind": "promoted",
-          "created_at_iso": "2026-05-20T12:00:05+00:00"
-        },
-        {
-          "task_id": "t_482296c6",
-          "kind": "promoted",
-          "created_at_iso": "2026-05-20T12:00:05+00:00"
         }
       ],
-      "active_total": 5
+      "active_total": 3
     },
     {
       "slug": "lisa-el-world",
@@ -1083,25 +1083,6 @@
   ],
   "jobs": [
     {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-20T16:50:00-04:00",
-      "last_run_at": "2026-05-20T16:40:07.656473-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 51
-      }
-    },
-    {
       "id": "a4f58658bf81",
       "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
       "category": "Communications",
@@ -1175,6 +1156,25 @@
       "repeat": {
         "times": 365,
         "completed": 0
+      }
+    },
+    {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-20T17:00:00-04:00",
+      "last_run_at": "2026-05-20T16:40:07.656473-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 51
       }
     },
     {
@@ -1769,48 +1769,6 @@
       {
         "board": "ugc-academy",
         "board_name": "UGC Academy Content + Ads",
-        "id": "t_10e0680d",
-        "title": "UGC Academy \u2014 Daily PIP stats reporter",
-        "assignee": "crmworker",
-        "status": "running",
-        "priority": 90,
-        "created_by": "user",
-        "created_at": 1779309908,
-        "started_at": 1779309918,
-        "completed_at": null,
-        "last_heartbeat_at": null,
-        "created_at_iso": "2026-05-20T20:45:08+00:00",
-        "started_at_iso": "2026-05-20T20:45:18+00:00",
-        "completed_at_iso": null,
-        "last_heartbeat_at_iso": null,
-        "has_result": false,
-        "has_error": false,
-        "public_summary": "Hermes is working this now \u2014 crmworker"
-      },
-      {
-        "board": "ugc-academy",
-        "board_name": "UGC Academy Content + Ads",
-        "id": "t_8daaa56c",
-        "title": "UGC Academy \u2014 Creative direction agent",
-        "assignee": "contentworker",
-        "status": "running",
-        "priority": 85,
-        "created_by": "user",
-        "created_at": 1779309909,
-        "started_at": 1779309918,
-        "completed_at": null,
-        "last_heartbeat_at": null,
-        "created_at_iso": "2026-05-20T20:45:09+00:00",
-        "started_at_iso": "2026-05-20T20:45:18+00:00",
-        "completed_at_iso": null,
-        "last_heartbeat_at_iso": null,
-        "has_result": false,
-        "has_error": false,
-        "public_summary": "Hermes is working this now \u2014 contentworker"
-      },
-      {
-        "board": "ugc-academy",
-        "board_name": "UGC Academy Content + Ads",
         "id": "t_78307607",
         "title": "UGC Academy \u2014 Production blocker watch",
         "assignee": "opsworker",
@@ -1874,25 +1832,6 @@
     ],
     "queued": [],
     "next_jobs": [
-      {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-20T16:50:00-04:00",
-        "last_run_at": "2026-05-20T16:40:07.656473-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 51
-        }
-      },
       {
         "id": "a4f58658bf81",
         "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
@@ -1967,6 +1906,25 @@
         "repeat": {
           "times": 365,
           "completed": 0
+        }
+      },
+      {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-20T17:00:00-04:00",
+        "last_run_at": "2026-05-20T16:40:07.656473-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 51
         }
       },
       {
