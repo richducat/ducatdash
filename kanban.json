@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T16:20:02.305886+00:00",
-  "generated_unix": 1779294002,
+  "generated_at": "2026-05-20T16:30:06.610490+00:00",
+  "generated_unix": 1779294606,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -776,63 +776,6 @@
   ],
   "jobs": [
     {
-      "id": "e37aea919737",
-      "name": "DucatDash \u2014 enable HTTPS when cert ready",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-20T12:23:30.293481-04:00",
-      "last_run_at": "2026-05-20T11:53:30.293481-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "ducatdash_enable_https.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 48,
-        "completed": 7
-      }
-    },
-    {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-20T12:30:00-04:00",
-      "last_run_at": "2026-05-20T12:10:33.301906-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 24
-      }
-    },
-    {
-      "id": "26614aaee14c",
-      "name": "Personal Assistant \u2014 Midday Exception Check",
-      "category": "Personal Assistant",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "30 12 * * 1-5",
-      "next_run_at": "2026-05-20T12:30:00-04:00",
-      "last_run_at": "2026-05-19T12:39:15.164486-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": null,
-      "no_agent": false,
-      "repeat": {
-        "times": null,
-        "completed": 17
-      }
-    },
-    {
       "id": "93e52af74678",
       "name": "Lisa / EL World email watchdog",
       "category": "Client \u2014 Lisa / EL World",
@@ -852,6 +795,25 @@
       }
     },
     {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-20T12:40:00-04:00",
+      "last_run_at": "2026-05-20T12:20:04.062736-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 25
+      }
+    },
+    {
       "id": "a4f58658bf81",
       "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
       "category": "Communications",
@@ -868,6 +830,25 @@
       "repeat": {
         "times": 365,
         "completed": 91
+      }
+    },
+    {
+      "id": "e37aea919737",
+      "name": "DucatDash \u2014 enable HTTPS when cert ready",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-20T12:54:05.993972-04:00",
+      "last_run_at": "2026-05-20T12:24:05.993972-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ducatdash_enable_https.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 48,
+        "completed": 8
       }
     },
     {
@@ -1213,6 +1194,25 @@
       }
     },
     {
+      "id": "26614aaee14c",
+      "name": "Personal Assistant \u2014 Midday Exception Check",
+      "category": "Personal Assistant",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "30 12 * * 1-5",
+      "next_run_at": "2026-05-21T12:30:00-04:00",
+      "last_run_at": "2026-05-19T12:39:15.164486-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": null,
+      "no_agent": false,
+      "repeat": {
+        "times": null,
+        "completed": 17
+      }
+    },
+    {
       "id": "979207ea6fcc",
       "name": "Personal Assistant \u2014 Weekly Systems Audit",
       "category": "Personal Assistant",
@@ -1405,63 +1405,6 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "e37aea919737",
-        "name": "DucatDash \u2014 enable HTTPS when cert ready",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-20T12:23:30.293481-04:00",
-        "last_run_at": "2026-05-20T11:53:30.293481-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "ducatdash_enable_https.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 48,
-          "completed": 7
-        }
-      },
-      {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-20T12:30:00-04:00",
-        "last_run_at": "2026-05-20T12:10:33.301906-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 24
-        }
-      },
-      {
-        "id": "26614aaee14c",
-        "name": "Personal Assistant \u2014 Midday Exception Check",
-        "category": "Personal Assistant",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "30 12 * * 1-5",
-        "next_run_at": "2026-05-20T12:30:00-04:00",
-        "last_run_at": "2026-05-19T12:39:15.164486-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": null,
-        "no_agent": false,
-        "repeat": {
-          "times": null,
-          "completed": 17
-        }
-      },
-      {
         "id": "93e52af74678",
         "name": "Lisa / EL World email watchdog",
         "category": "Client \u2014 Lisa / EL World",
@@ -1481,6 +1424,25 @@
         }
       },
       {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-20T12:40:00-04:00",
+        "last_run_at": "2026-05-20T12:20:04.062736-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 25
+        }
+      },
+      {
         "id": "a4f58658bf81",
         "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
         "category": "Communications",
@@ -1497,6 +1459,25 @@
         "repeat": {
           "times": 365,
           "completed": 91
+        }
+      },
+      {
+        "id": "e37aea919737",
+        "name": "DucatDash \u2014 enable HTTPS when cert ready",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-20T12:54:05.993972-04:00",
+        "last_run_at": "2026-05-20T12:24:05.993972-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "ducatdash_enable_https.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 48,
+          "completed": 8
         }
       },
       {
@@ -1554,6 +1535,25 @@
         "repeat": {
           "times": 365,
           "completed": 0
+        }
+      },
+      {
+        "id": "34794ddb0837",
+        "name": "Personal Assistant \u2014 End-of-Day Closeout",
+        "category": "Personal Assistant",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "30 17 * * 1-5",
+        "next_run_at": "2026-05-20T17:30:00-04:00",
+        "last_run_at": "2026-05-19T17:35:10.871083-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": null,
+        "no_agent": false,
+        "repeat": {
+          "times": null,
+          "completed": 17
         }
       }
     ],
