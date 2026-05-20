@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T12:14:02.839613+00:00",
-  "generated_unix": 1779279242,
+  "generated_at": "2026-05-20T12:20:48.795162+00:00",
+  "generated_unix": 1779279648,
   "note": "Read-only public-safe Kanban snapshot. Bodies, comments, local paths, secrets, results, and errors are intentionally excluded.",
   "boards": [
     {
@@ -492,6 +492,16 @@
         }
       ],
       "events": [
+        {
+          "task_id": "t_40f00692",
+          "kind": "commented",
+          "created_at_iso": "2026-05-20T12:17:28+00:00"
+        },
+        {
+          "task_id": "t_6af2973e",
+          "kind": "commented",
+          "created_at_iso": "2026-05-20T12:15:35+00:00"
+        },
         {
           "task_id": "t_40f00692",
           "kind": "commented",
