@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T12:36:20.155967+00:00",
-  "generated_unix": 1779280580,
+  "generated_at": "2026-05-20T12:40:22.902537+00:00",
+  "generated_unix": 1779280822,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -776,28 +776,6 @@
   ],
   "jobs": [
     {
-      "id": "a4f58658bf81",
-      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-20T08:38:41.545026-04:00",
-      "last_status": "ok",
-      "deliver": "origin",
-      "script": "gmail_junk_sweeper.py"
-    },
-    {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-20T08:40:00-04:00",
-      "last_status": "ok",
-      "deliver": "local",
-      "script": "ducatdash_publish.py"
-    },
-    {
       "id": "5b8410485496",
       "name": "Lisa / EL World inbox watchdog",
       "enabled": true,
@@ -831,6 +809,17 @@
       "script": "ducatdash_enable_https.py"
     },
     {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-20T08:50:00-04:00",
+      "last_status": "ok",
+      "deliver": "local",
+      "script": "ducatdash_publish.py"
+    },
+    {
       "id": "10c0e8234c93",
       "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
       "enabled": true,
@@ -851,6 +840,17 @@
       "last_status": null,
       "deliver": "local",
       "script": null
+    },
+    {
+      "id": "a4f58658bf81",
+      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-20T09:09:22.440056-04:00",
+      "last_status": "ok",
+      "deliver": "origin",
+      "script": "gmail_junk_sweeper.py"
     },
     {
       "id": "0d37847feb8d",
@@ -1205,28 +1205,6 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "a4f58658bf81",
-        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-20T08:38:41.545026-04:00",
-        "last_status": "ok",
-        "deliver": "origin",
-        "script": "gmail_junk_sweeper.py"
-      },
-      {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-20T08:40:00-04:00",
-        "last_status": "ok",
-        "deliver": "local",
-        "script": "ducatdash_publish.py"
-      },
-      {
         "id": "5b8410485496",
         "name": "Lisa / EL World inbox watchdog",
         "enabled": true,
@@ -1260,6 +1238,17 @@
         "script": "ducatdash_enable_https.py"
       },
       {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-20T08:50:00-04:00",
+        "last_status": "ok",
+        "deliver": "local",
+        "script": "ducatdash_publish.py"
+      },
+      {
         "id": "10c0e8234c93",
         "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
         "enabled": true,
@@ -1269,6 +1258,17 @@
         "last_status": "ok",
         "deliver": "origin",
         "script": "hourly_comms_watch.py"
+      },
+      {
+        "id": "a4f58658bf81",
+        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-20T09:09:22.440056-04:00",
+        "last_status": "ok",
+        "deliver": "origin",
+        "script": "gmail_junk_sweeper.py"
       },
       {
         "id": "0d37847feb8d",
