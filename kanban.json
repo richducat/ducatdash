@@ -1,0 +1,460 @@
+{
+  "generated_at": "2026-05-20T12:01:27.683952+00:00",
+  "generated_unix": 1779278487,
+  "note": "Read-only public-safe Kanban snapshot. Bodies, comments, local paths, secrets, results, and errors are intentionally excluded.",
+  "boards": [
+    {
+      "slug": "default",
+      "name": "Default",
+      "counts": {
+        "triage": 0,
+        "todo": 0,
+        "scheduled": 0,
+        "ready": 0,
+        "running": 0,
+        "blocked": 0,
+        "review": 0,
+        "done": 0,
+        "archived": 0
+      },
+      "tasks": [],
+      "events": []
+    },
+    {
+      "slug": "ugc-academy",
+      "name": "UGC Academy Content + Ads",
+      "counts": {
+        "triage": 0,
+        "todo": 0,
+        "scheduled": 0,
+        "ready": 0,
+        "running": 2,
+        "blocked": 0,
+        "review": 0,
+        "done": 0,
+        "archived": 0
+      },
+      "tasks": [
+        {
+          "id": "t_482296c6",
+          "title": "Review daily content machine outputs before external publishing",
+          "assignee": "reviewworker",
+          "status": "running",
+          "priority": 0,
+          "created_by": "user",
+          "created_at": 1779278394,
+          "started_at": 1779278405,
+          "completed_at": null,
+          "tenant": null,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T11:59:54+00:00",
+          "started_at_iso": "2026-05-20T12:00:05+00:00",
+          "completed_at_iso": null,
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false
+        },
+        {
+          "id": "t_5a92483f",
+          "title": "Daily Sydney/Nate UGC content manager",
+          "assignee": "crmworker",
+          "status": "running",
+          "priority": 0,
+          "created_by": "user",
+          "created_at": 1779278393,
+          "started_at": 1779278405,
+          "completed_at": null,
+          "tenant": null,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T11:59:53+00:00",
+          "started_at_iso": "2026-05-20T12:00:05+00:00",
+          "completed_at_iso": null,
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false
+        }
+      ],
+      "events": [
+        {
+          "task_id": "t_5a92483f",
+          "kind": "promoted",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_482296c6",
+          "kind": "promoted",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_5a92483f",
+          "kind": "claimed",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_5a92483f",
+          "kind": "spawned",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_482296c6",
+          "kind": "claimed",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_482296c6",
+          "kind": "spawned",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_482296c6",
+          "kind": "created",
+          "created_at_iso": "2026-05-20T11:59:54+00:00"
+        },
+        {
+          "task_id": "t_5a92483f",
+          "kind": "created",
+          "created_at_iso": "2026-05-20T11:59:53+00:00"
+        }
+      ]
+    },
+    {
+      "slug": "lisa-el-world",
+      "name": "Lisa / EL World",
+      "counts": {
+        "triage": 0,
+        "todo": 0,
+        "scheduled": 0,
+        "ready": 0,
+        "running": 1,
+        "blocked": 0,
+        "review": 0,
+        "done": 0,
+        "archived": 0
+      },
+      "tasks": [
+        {
+          "id": "t_a39461da",
+          "title": "Manage Lisa Schmitt / EL World email + website edit requests",
+          "assignee": "opsworker",
+          "status": "running",
+          "priority": 0,
+          "created_by": "user",
+          "created_at": 1779278394,
+          "started_at": 1779278405,
+          "completed_at": null,
+          "tenant": null,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T11:59:54+00:00",
+          "started_at_iso": "2026-05-20T12:00:05+00:00",
+          "completed_at_iso": null,
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false
+        }
+      ],
+      "events": [
+        {
+          "task_id": "t_a39461da",
+          "kind": "promoted",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_a39461da",
+          "kind": "claimed",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_a39461da",
+          "kind": "spawned",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_a39461da",
+          "kind": "created",
+          "created_at_iso": "2026-05-20T11:59:54+00:00"
+        }
+      ]
+    },
+    {
+      "slug": "tyfys-openclaw",
+      "name": "TYFYS OpenClaw Ops",
+      "counts": {
+        "triage": 0,
+        "todo": 0,
+        "scheduled": 0,
+        "ready": 0,
+        "running": 1,
+        "blocked": 0,
+        "review": 0,
+        "done": 0,
+        "archived": 0
+      },
+      "tasks": [
+        {
+          "id": "t_08343134",
+          "title": "RingCentral / Zoho / OpenClaw watchdog lane",
+          "assignee": "opsworker",
+          "status": "running",
+          "priority": 0,
+          "created_by": "user",
+          "created_at": 1779278395,
+          "started_at": 1779278405,
+          "completed_at": null,
+          "tenant": null,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T11:59:55+00:00",
+          "started_at_iso": "2026-05-20T12:00:05+00:00",
+          "completed_at_iso": null,
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false
+        }
+      ],
+      "events": [
+        {
+          "task_id": "t_08343134",
+          "kind": "promoted",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_08343134",
+          "kind": "claimed",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_08343134",
+          "kind": "spawned",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_08343134",
+          "kind": "created",
+          "created_at_iso": "2026-05-20T11:59:55+00:00"
+        }
+      ]
+    },
+    {
+      "slug": "app-builds",
+      "name": "App Builds / Codex",
+      "counts": {
+        "triage": 0,
+        "todo": 0,
+        "scheduled": 0,
+        "ready": 0,
+        "running": 0,
+        "blocked": 1,
+        "review": 0,
+        "done": 0,
+        "archived": 0
+      },
+      "tasks": [
+        {
+          "id": "t_eeec3698",
+          "title": "App build and deployment lane",
+          "assignee": "codeworker",
+          "status": "blocked",
+          "priority": 0,
+          "created_by": "user",
+          "created_at": 1779278396,
+          "started_at": 1779278405,
+          "completed_at": null,
+          "tenant": null,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T11:59:56+00:00",
+          "started_at_iso": "2026-05-20T12:00:05+00:00",
+          "completed_at_iso": null,
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false
+        }
+      ],
+      "events": [
+        {
+          "task_id": "t_eeec3698",
+          "kind": "blocked",
+          "created_at_iso": "2026-05-20T12:00:29+00:00"
+        },
+        {
+          "task_id": "t_eeec3698",
+          "kind": "commented",
+          "created_at_iso": "2026-05-20T12:00:27+00:00"
+        },
+        {
+          "task_id": "t_eeec3698",
+          "kind": "promoted",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_eeec3698",
+          "kind": "claimed",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_eeec3698",
+          "kind": "spawned",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_eeec3698",
+          "kind": "created",
+          "created_at_iso": "2026-05-20T11:59:56+00:00"
+        }
+      ]
+    },
+    {
+      "slug": "personal-ops",
+      "name": "Personal Assistant / Admin",
+      "counts": {
+        "triage": 0,
+        "todo": 0,
+        "scheduled": 0,
+        "ready": 0,
+        "running": 1,
+        "blocked": 0,
+        "review": 0,
+        "done": 0,
+        "archived": 0
+      },
+      "tasks": [
+        {
+          "id": "t_24b6712e",
+          "title": "Private assistant morning/midday/EOD command lane",
+          "assignee": "opsworker",
+          "status": "running",
+          "priority": 0,
+          "created_by": "user",
+          "created_at": 1779278397,
+          "started_at": 1779278405,
+          "completed_at": null,
+          "tenant": null,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T11:59:57+00:00",
+          "started_at_iso": "2026-05-20T12:00:05+00:00",
+          "completed_at_iso": null,
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false
+        }
+      ],
+      "events": [
+        {
+          "task_id": "t_24b6712e",
+          "kind": "promoted",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_24b6712e",
+          "kind": "claimed",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_24b6712e",
+          "kind": "spawned",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_24b6712e",
+          "kind": "created",
+          "created_at_iso": "2026-05-20T11:59:57+00:00"
+        }
+      ]
+    },
+    {
+      "slug": "hermes-systems",
+      "name": "Hermes Systems",
+      "counts": {
+        "triage": 0,
+        "todo": 0,
+        "scheduled": 0,
+        "ready": 0,
+        "running": 2,
+        "blocked": 0,
+        "review": 0,
+        "done": 0,
+        "archived": 0
+      },
+      "tasks": [
+        {
+          "id": "t_32fdda4d",
+          "title": "Access blocker: Voice Memos / iMessage / Slack context",
+          "assignee": "opsworker",
+          "status": "running",
+          "priority": 0,
+          "created_by": "user",
+          "created_at": 1779278398,
+          "started_at": 1779278405,
+          "completed_at": null,
+          "tenant": null,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T11:59:58+00:00",
+          "started_at_iso": "2026-05-20T12:00:05+00:00",
+          "completed_at_iso": null,
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false
+        },
+        {
+          "id": "t_c12f137f",
+          "title": "Hermes platform health and blocker cleanup",
+          "assignee": "codeworker",
+          "status": "running",
+          "priority": 0,
+          "created_by": "user",
+          "created_at": 1779278397,
+          "started_at": 1779278405,
+          "completed_at": null,
+          "tenant": null,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T11:59:57+00:00",
+          "started_at_iso": "2026-05-20T12:00:05+00:00",
+          "completed_at_iso": null,
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false
+        }
+      ],
+      "events": [
+        {
+          "task_id": "t_c12f137f",
+          "kind": "promoted",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_32fdda4d",
+          "kind": "promoted",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_c12f137f",
+          "kind": "claimed",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_c12f137f",
+          "kind": "spawned",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_32fdda4d",
+          "kind": "claimed",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_32fdda4d",
+          "kind": "spawned",
+          "created_at_iso": "2026-05-20T12:00:05+00:00"
+        },
+        {
+          "task_id": "t_32fdda4d",
+          "kind": "created",
+          "created_at_iso": "2026-05-20T11:59:58+00:00"
+        },
+        {
+          "task_id": "t_c12f137f",
+          "kind": "created",
+          "created_at_iso": "2026-05-20T11:59:57+00:00"
+        }
+      ]
+    }
+  ]
+}
