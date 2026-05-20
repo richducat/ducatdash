@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T19:20:39.761400+00:00",
-  "generated_unix": 1779304839,
+  "generated_at": "2026-05-20T19:30:03.875467+00:00",
+  "generated_unix": 1779305403,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -776,52 +776,14 @@
   ],
   "jobs": [
     {
-      "id": "93e52af74678",
-      "name": "Lisa / EL World email watchdog",
-      "category": "Client \u2014 Lisa / EL World",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 15m",
-      "next_run_at": "2026-05-20T15:24:37.580620-04:00",
-      "last_run_at": "2026-05-20T15:09:37.580620-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "lisa_el_world_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 208
-      }
-    },
-    {
-      "id": "e37aea919737",
-      "name": "DucatDash \u2014 enable HTTPS when cert ready",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-20T15:27:09.548323-04:00",
-      "last_run_at": "2026-05-20T14:57:09.548323-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "ducatdash_enable_https.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 48,
-        "completed": 13
-      }
-    },
-    {
       "id": "126bd65ee907",
       "name": "DucatDash \u2014 publish Kanban snapshot",
       "category": "DucatDash / Systems",
       "enabled": true,
       "state": "scheduled",
       "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-20T15:30:00-04:00",
-      "last_run_at": "2026-05-20T15:10:39.483567-04:00",
+      "next_run_at": "2026-05-20T15:40:00-04:00",
+      "last_run_at": "2026-05-20T15:20:41.217459-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -829,7 +791,26 @@
       "no_agent": true,
       "repeat": {
         "times": 3650,
-        "completed": 42
+        "completed": 43
+      }
+    },
+    {
+      "id": "93e52af74678",
+      "name": "Lisa / EL World email watchdog",
+      "category": "Client \u2014 Lisa / EL World",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 15m",
+      "next_run_at": "2026-05-20T15:40:01.911769-04:00",
+      "last_run_at": "2026-05-20T15:25:01.911769-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "lisa_el_world_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 209
       }
     },
     {
@@ -839,8 +820,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 30m",
-      "next_run_at": "2026-05-20T15:50:39.600746-04:00",
-      "last_run_at": "2026-05-20T14:50:01.126360-04:00",
+      "next_run_at": "2026-05-20T15:50:56.505410-04:00",
+      "last_run_at": "2026-05-20T15:20:56.505410-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -848,7 +829,26 @@
       "no_agent": true,
       "repeat": {
         "times": 365,
-        "completed": 96
+        "completed": 97
+      }
+    },
+    {
+      "id": "e37aea919737",
+      "name": "DucatDash \u2014 enable HTTPS when cert ready",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-20T15:58:03.440581-04:00",
+      "last_run_at": "2026-05-20T15:28:03.440581-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ducatdash_enable_https.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 48,
+        "completed": 14
       }
     },
     {
@@ -1405,52 +1405,14 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "93e52af74678",
-        "name": "Lisa / EL World email watchdog",
-        "category": "Client \u2014 Lisa / EL World",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 15m",
-        "next_run_at": "2026-05-20T15:24:37.580620-04:00",
-        "last_run_at": "2026-05-20T15:09:37.580620-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "lisa_el_world_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 208
-        }
-      },
-      {
-        "id": "e37aea919737",
-        "name": "DucatDash \u2014 enable HTTPS when cert ready",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-20T15:27:09.548323-04:00",
-        "last_run_at": "2026-05-20T14:57:09.548323-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "ducatdash_enable_https.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 48,
-          "completed": 13
-        }
-      },
-      {
         "id": "126bd65ee907",
         "name": "DucatDash \u2014 publish Kanban snapshot",
         "category": "DucatDash / Systems",
         "enabled": true,
         "state": "scheduled",
         "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-20T15:30:00-04:00",
-        "last_run_at": "2026-05-20T15:10:39.483567-04:00",
+        "next_run_at": "2026-05-20T15:40:00-04:00",
+        "last_run_at": "2026-05-20T15:20:41.217459-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -1458,7 +1420,26 @@
         "no_agent": true,
         "repeat": {
           "times": 3650,
-          "completed": 42
+          "completed": 43
+        }
+      },
+      {
+        "id": "93e52af74678",
+        "name": "Lisa / EL World email watchdog",
+        "category": "Client \u2014 Lisa / EL World",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 15m",
+        "next_run_at": "2026-05-20T15:40:01.911769-04:00",
+        "last_run_at": "2026-05-20T15:25:01.911769-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "lisa_el_world_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 209
         }
       },
       {
@@ -1468,8 +1449,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 30m",
-        "next_run_at": "2026-05-20T15:50:39.600746-04:00",
-        "last_run_at": "2026-05-20T14:50:01.126360-04:00",
+        "next_run_at": "2026-05-20T15:50:56.505410-04:00",
+        "last_run_at": "2026-05-20T15:20:56.505410-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -1477,7 +1458,26 @@
         "no_agent": true,
         "repeat": {
           "times": 365,
-          "completed": 96
+          "completed": 97
+        }
+      },
+      {
+        "id": "e37aea919737",
+        "name": "DucatDash \u2014 enable HTTPS when cert ready",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-20T15:58:03.440581-04:00",
+        "last_run_at": "2026-05-20T15:28:03.440581-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "ducatdash_enable_https.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 48,
+          "completed": 14
         }
       },
       {
