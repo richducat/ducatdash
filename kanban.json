@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T19:30:03.875467+00:00",
-  "generated_unix": 1779305403,
+  "generated_at": "2026-05-20T19:40:05.784795+00:00",
+  "generated_unix": 1779306005,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -782,8 +782,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-20T15:40:00-04:00",
-      "last_run_at": "2026-05-20T15:20:41.217459-04:00",
+      "next_run_at": "2026-05-20T15:50:00-04:00",
+      "last_run_at": "2026-05-20T15:30:05.459666-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -791,26 +791,7 @@
       "no_agent": true,
       "repeat": {
         "times": 3650,
-        "completed": 43
-      }
-    },
-    {
-      "id": "93e52af74678",
-      "name": "Lisa / EL World email watchdog",
-      "category": "Client \u2014 Lisa / EL World",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 15m",
-      "next_run_at": "2026-05-20T15:40:01.911769-04:00",
-      "last_run_at": "2026-05-20T15:25:01.911769-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "lisa_el_world_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 209
+        "completed": 44
       }
     },
     {
@@ -830,6 +811,25 @@
       "repeat": {
         "times": 365,
         "completed": 97
+      }
+    },
+    {
+      "id": "93e52af74678",
+      "name": "Lisa / EL World email watchdog",
+      "category": "Client \u2014 Lisa / EL World",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 15m",
+      "next_run_at": "2026-05-20T15:55:05.614041-04:00",
+      "last_run_at": "2026-05-20T15:25:01.911769-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "lisa_el_world_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 209
       }
     },
     {
@@ -1411,8 +1411,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-20T15:40:00-04:00",
-        "last_run_at": "2026-05-20T15:20:41.217459-04:00",
+        "next_run_at": "2026-05-20T15:50:00-04:00",
+        "last_run_at": "2026-05-20T15:30:05.459666-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -1420,26 +1420,7 @@
         "no_agent": true,
         "repeat": {
           "times": 3650,
-          "completed": 43
-        }
-      },
-      {
-        "id": "93e52af74678",
-        "name": "Lisa / EL World email watchdog",
-        "category": "Client \u2014 Lisa / EL World",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 15m",
-        "next_run_at": "2026-05-20T15:40:01.911769-04:00",
-        "last_run_at": "2026-05-20T15:25:01.911769-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "lisa_el_world_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 209
+          "completed": 44
         }
       },
       {
@@ -1459,6 +1440,25 @@
         "repeat": {
           "times": 365,
           "completed": 97
+        }
+      },
+      {
+        "id": "93e52af74678",
+        "name": "Lisa / EL World email watchdog",
+        "category": "Client \u2014 Lisa / EL World",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 15m",
+        "next_run_at": "2026-05-20T15:55:05.614041-04:00",
+        "last_run_at": "2026-05-20T15:25:01.911769-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "lisa_el_world_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 209
         }
       },
       {
