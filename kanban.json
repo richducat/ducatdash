@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T20:40:05.895652+00:00",
-  "generated_unix": 1779309605,
+  "generated_at": "2026-05-20T20:46:00.457697+00:00",
+  "generated_unix": 1779309960,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -65,10 +65,11 @@
       "board": "ugc-academy",
       "coverage": [
         "CRM KPIs",
-        "Facebook ad content direction",
-        "Daily creative briefs"
+        "Meta/CRM creative direction",
+        "PIP-style daily stats",
+        "Simple factual replies when verified"
       ],
-      "guardrail": "Draft/coach only unless explicitly approved to publish or send."
+      "guardrail": "Richard owns media buying. No spend/campaign/customer-impacting changes without approval; factual KPI replies only from verified sources."
     },
     {
       "name": "TYFYS / OpenClaw",
@@ -81,6 +82,166 @@
       "guardrail": "Customer/lead-impacting automation changes require approval."
     }
   ],
+  "ugc_project": {
+    "project": "UGC Academy \u2014 Content Creation System + PIP Stats",
+    "owner": "Richard Ducat",
+    "last_updated": "2026-05-20",
+    "status": "active / fight-mode",
+    "target": "Recover toward 4x ROAS by improving lead quality, booked-call intent, show rate, close readiness, and cash ROAS.",
+    "pip_format_source": "Fathom recap from Ludovic Bantzhaff meeting on 2026-05-20 + owners call action brief. No separate local file named PIP was found yet.",
+    "posture": [
+      {
+        "title": "Primary bottleneck",
+        "note": "Low show rates and weak financial quality are the main blockers. Optimize for qualified booked calls, not CPL alone."
+      },
+      {
+        "title": "Richard ownership",
+        "note": "Richard owns ad strategy, creative direction, media buying / launch decisions, KPI pulls, and kill / iterate / scale recommendations."
+      },
+      {
+        "title": "Creative ops",
+        "note": "Ludo owns production operations. Sydney/Nate/FMs record. Editors edit. Richard reviews and launches/tests."
+      },
+      {
+        "title": "Fight-mode cadence",
+        "note": "20\u201330 creatives/day across BU1/Sydney and BU2/Nate once recording/editing capacity is confirmed."
+      }
+    ],
+    "agents": [
+      {
+        "name": "PIP Stats Reporter",
+        "owner": "Hermes",
+        "status": "active",
+        "schedule": "Weekdays morning",
+        "note": "Pulls GetInsights/CRM stats and formats the daily PIP-style update."
+      },
+      {
+        "name": "Creative Direction Agent",
+        "owner": "Hermes",
+        "status": "active",
+        "schedule": "Weekdays morning",
+        "note": "Generates Sydney/Nate creative assignments from KPI receipts, ad exports, and playbook rules."
+      },
+      {
+        "name": "Midday Production Watch",
+        "owner": "Hermes",
+        "status": "active",
+        "schedule": "Weekdays midday",
+        "note": "Surfaces recording/editing/launch blockers and drafts follow-up asks."
+      },
+      {
+        "name": "EOD Closeout Agent",
+        "owner": "Hermes",
+        "status": "active",
+        "schedule": "Weekdays EOD",
+        "note": "Summarizes what shipped, what is blocked, and what tomorrow needs."
+      },
+      {
+        "name": "Comms / Reply Watch",
+        "owner": "Hermes",
+        "status": "partial",
+        "schedule": "Hourly",
+        "note": "Gmail live; Slack blocked until token/workspace access is provided. Can draft/answer factual CRM requests when accessible."
+      },
+      {
+        "name": "DucatDash Publisher",
+        "owner": "Hermes",
+        "status": "active",
+        "schedule": "Every 10 minutes",
+        "note": "Publishes project/job dashboard snapshot."
+      }
+    ],
+    "daily_deliverables": [
+      {
+        "title": "Daily PIP stats update",
+        "note": "Live/Webinar/DM/Google/creative-system status when source data is available; GetInsights verified where possible."
+      },
+      {
+        "title": "Sydney creative assignments",
+        "note": "Specific hooks, points, CTA, visual/editor notes."
+      },
+      {
+        "title": "Nate creative assignments",
+        "note": "Specific hooks, points, CTA, visual/editor notes."
+      },
+      {
+        "title": "Production blocker list",
+        "note": "Recorder capacity, editor capacity, missing assets, missing CTA/keyword/launch details."
+      },
+      {
+        "title": "Kill / iterate / scale recommendation",
+        "note": "Based on spend, leads, appointments, show rate, close rate, cash/revenue ROAS."
+      },
+      {
+        "title": "Copy/paste Slack-ready update",
+        "note": "Only when enough verified data exists. Otherwise Telegram alert asks Richard for missing access/decision."
+      }
+    ],
+    "reply_rules": [
+      {
+        "title": "Allowed autonomous replies",
+        "note": "Factual responses based on GetInsights/CRM, existing PDFs/playbook, known calendar/doc links, or explicit previous approval."
+      },
+      {
+        "title": "Requires Richard approval",
+        "note": "Spend/budget changes, campaign changes, final strategic commitments, legal/financial/pricing/customer-impacting decisions, or anything requiring guesswork."
+      },
+      {
+        "title": "Slack status",
+        "note": "Slack read/write is currently blocked without SLACK_BOT_TOKEN/SLACK_USER_TOKEN or a connected Slack Hermes target."
+      },
+      {
+        "title": "Email status",
+        "note": "Gmail can be read and replied to inside the delegated boundary; non-simple replies are drafted for approval."
+      }
+    ],
+    "docs": [
+      {
+        "title": "SOP / Playbook PDF",
+        "path": "/Users/ducatllm/.hermes/content-machine/output/daily/2026-05-20/UGC_Academy_Daily_Content_Creation_System_SOP_Playbook_Richard_Media_Buyer.pdf"
+      },
+      {
+        "title": "Creative Direction PDF \u2014 20 Sydney + 20 Nate",
+        "path": "/Users/ducatllm/.hermes/content-machine/output/daily/2026-05-20/UGC_Academy_Creative_Direction_20_Sydney_20_Nate.pdf"
+      },
+      {
+        "title": "SOP source markdown",
+        "path": "/Users/ducatllm/.hermes/content-machine/output/daily/2026-05-20/19_ugc_daily_content_creation_system_sop_v6_richard_media_buyer.md"
+      },
+      {
+        "title": "Creative direction source markdown",
+        "path": "/Users/ducatllm/.hermes/content-machine/output/daily/2026-05-20/20_ugc_creative_direction_20_sydney_20_nate.md"
+      },
+      {
+        "title": "Ludovic/Fathom recap text",
+        "path": "/Users/ducatllm/.hermes/cache/documents/ludovic_fathom_recap_2026-05-20.txt"
+      },
+      {
+        "title": "Owners call action brief",
+        "path": "/Users/ducatllm/.hermes/cache/documents/owners_call_action_brief_2026-05-20.md"
+      },
+      {
+        "title": "Hermes UGC Academy operating plan",
+        "path": "/Users/ducatllm/.hermes/ugc-academy-ops/OPERATING_PLAN.md"
+      },
+      {
+        "title": "UGC Academy reply/action queue",
+        "path": "/Users/ducatllm/.hermes/ugc-academy-ops/reply_queue.md"
+      }
+    ],
+    "pip_update_template": [
+      "1. Executive read: are we moving toward 4x ROAS or not?",
+      "2. Primary bottleneck: show rate / lead quality / booking quality / close rate / cash ROAS.",
+      "3. Live webinar stats: spend, CPL, booked calls, show rate, close rate, cash collected when available.",
+      "4. Evergreen webinar stats: spend, registrants/leads, booked calls, show rate when available.",
+      "5. DM funnel stats: conversations, calendar sent rate, booked calls, close rate, cash collected when available.",
+      "6. Sydney/Bu1 read: key KPIs + creative move today.",
+      "7. Nate/Bu2 read: key KPIs + creative move today.",
+      "8. Creative system: target, shipped, blocked, next asks.",
+      "9. Google Ads / form qualifier / attribution status.",
+      "10. Decisions/blockers needing Richard or team input."
+    ]
+  },
   "comm_sources": [
     {
       "source": "Telegram",
@@ -108,9 +269,9 @@
       "note": "Needs macOS Full Disk Access/transcript access."
     },
     {
-      "source": "Slack / Jaamal",
+      "source": "Slack / UGC Academy",
       "status": "blocked",
-      "note": "Needs Slack token/workspace read access."
+      "note": "Needs Slack token/workspace read/write access before Hermes can monitor or respond in Slack."
     }
   ],
   "boards": [
@@ -142,13 +303,108 @@
         "todo": 0,
         "scheduled": 0,
         "ready": 0,
-        "running": 0,
+        "running": 5,
         "blocked": 0,
         "review": 0,
         "done": 2,
         "archived": 0
       },
       "tasks": [
+        {
+          "id": "t_10e0680d",
+          "title": "UGC Academy \u2014 Daily PIP stats reporter",
+          "assignee": "crmworker",
+          "status": "running",
+          "priority": 90,
+          "created_by": "user",
+          "created_at": 1779309908,
+          "started_at": 1779309918,
+          "completed_at": null,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T20:45:08+00:00",
+          "started_at_iso": "2026-05-20T20:45:18+00:00",
+          "completed_at_iso": null,
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false,
+          "public_summary": "Hermes is working this now \u2014 crmworker"
+        },
+        {
+          "id": "t_8daaa56c",
+          "title": "UGC Academy \u2014 Creative direction agent",
+          "assignee": "contentworker",
+          "status": "running",
+          "priority": 85,
+          "created_by": "user",
+          "created_at": 1779309909,
+          "started_at": 1779309918,
+          "completed_at": null,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T20:45:09+00:00",
+          "started_at_iso": "2026-05-20T20:45:18+00:00",
+          "completed_at_iso": null,
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false,
+          "public_summary": "Hermes is working this now \u2014 contentworker"
+        },
+        {
+          "id": "t_78307607",
+          "title": "UGC Academy \u2014 Production blocker watch",
+          "assignee": "opsworker",
+          "status": "running",
+          "priority": 80,
+          "created_by": "user",
+          "created_at": 1779309910,
+          "started_at": 1779309918,
+          "completed_at": null,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T20:45:10+00:00",
+          "started_at_iso": "2026-05-20T20:45:18+00:00",
+          "completed_at_iso": null,
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false,
+          "public_summary": "Hermes is working this now \u2014 opsworker"
+        },
+        {
+          "id": "t_147f5aa8",
+          "title": "UGC Academy \u2014 Reply/action queue",
+          "assignee": "opsworker",
+          "status": "running",
+          "priority": 78,
+          "created_by": "user",
+          "created_at": 1779309911,
+          "started_at": 1779309918,
+          "completed_at": null,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T20:45:11+00:00",
+          "started_at_iso": "2026-05-20T20:45:18+00:00",
+          "completed_at_iso": null,
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false,
+          "public_summary": "Hermes is working this now \u2014 opsworker"
+        },
+        {
+          "id": "t_343e9e54",
+          "title": "UGC Academy \u2014 Dashboard lane/source health",
+          "assignee": "opsworker",
+          "status": "running",
+          "priority": 70,
+          "created_by": "user",
+          "created_at": 1779309912,
+          "started_at": 1779309918,
+          "completed_at": null,
+          "last_heartbeat_at": null,
+          "created_at_iso": "2026-05-20T20:45:12+00:00",
+          "started_at_iso": "2026-05-20T20:45:18+00:00",
+          "completed_at_iso": null,
+          "last_heartbeat_at_iso": null,
+          "has_result": false,
+          "has_error": false,
+          "public_summary": "Hermes is working this now \u2014 opsworker"
+        },
         {
           "id": "t_482296c6",
           "title": "Review daily content machine outputs before external publishing",
@@ -190,6 +446,81 @@
       ],
       "events": [
         {
+          "task_id": "t_10e0680d",
+          "kind": "claimed",
+          "created_at_iso": "2026-05-20T20:45:18+00:00"
+        },
+        {
+          "task_id": "t_10e0680d",
+          "kind": "spawned",
+          "created_at_iso": "2026-05-20T20:45:18+00:00"
+        },
+        {
+          "task_id": "t_8daaa56c",
+          "kind": "claimed",
+          "created_at_iso": "2026-05-20T20:45:18+00:00"
+        },
+        {
+          "task_id": "t_8daaa56c",
+          "kind": "spawned",
+          "created_at_iso": "2026-05-20T20:45:18+00:00"
+        },
+        {
+          "task_id": "t_78307607",
+          "kind": "claimed",
+          "created_at_iso": "2026-05-20T20:45:18+00:00"
+        },
+        {
+          "task_id": "t_78307607",
+          "kind": "spawned",
+          "created_at_iso": "2026-05-20T20:45:18+00:00"
+        },
+        {
+          "task_id": "t_147f5aa8",
+          "kind": "claimed",
+          "created_at_iso": "2026-05-20T20:45:18+00:00"
+        },
+        {
+          "task_id": "t_147f5aa8",
+          "kind": "spawned",
+          "created_at_iso": "2026-05-20T20:45:18+00:00"
+        },
+        {
+          "task_id": "t_343e9e54",
+          "kind": "claimed",
+          "created_at_iso": "2026-05-20T20:45:18+00:00"
+        },
+        {
+          "task_id": "t_343e9e54",
+          "kind": "spawned",
+          "created_at_iso": "2026-05-20T20:45:18+00:00"
+        },
+        {
+          "task_id": "t_343e9e54",
+          "kind": "created",
+          "created_at_iso": "2026-05-20T20:45:12+00:00"
+        },
+        {
+          "task_id": "t_147f5aa8",
+          "kind": "created",
+          "created_at_iso": "2026-05-20T20:45:11+00:00"
+        },
+        {
+          "task_id": "t_78307607",
+          "kind": "created",
+          "created_at_iso": "2026-05-20T20:45:10+00:00"
+        },
+        {
+          "task_id": "t_8daaa56c",
+          "kind": "created",
+          "created_at_iso": "2026-05-20T20:45:09+00:00"
+        },
+        {
+          "task_id": "t_10e0680d",
+          "kind": "created",
+          "created_at_iso": "2026-05-20T20:45:08+00:00"
+        },
+        {
           "task_id": "t_5a92483f",
           "kind": "completed",
           "created_at_iso": "2026-05-20T12:05:39+00:00"
@@ -213,39 +544,9 @@
           "task_id": "t_482296c6",
           "kind": "promoted",
           "created_at_iso": "2026-05-20T12:00:05+00:00"
-        },
-        {
-          "task_id": "t_5a92483f",
-          "kind": "claimed",
-          "created_at_iso": "2026-05-20T12:00:05+00:00"
-        },
-        {
-          "task_id": "t_5a92483f",
-          "kind": "spawned",
-          "created_at_iso": "2026-05-20T12:00:05+00:00"
-        },
-        {
-          "task_id": "t_482296c6",
-          "kind": "claimed",
-          "created_at_iso": "2026-05-20T12:00:05+00:00"
-        },
-        {
-          "task_id": "t_482296c6",
-          "kind": "spawned",
-          "created_at_iso": "2026-05-20T12:00:05+00:00"
-        },
-        {
-          "task_id": "t_482296c6",
-          "kind": "created",
-          "created_at_iso": "2026-05-20T11:59:54+00:00"
-        },
-        {
-          "task_id": "t_5a92483f",
-          "kind": "created",
-          "created_at_iso": "2026-05-20T11:59:53+00:00"
         }
       ],
-      "active_total": 0
+      "active_total": 5
     },
     {
       "slug": "lisa-el-world",
@@ -776,25 +1077,6 @@
   ],
   "jobs": [
     {
-      "id": "93e52af74678",
-      "name": "Lisa / EL World email watchdog",
-      "category": "Client \u2014 Lisa / EL World",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 15m",
-      "next_run_at": "2026-05-20T16:42:00.333196-04:00",
-      "last_run_at": "2026-05-20T16:27:00.333196-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "lisa_el_world_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 213
-      }
-    },
-    {
       "id": "126bd65ee907",
       "name": "DucatDash \u2014 publish Kanban snapshot",
       "category": "DucatDash / Systems",
@@ -802,7 +1084,7 @@
       "state": "scheduled",
       "schedule": "*/10 * * * *",
       "next_run_at": "2026-05-20T16:50:00-04:00",
-      "last_run_at": "2026-05-20T16:30:04.125753-04:00",
+      "last_run_at": "2026-05-20T16:40:07.656473-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -810,7 +1092,7 @@
       "no_agent": true,
       "repeat": {
         "times": 3650,
-        "completed": 50
+        "completed": 51
       }
     },
     {
@@ -830,6 +1112,25 @@
       "repeat": {
         "times": 365,
         "completed": 99
+      }
+    },
+    {
+      "id": "93e52af74678",
+      "name": "Lisa / EL World email watchdog",
+      "category": "Client \u2014 Lisa / EL World",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 15m",
+      "next_run_at": "2026-05-20T16:57:14.048201-04:00",
+      "last_run_at": "2026-05-20T16:42:14.048201-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "lisa_el_world_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 214
       }
     },
     {
@@ -887,6 +1188,44 @@
       "repeat": {
         "times": null,
         "completed": 234
+      }
+    },
+    {
+      "id": "16ab4f418fea",
+      "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
+      "category": "Client \u2014 UGC Academy",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-20T17:14:37.918089-04:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ugc_academy_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 0
+      }
+    },
+    {
+      "id": "d1df5c4f6a15",
+      "name": "UGC Academy \u2014 EOD PIP Closeout + Tomorrow Plan",
+      "category": "Client \u2014 UGC Academy",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "15 17 * * 1-5",
+      "next_run_at": "2026-05-20T17:15:00-04:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ugc_academy_pip_context.py",
+      "no_agent": false,
+      "repeat": {
+        "times": 365,
+        "completed": 0
       }
     },
     {
@@ -1137,6 +1476,25 @@
       }
     },
     {
+      "id": "60a83d6a6ecb",
+      "name": "UGC Academy \u2014 Facebook Ads Creative Coach",
+      "category": "Client \u2014 UGC Academy",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "20 8 * * 1-5",
+      "next_run_at": "2026-05-21T08:20:00-04:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": null,
+      "no_agent": false,
+      "repeat": {
+        "times": 365,
+        "completed": 0
+      }
+    },
+    {
       "id": "5cd72b7d9f3d",
       "name": "Content Machine \u2014 Daily Review Ping",
       "category": "Content Machine",
@@ -1153,6 +1511,25 @@
       "repeat": {
         "times": 365,
         "completed": 1
+      }
+    },
+    {
+      "id": "0d37847feb8d",
+      "name": "UGC Academy \u2014 Morning PIP Stats + Creative Ops",
+      "category": "Client \u2014 UGC Academy",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "45 8 * * 1-5",
+      "next_run_at": "2026-05-21T08:45:00-04:00",
+      "last_run_at": "2026-05-20T09:19:14.292509-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ugc_academy_pip_context.py",
+      "no_agent": false,
+      "repeat": {
+        "times": 365,
+        "completed": 2
       }
     },
     {
@@ -1175,22 +1552,22 @@
       }
     },
     {
-      "id": "0d37847feb8d",
-      "name": "UGC Academy \u2014 Daily Content Manager",
+      "id": "5f37786a7b1f",
+      "name": "UGC Academy \u2014 Midday Production + Reply Queue",
       "category": "Client \u2014 UGC Academy",
       "enabled": true,
       "state": "scheduled",
-      "schedule": "15 9 * * *",
-      "next_run_at": "2026-05-21T09:15:00-04:00",
-      "last_run_at": "2026-05-20T09:19:14.292509-04:00",
-      "last_status": "ok",
+      "schedule": "15 12 * * 1-5",
+      "next_run_at": "2026-05-21T12:15:00-04:00",
+      "last_run_at": null,
+      "last_status": null,
       "last_delivery_error": null,
       "deliver": "origin",
-      "script": "ugc_academy_daily_context.py",
+      "script": "ugc_academy_pip_context.py",
       "no_agent": false,
       "repeat": {
         "times": 365,
-        "completed": 2
+        "completed": 0
       }
     },
     {
@@ -1229,25 +1606,6 @@
       "repeat": {
         "times": null,
         "completed": 4
-      }
-    },
-    {
-      "id": "60a83d6a6ecb",
-      "name": "Content Machine \u2014 UGC Academy Facebook Ads Coach",
-      "category": "Client \u2014 UGC Academy",
-      "enabled": false,
-      "state": "paused",
-      "schedule": "0 9 * * 1,3,5",
-      "next_run_at": "2026-05-20T09:00:00-04:00",
-      "last_run_at": null,
-      "last_status": null,
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": null,
-      "no_agent": false,
-      "repeat": {
-        "times": 365,
-        "completed": 0
       }
     }
   ],
@@ -1401,28 +1759,115 @@
         "public_summary": "Needs unblock / decision path \u2014 opsworker"
       }
     ],
-    "running": [],
+    "running": [
+      {
+        "board": "ugc-academy",
+        "board_name": "UGC Academy Content + Ads",
+        "id": "t_10e0680d",
+        "title": "UGC Academy \u2014 Daily PIP stats reporter",
+        "assignee": "crmworker",
+        "status": "running",
+        "priority": 90,
+        "created_by": "user",
+        "created_at": 1779309908,
+        "started_at": 1779309918,
+        "completed_at": null,
+        "last_heartbeat_at": null,
+        "created_at_iso": "2026-05-20T20:45:08+00:00",
+        "started_at_iso": "2026-05-20T20:45:18+00:00",
+        "completed_at_iso": null,
+        "last_heartbeat_at_iso": null,
+        "has_result": false,
+        "has_error": false,
+        "public_summary": "Hermes is working this now \u2014 crmworker"
+      },
+      {
+        "board": "ugc-academy",
+        "board_name": "UGC Academy Content + Ads",
+        "id": "t_8daaa56c",
+        "title": "UGC Academy \u2014 Creative direction agent",
+        "assignee": "contentworker",
+        "status": "running",
+        "priority": 85,
+        "created_by": "user",
+        "created_at": 1779309909,
+        "started_at": 1779309918,
+        "completed_at": null,
+        "last_heartbeat_at": null,
+        "created_at_iso": "2026-05-20T20:45:09+00:00",
+        "started_at_iso": "2026-05-20T20:45:18+00:00",
+        "completed_at_iso": null,
+        "last_heartbeat_at_iso": null,
+        "has_result": false,
+        "has_error": false,
+        "public_summary": "Hermes is working this now \u2014 contentworker"
+      },
+      {
+        "board": "ugc-academy",
+        "board_name": "UGC Academy Content + Ads",
+        "id": "t_78307607",
+        "title": "UGC Academy \u2014 Production blocker watch",
+        "assignee": "opsworker",
+        "status": "running",
+        "priority": 80,
+        "created_by": "user",
+        "created_at": 1779309910,
+        "started_at": 1779309918,
+        "completed_at": null,
+        "last_heartbeat_at": null,
+        "created_at_iso": "2026-05-20T20:45:10+00:00",
+        "started_at_iso": "2026-05-20T20:45:18+00:00",
+        "completed_at_iso": null,
+        "last_heartbeat_at_iso": null,
+        "has_result": false,
+        "has_error": false,
+        "public_summary": "Hermes is working this now \u2014 opsworker"
+      },
+      {
+        "board": "ugc-academy",
+        "board_name": "UGC Academy Content + Ads",
+        "id": "t_147f5aa8",
+        "title": "UGC Academy \u2014 Reply/action queue",
+        "assignee": "opsworker",
+        "status": "running",
+        "priority": 78,
+        "created_by": "user",
+        "created_at": 1779309911,
+        "started_at": 1779309918,
+        "completed_at": null,
+        "last_heartbeat_at": null,
+        "created_at_iso": "2026-05-20T20:45:11+00:00",
+        "started_at_iso": "2026-05-20T20:45:18+00:00",
+        "completed_at_iso": null,
+        "last_heartbeat_at_iso": null,
+        "has_result": false,
+        "has_error": false,
+        "public_summary": "Hermes is working this now \u2014 opsworker"
+      },
+      {
+        "board": "ugc-academy",
+        "board_name": "UGC Academy Content + Ads",
+        "id": "t_343e9e54",
+        "title": "UGC Academy \u2014 Dashboard lane/source health",
+        "assignee": "opsworker",
+        "status": "running",
+        "priority": 70,
+        "created_by": "user",
+        "created_at": 1779309912,
+        "started_at": 1779309918,
+        "completed_at": null,
+        "last_heartbeat_at": null,
+        "created_at_iso": "2026-05-20T20:45:12+00:00",
+        "started_at_iso": "2026-05-20T20:45:18+00:00",
+        "completed_at_iso": null,
+        "last_heartbeat_at_iso": null,
+        "has_result": false,
+        "has_error": false,
+        "public_summary": "Hermes is working this now \u2014 opsworker"
+      }
+    ],
     "queued": [],
     "next_jobs": [
-      {
-        "id": "93e52af74678",
-        "name": "Lisa / EL World email watchdog",
-        "category": "Client \u2014 Lisa / EL World",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 15m",
-        "next_run_at": "2026-05-20T16:42:00.333196-04:00",
-        "last_run_at": "2026-05-20T16:27:00.333196-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "lisa_el_world_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 213
-        }
-      },
       {
         "id": "126bd65ee907",
         "name": "DucatDash \u2014 publish Kanban snapshot",
@@ -1431,7 +1876,7 @@
         "state": "scheduled",
         "schedule": "*/10 * * * *",
         "next_run_at": "2026-05-20T16:50:00-04:00",
-        "last_run_at": "2026-05-20T16:30:04.125753-04:00",
+        "last_run_at": "2026-05-20T16:40:07.656473-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -1439,7 +1884,7 @@
         "no_agent": true,
         "repeat": {
           "times": 3650,
-          "completed": 50
+          "completed": 51
         }
       },
       {
@@ -1459,6 +1904,25 @@
         "repeat": {
           "times": 365,
           "completed": 99
+        }
+      },
+      {
+        "id": "93e52af74678",
+        "name": "Lisa / EL World email watchdog",
+        "category": "Client \u2014 Lisa / EL World",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 15m",
+        "next_run_at": "2026-05-20T16:57:14.048201-04:00",
+        "last_run_at": "2026-05-20T16:42:14.048201-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "lisa_el_world_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 214
         }
       },
       {
@@ -1519,41 +1983,41 @@
         }
       },
       {
-        "id": "34794ddb0837",
-        "name": "Personal Assistant \u2014 End-of-Day Closeout",
-        "category": "Personal Assistant",
+        "id": "16ab4f418fea",
+        "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
+        "category": "Client \u2014 UGC Academy",
         "enabled": true,
         "state": "scheduled",
-        "schedule": "30 17 * * 1-5",
-        "next_run_at": "2026-05-20T17:30:00-04:00",
-        "last_run_at": "2026-05-19T17:35:10.871083-04:00",
-        "last_status": "ok",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-20T17:14:37.918089-04:00",
+        "last_run_at": null,
+        "last_status": null,
         "last_delivery_error": null,
         "deliver": "origin",
-        "script": null,
-        "no_agent": false,
+        "script": "ugc_academy_comms_watch.py",
+        "no_agent": true,
         "repeat": {
-          "times": null,
-          "completed": 17
+          "times": 365,
+          "completed": 0
         }
       },
       {
-        "id": "f1c502409ab1",
-        "name": "Content Machine \u2014 08 Clip Factory",
-        "category": "Content Machine",
+        "id": "d1df5c4f6a15",
+        "name": "UGC Academy \u2014 EOD PIP Closeout + Tomorrow Plan",
+        "category": "Client \u2014 UGC Academy",
         "enabled": true,
         "state": "scheduled",
-        "schedule": "0 */2 * * 1-5",
-        "next_run_at": "2026-05-20T18:00:00-04:00",
-        "last_run_at": "2026-05-20T16:04:17.506441-04:00",
-        "last_status": "ok",
+        "schedule": "15 17 * * 1-5",
+        "next_run_at": "2026-05-20T17:15:00-04:00",
+        "last_run_at": null,
+        "last_status": null,
         "last_delivery_error": null,
-        "deliver": "local",
-        "script": null,
+        "deliver": "origin",
+        "script": "ugc_academy_pip_context.py",
         "no_agent": false,
         "repeat": {
           "times": 365,
-          "completed": 12
+          "completed": 0
         }
       }
     ],
