@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T14:01:04.252490+00:00",
-  "generated_unix": 1779285664,
+  "generated_at": "2026-05-20T14:10:44.460446+00:00",
+  "generated_unix": 1779286244,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -776,25 +776,6 @@
   ],
   "jobs": [
     {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-20T10:10:00-04:00",
-      "last_run_at": "2026-05-20T09:50:58.250440-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 10
-      }
-    },
-    {
       "id": "a4f58658bf81",
       "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
       "category": "Communications",
@@ -833,6 +814,25 @@
       }
     },
     {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-20T10:20:00-04:00",
+      "last_run_at": "2026-05-20T10:01:05.820807-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 11
+      }
+    },
+    {
       "id": "e37aea919737",
       "name": "DucatDash \u2014 enable HTTPS when cert ready",
       "category": "DucatDash / Systems",
@@ -859,7 +859,7 @@
       "state": "scheduled",
       "schedule": "0 * * * *",
       "next_run_at": "2026-05-20T11:00:00-04:00",
-      "last_run_at": "2026-05-20T09:01:03.155015-04:00",
+      "last_run_at": "2026-05-20T10:01:27.374792-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -867,7 +867,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 227
+        "completed": 228
       }
     },
     {
@@ -878,7 +878,7 @@
       "state": "scheduled",
       "schedule": "0 */2 * * 1-5",
       "next_run_at": "2026-05-20T12:00:00-04:00",
-      "last_run_at": "2026-05-20T08:02:55.262887-04:00",
+      "last_run_at": "2026-05-20T10:03:43.587039-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -886,7 +886,7 @@
       "no_agent": false,
       "repeat": {
         "times": 365,
-        "completed": 8
+        "completed": 9
       }
     },
     {
@@ -1405,25 +1405,6 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-20T10:10:00-04:00",
-        "last_run_at": "2026-05-20T09:50:58.250440-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 10
-        }
-      },
-      {
         "id": "a4f58658bf81",
         "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
         "category": "Communications",
@@ -1462,6 +1443,25 @@
         }
       },
       {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-20T10:20:00-04:00",
+        "last_run_at": "2026-05-20T10:01:05.820807-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 11
+        }
+      },
+      {
         "id": "e37aea919737",
         "name": "DucatDash \u2014 enable HTTPS when cert ready",
         "category": "DucatDash / Systems",
@@ -1488,7 +1488,7 @@
         "state": "scheduled",
         "schedule": "0 * * * *",
         "next_run_at": "2026-05-20T11:00:00-04:00",
-        "last_run_at": "2026-05-20T09:01:03.155015-04:00",
+        "last_run_at": "2026-05-20T10:01:27.374792-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -1496,7 +1496,7 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 227
+          "completed": 228
         }
       },
       {
@@ -1507,7 +1507,7 @@
         "state": "scheduled",
         "schedule": "0 */2 * * 1-5",
         "next_run_at": "2026-05-20T12:00:00-04:00",
-        "last_run_at": "2026-05-20T08:02:55.262887-04:00",
+        "last_run_at": "2026-05-20T10:03:43.587039-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -1515,7 +1515,7 @@
         "no_agent": false,
         "repeat": {
           "times": 365,
-          "completed": 8
+          "completed": 9
         }
       },
       {
