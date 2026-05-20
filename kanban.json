@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T20:46:00.457697+00:00",
-  "generated_unix": 1779309960,
+  "generated_at": "2026-05-20T20:47:04.974358+00:00",
+  "generated_unix": 1779310024,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -85,7 +85,7 @@
   "ugc_project": {
     "project": "UGC Academy \u2014 Content Creation System + PIP Stats",
     "owner": "Richard Ducat",
-    "last_updated": "2026-05-20",
+    "last_updated": "2026-05-20 16:47 ET",
     "status": "active / fight-mode",
     "target": "Recover toward 4x ROAS by improving lead quality, booked-call intent, show rate, close readiness, and cash ROAS.",
     "pip_format_source": "Fathom recap from Ludovic Bantzhaff meeting on 2026-05-20 + owners call action brief. No separate local file named PIP was found yet.",
@@ -113,42 +113,48 @@
         "owner": "Hermes",
         "status": "active",
         "schedule": "Weekdays morning",
-        "note": "Pulls GetInsights/CRM stats and formats the daily PIP-style update."
+        "note": "Pulls GetInsights/CRM stats and formats the daily PIP-style update.",
+        "job_id": "0d37847feb8d"
       },
       {
         "name": "Creative Direction Agent",
         "owner": "Hermes",
         "status": "active",
         "schedule": "Weekdays morning",
-        "note": "Generates Sydney/Nate creative assignments from KPI receipts, ad exports, and playbook rules."
+        "note": "Generates Sydney/Nate creative assignments from KPI receipts, ad exports, and playbook rules.",
+        "job_id": "60a83d6a6ecb"
       },
       {
         "name": "Midday Production Watch",
         "owner": "Hermes",
         "status": "active",
         "schedule": "Weekdays midday",
-        "note": "Surfaces recording/editing/launch blockers and drafts follow-up asks."
+        "note": "Surfaces recording/editing/launch blockers and drafts follow-up asks.",
+        "job_id": "5f37786a7b1f"
       },
       {
         "name": "EOD Closeout Agent",
         "owner": "Hermes",
         "status": "active",
         "schedule": "Weekdays EOD",
-        "note": "Summarizes what shipped, what is blocked, and what tomorrow needs."
+        "note": "Summarizes what shipped, what is blocked, and what tomorrow needs.",
+        "job_id": "d1df5c4f6a15"
       },
       {
         "name": "Comms / Reply Watch",
         "owner": "Hermes",
         "status": "partial",
         "schedule": "Hourly",
-        "note": "Gmail live; Slack blocked until token/workspace access is provided. Can draft/answer factual CRM requests when accessible."
+        "note": "Gmail live; Slack blocked until token/workspace access is provided. Can draft/answer factual CRM requests when accessible.",
+        "job_id": "16ab4f418fea"
       },
       {
         "name": "DucatDash Publisher",
         "owner": "Hermes",
         "status": "active",
         "schedule": "Every 10 minutes",
-        "note": "Publishes project/job dashboard snapshot."
+        "note": "Publishes project/job dashboard snapshot.",
+        "job_id": "126bd65ee907"
       }
     ],
     "daily_deliverables": [
