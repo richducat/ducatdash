@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-21T12:50:35.258528+00:00",
-  "generated_unix": 1779367835,
+  "generated_at": "2026-05-21T13:00:38.793739+00:00",
+  "generated_unix": 1779368438,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,63 +1258,6 @@
   ],
   "jobs": [
     {
-      "id": "95b861db50cd",
-      "name": "Charlene Maven Payment Plan Watchdog",
-      "category": "Admin / Payments",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "0 9 * * *",
-      "next_run_at": "2026-05-21T09:00:00-04:00",
-      "last_run_at": "2026-05-20T09:00:42.361670-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "charlene_maven_payment_watchdog.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 12
-      }
-    },
-    {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-21T09:00:00-04:00",
-      "last_run_at": "2026-05-21T08:40:22.871505-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 146
-      }
-    },
-    {
-      "id": "10c0e8234c93",
-      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-      "category": "Communications",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "0 * * * *",
-      "next_run_at": "2026-05-21T09:00:00-04:00",
-      "last_run_at": "2026-05-21T08:00:29.983508-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "hourly_comms_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 250
-      }
-    },
-    {
       "id": "e37aea919737",
       "name": "DucatDash \u2014 enable HTTPS when cert ready",
       "category": "DucatDash / Systems",
@@ -1372,6 +1315,25 @@
       }
     },
     {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-21T09:10:00-04:00",
+      "last_run_at": "2026-05-21T08:50:36.981262-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 147
+      }
+    },
+    {
       "id": "16ab4f418fea",
       "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
       "category": "Client \u2014 UGC Academy",
@@ -1407,6 +1369,25 @@
       "repeat": {
         "times": 365,
         "completed": 20
+      }
+    },
+    {
+      "id": "10c0e8234c93",
+      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+      "category": "Communications",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 * * * *",
+      "next_run_at": "2026-05-21T10:00:00-04:00",
+      "last_run_at": "2026-05-21T08:00:29.983508-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "hourly_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 250
       }
     },
     {
@@ -1733,6 +1714,25 @@
       }
     },
     {
+      "id": "95b861db50cd",
+      "name": "Charlene Maven Payment Plan Watchdog",
+      "category": "Admin / Payments",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 9 * * *",
+      "next_run_at": "2026-05-22T09:00:00-04:00",
+      "last_run_at": "2026-05-20T09:00:42.361670-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "charlene_maven_payment_watchdog.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 12
+      }
+    },
+    {
       "id": "a7632feefe93",
       "name": "Content Machine \u2014 09 Newsletter",
       "category": "Content Machine",
@@ -1967,63 +1967,6 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "95b861db50cd",
-        "name": "Charlene Maven Payment Plan Watchdog",
-        "category": "Admin / Payments",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "0 9 * * *",
-        "next_run_at": "2026-05-21T09:00:00-04:00",
-        "last_run_at": "2026-05-20T09:00:42.361670-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "charlene_maven_payment_watchdog.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 12
-        }
-      },
-      {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-21T09:00:00-04:00",
-        "last_run_at": "2026-05-21T08:40:22.871505-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 146
-        }
-      },
-      {
-        "id": "10c0e8234c93",
-        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-        "category": "Communications",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "0 * * * *",
-        "next_run_at": "2026-05-21T09:00:00-04:00",
-        "last_run_at": "2026-05-21T08:00:29.983508-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "hourly_comms_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 250
-        }
-      },
-      {
         "id": "e37aea919737",
         "name": "DucatDash \u2014 enable HTTPS when cert ready",
         "category": "DucatDash / Systems",
@@ -2081,6 +2024,25 @@
         }
       },
       {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-21T09:10:00-04:00",
+        "last_run_at": "2026-05-21T08:50:36.981262-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 147
+        }
+      },
+      {
         "id": "16ab4f418fea",
         "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
         "category": "Client \u2014 UGC Academy",
@@ -2116,6 +2078,44 @@
         "repeat": {
           "times": 365,
           "completed": 20
+        }
+      },
+      {
+        "id": "10c0e8234c93",
+        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+        "category": "Communications",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "0 * * * *",
+        "next_run_at": "2026-05-21T10:00:00-04:00",
+        "last_run_at": "2026-05-21T08:00:29.983508-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "hourly_comms_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 250
+        }
+      },
+      {
+        "id": "5f37786a7b1f",
+        "name": "UGC Academy \u2014 Midday Production + Reply Queue",
+        "category": "Client \u2014 UGC Academy",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "15 12 * * 1-5",
+        "next_run_at": "2026-05-21T12:15:00-04:00",
+        "last_run_at": null,
+        "last_status": null,
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "ugc_academy_pip_context.py",
+        "no_agent": false,
+        "repeat": {
+          "times": 365,
+          "completed": 0
         }
       }
     ],
