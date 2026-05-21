@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-21T20:00:00.426465+00:00",
-  "generated_unix": 1779393600,
+  "generated_at": "2026-05-21T20:10:15.524113+00:00",
+  "generated_unix": 1779394215,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,33 +1258,14 @@
   ],
   "jobs": [
     {
-      "id": "93e52af74678",
-      "name": "Lisa / EL World email watchdog",
-      "category": "Client \u2014 Lisa / EL World",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 15m",
-      "next_run_at": "2026-05-21T16:09:59.461947-04:00",
-      "last_run_at": "2026-05-21T15:54:59.461947-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "lisa_el_world_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 301
-      }
-    },
-    {
       "id": "126bd65ee907",
       "name": "DucatDash \u2014 publish Kanban snapshot",
       "category": "DucatDash / Systems",
       "enabled": true,
       "state": "scheduled",
       "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-21T16:10:00-04:00",
-      "last_run_at": "2026-05-21T15:50:09.701159-04:00",
+      "next_run_at": "2026-05-21T16:20:00-04:00",
+      "last_run_at": "2026-05-21T16:00:02.091521-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -1292,7 +1273,7 @@
       "no_agent": true,
       "repeat": {
         "times": 3650,
-        "completed": 189
+        "completed": 190
       }
     },
     {
@@ -1334,6 +1315,25 @@
       }
     },
     {
+      "id": "93e52af74678",
+      "name": "Lisa / EL World email watchdog",
+      "category": "Client \u2014 Lisa / EL World",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 15m",
+      "next_run_at": "2026-05-21T16:25:15.305183-04:00",
+      "last_run_at": "2026-05-21T15:54:59.461947-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "lisa_el_world_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 301
+      }
+    },
+    {
       "id": "b32b76d59eff",
       "name": "Content Machine \u2014 10 Research Agent",
       "category": "Content Machine",
@@ -1360,7 +1360,7 @@
       "state": "scheduled",
       "schedule": "0 * * * *",
       "next_run_at": "2026-05-21T17:00:00-04:00",
-      "last_run_at": "2026-05-21T15:00:53.748628-04:00",
+      "last_run_at": "2026-05-21T16:00:23.935426-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1368,7 +1368,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 257
+        "completed": 258
       }
     },
     {
@@ -1417,7 +1417,7 @@
       "state": "scheduled",
       "schedule": "0 */2 * * 1-5",
       "next_run_at": "2026-05-21T18:00:00-04:00",
-      "last_run_at": "2026-05-21T14:04:37.316711-04:00",
+      "last_run_at": "2026-05-21T16:04:14.497348-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -1425,7 +1425,7 @@
       "no_agent": false,
       "repeat": {
         "times": 365,
-        "completed": 23
+        "completed": 24
       }
     },
     {
@@ -1948,33 +1948,14 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "93e52af74678",
-        "name": "Lisa / EL World email watchdog",
-        "category": "Client \u2014 Lisa / EL World",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 15m",
-        "next_run_at": "2026-05-21T16:09:59.461947-04:00",
-        "last_run_at": "2026-05-21T15:54:59.461947-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "lisa_el_world_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 301
-        }
-      },
-      {
         "id": "126bd65ee907",
         "name": "DucatDash \u2014 publish Kanban snapshot",
         "category": "DucatDash / Systems",
         "enabled": true,
         "state": "scheduled",
         "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-21T16:10:00-04:00",
-        "last_run_at": "2026-05-21T15:50:09.701159-04:00",
+        "next_run_at": "2026-05-21T16:20:00-04:00",
+        "last_run_at": "2026-05-21T16:00:02.091521-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -1982,7 +1963,7 @@
         "no_agent": true,
         "repeat": {
           "times": 3650,
-          "completed": 189
+          "completed": 190
         }
       },
       {
@@ -2024,6 +2005,25 @@
         }
       },
       {
+        "id": "93e52af74678",
+        "name": "Lisa / EL World email watchdog",
+        "category": "Client \u2014 Lisa / EL World",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 15m",
+        "next_run_at": "2026-05-21T16:25:15.305183-04:00",
+        "last_run_at": "2026-05-21T15:54:59.461947-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "lisa_el_world_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 301
+        }
+      },
+      {
         "id": "b32b76d59eff",
         "name": "Content Machine \u2014 10 Research Agent",
         "category": "Content Machine",
@@ -2050,7 +2050,7 @@
         "state": "scheduled",
         "schedule": "0 * * * *",
         "next_run_at": "2026-05-21T17:00:00-04:00",
-        "last_run_at": "2026-05-21T15:00:53.748628-04:00",
+        "last_run_at": "2026-05-21T16:00:23.935426-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2058,7 +2058,7 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 257
+          "completed": 258
         }
       },
       {
