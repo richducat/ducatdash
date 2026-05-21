@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-21T01:00:23.808018+00:00",
-  "generated_unix": 1779325223,
+  "generated_at": "2026-05-21T01:20:41.631551+00:00",
+  "generated_unix": 1779326441,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,41 +1258,41 @@
   ],
   "jobs": [
     {
-      "id": "2232462e96f6",
-      "name": "Tonight \u2014 Vercel/GitHub/Namecheap Project Preservation Audit",
-      "category": "Apps / Deployments",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "once at 2026-05-20 21:00",
-      "next_run_at": "2026-05-20T21:00:00-04:00",
-      "last_run_at": null,
-      "last_status": null,
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": null,
-      "no_agent": false,
-      "repeat": {
-        "times": 1,
-        "completed": 0
-      }
-    },
-    {
-      "id": "e37aea919737",
-      "name": "DucatDash \u2014 enable HTTPS when cert ready",
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
       "category": "DucatDash / Systems",
       "enabled": true,
       "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-20T21:30:00-04:00",
+      "last_run_at": "2026-05-20T21:00:25.203382-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 77
+      }
+    },
+    {
+      "id": "a4f58658bf81",
+      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+      "category": "Communications",
+      "enabled": true,
+      "state": "scheduled",
       "schedule": "every 30m",
-      "next_run_at": "2026-05-20T21:06:07.294147-04:00",
-      "last_run_at": "2026-05-20T20:36:07.294147-04:00",
+      "next_run_at": "2026-05-20T21:30:44.651435-04:00",
+      "last_run_at": "2026-05-20T21:00:44.651435-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
-      "script": "ducatdash_enable_https.py",
+      "script": "gmail_junk_sweeper.py",
       "no_agent": true,
       "repeat": {
-        "times": 48,
-        "completed": 24
+        "times": 365,
+        "completed": 108
       }
     },
     {
@@ -1302,7 +1302,7 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 15m",
-      "next_run_at": "2026-05-20T21:06:22.388142-04:00",
+      "next_run_at": "2026-05-20T21:32:37.439962-04:00",
       "last_run_at": "2026-05-20T20:51:22.388142-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
@@ -1315,22 +1315,22 @@
       }
     },
     {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "id": "e37aea919737",
+      "name": "DucatDash \u2014 enable HTTPS when cert ready",
       "category": "DucatDash / Systems",
       "enabled": true,
       "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-20T21:10:00-04:00",
-      "last_run_at": "2026-05-20T20:50:17.239474-04:00",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-20T21:47:38.722318-04:00",
+      "last_run_at": "2026-05-20T21:17:38.722318-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
+      "deliver": "origin",
+      "script": "ducatdash_enable_https.py",
       "no_agent": true,
       "repeat": {
-        "times": 3650,
-        "completed": 76
+        "times": 48,
+        "completed": 25
       }
     },
     {
@@ -1340,8 +1340,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 30m",
-      "next_run_at": "2026-05-20T21:19:15.615953-04:00",
-      "last_run_at": "2026-05-20T20:49:15.615953-04:00",
+      "next_run_at": "2026-05-20T21:49:41.446811-04:00",
+      "last_run_at": "2026-05-20T21:19:41.446811-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1349,26 +1349,7 @@
       "no_agent": true,
       "repeat": {
         "times": 365,
-        "completed": 8
-      }
-    },
-    {
-      "id": "a4f58658bf81",
-      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-      "category": "Communications",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-20T21:30:23.650104-04:00",
-      "last_run_at": "2026-05-20T20:30:03.826819-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "gmail_junk_sweeper.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 107
+        "completed": 9
       }
     },
     {
@@ -1398,7 +1379,7 @@
       "state": "scheduled",
       "schedule": "0 * * * *",
       "next_run_at": "2026-05-20T22:00:00-04:00",
-      "last_run_at": "2026-05-20T20:01:03.469326-04:00",
+      "last_run_at": "2026-05-20T21:00:43.026592-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1406,7 +1387,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 238
+        "completed": 239
       }
     },
     {
@@ -1986,41 +1967,41 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "2232462e96f6",
-        "name": "Tonight \u2014 Vercel/GitHub/Namecheap Project Preservation Audit",
-        "category": "Apps / Deployments",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "once at 2026-05-20 21:00",
-        "next_run_at": "2026-05-20T21:00:00-04:00",
-        "last_run_at": null,
-        "last_status": null,
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": null,
-        "no_agent": false,
-        "repeat": {
-          "times": 1,
-          "completed": 0
-        }
-      },
-      {
-        "id": "e37aea919737",
-        "name": "DucatDash \u2014 enable HTTPS when cert ready",
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
         "category": "DucatDash / Systems",
         "enabled": true,
         "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-20T21:30:00-04:00",
+        "last_run_at": "2026-05-20T21:00:25.203382-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 77
+        }
+      },
+      {
+        "id": "a4f58658bf81",
+        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+        "category": "Communications",
+        "enabled": true,
+        "state": "scheduled",
         "schedule": "every 30m",
-        "next_run_at": "2026-05-20T21:06:07.294147-04:00",
-        "last_run_at": "2026-05-20T20:36:07.294147-04:00",
+        "next_run_at": "2026-05-20T21:30:44.651435-04:00",
+        "last_run_at": "2026-05-20T21:00:44.651435-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
-        "script": "ducatdash_enable_https.py",
+        "script": "gmail_junk_sweeper.py",
         "no_agent": true,
         "repeat": {
-          "times": 48,
-          "completed": 24
+          "times": 365,
+          "completed": 108
         }
       },
       {
@@ -2030,7 +2011,7 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 15m",
-        "next_run_at": "2026-05-20T21:06:22.388142-04:00",
+        "next_run_at": "2026-05-20T21:32:37.439962-04:00",
         "last_run_at": "2026-05-20T20:51:22.388142-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
@@ -2043,22 +2024,22 @@
         }
       },
       {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "id": "e37aea919737",
+        "name": "DucatDash \u2014 enable HTTPS when cert ready",
         "category": "DucatDash / Systems",
         "enabled": true,
         "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-20T21:10:00-04:00",
-        "last_run_at": "2026-05-20T20:50:17.239474-04:00",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-20T21:47:38.722318-04:00",
+        "last_run_at": "2026-05-20T21:17:38.722318-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
+        "deliver": "origin",
+        "script": "ducatdash_enable_https.py",
         "no_agent": true,
         "repeat": {
-          "times": 3650,
-          "completed": 76
+          "times": 48,
+          "completed": 25
         }
       },
       {
@@ -2068,8 +2049,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 30m",
-        "next_run_at": "2026-05-20T21:19:15.615953-04:00",
-        "last_run_at": "2026-05-20T20:49:15.615953-04:00",
+        "next_run_at": "2026-05-20T21:49:41.446811-04:00",
+        "last_run_at": "2026-05-20T21:19:41.446811-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2077,26 +2058,7 @@
         "no_agent": true,
         "repeat": {
           "times": 365,
-          "completed": 8
-        }
-      },
-      {
-        "id": "a4f58658bf81",
-        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-        "category": "Communications",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-20T21:30:23.650104-04:00",
-        "last_run_at": "2026-05-20T20:30:03.826819-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "gmail_junk_sweeper.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 107
+          "completed": 9
         }
       },
       {
@@ -2126,7 +2088,7 @@
         "state": "scheduled",
         "schedule": "0 * * * *",
         "next_run_at": "2026-05-20T22:00:00-04:00",
-        "last_run_at": "2026-05-20T20:01:03.469326-04:00",
+        "last_run_at": "2026-05-20T21:00:43.026592-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2134,7 +2096,26 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 238
+          "completed": 239
+        }
+      },
+      {
+        "id": "972534dc408e",
+        "name": "Content Machine \u2014 01 Scout",
+        "category": "Content Machine",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "0 5 * * 1-5",
+        "next_run_at": "2026-05-21T05:00:00-04:00",
+        "last_run_at": "2026-05-20T05:02:46.967598-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": null,
+        "no_agent": false,
+        "repeat": {
+          "times": 365,
+          "completed": 2
         }
       }
     ],
