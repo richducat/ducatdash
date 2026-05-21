@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-21T23:00:58.855914+00:00",
-  "generated_unix": 1779404458,
+  "generated_at": "2026-05-21T23:10:28.759022+00:00",
+  "generated_unix": 1779405028,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1264,8 +1264,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 15m",
-      "next_run_at": "2026-05-21T19:02:10.166556-04:00",
-      "last_run_at": "2026-05-21T18:47:10.166556-04:00",
+      "next_run_at": "2026-05-21T19:17:27.361995-04:00",
+      "last_run_at": "2026-05-21T19:02:27.361995-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1273,7 +1273,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 312
+        "completed": 313
       }
     },
     {
@@ -1283,8 +1283,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-21T19:10:00-04:00",
-      "last_run_at": "2026-05-21T18:50:12.052970-04:00",
+      "next_run_at": "2026-05-21T19:20:00-04:00",
+      "last_run_at": "2026-05-21T19:01:00.232690-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -1292,7 +1292,7 @@
       "no_agent": true,
       "repeat": {
         "times": 3650,
-        "completed": 207
+        "completed": 208
       }
     },
     {
@@ -1360,7 +1360,7 @@
       "state": "scheduled",
       "schedule": "0 * * * *",
       "next_run_at": "2026-05-21T20:00:00-04:00",
-      "last_run_at": "2026-05-21T18:00:48.842309-04:00",
+      "last_run_at": "2026-05-21T19:01:22.319007-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1368,7 +1368,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 260
+        "completed": 261
       }
     },
     {
@@ -1954,8 +1954,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 15m",
-        "next_run_at": "2026-05-21T19:02:10.166556-04:00",
-        "last_run_at": "2026-05-21T18:47:10.166556-04:00",
+        "next_run_at": "2026-05-21T19:17:27.361995-04:00",
+        "last_run_at": "2026-05-21T19:02:27.361995-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -1963,7 +1963,7 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 312
+          "completed": 313
         }
       },
       {
@@ -1973,8 +1973,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-21T19:10:00-04:00",
-        "last_run_at": "2026-05-21T18:50:12.052970-04:00",
+        "next_run_at": "2026-05-21T19:20:00-04:00",
+        "last_run_at": "2026-05-21T19:01:00.232690-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -1982,7 +1982,7 @@
         "no_agent": true,
         "repeat": {
           "times": 3650,
-          "completed": 207
+          "completed": 208
         }
       },
       {
@@ -2050,7 +2050,7 @@
         "state": "scheduled",
         "schedule": "0 * * * *",
         "next_run_at": "2026-05-21T20:00:00-04:00",
-        "last_run_at": "2026-05-21T18:00:48.842309-04:00",
+        "last_run_at": "2026-05-21T19:01:22.319007-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2058,7 +2058,7 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 260
+          "completed": 261
         }
       },
       {
