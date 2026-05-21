@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-21T12:40:21.381633+00:00",
-  "generated_unix": 1779367221,
+  "generated_at": "2026-05-21T12:50:35.258528+00:00",
+  "generated_unix": 1779367835,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,82 +1258,6 @@
   ],
   "jobs": [
     {
-      "id": "16ab4f418fea",
-      "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
-      "category": "Client \u2014 UGC Academy",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-21T08:43:59.542621-04:00",
-      "last_run_at": "2026-05-21T08:13:59.542621-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "ugc_academy_comms_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 30
-      }
-    },
-    {
-      "id": "0d37847feb8d",
-      "name": "UGC Academy \u2014 Morning PIP Stats + Creative Ops",
-      "category": "Client \u2014 UGC Academy",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "45 8 * * 1-5",
-      "next_run_at": "2026-05-21T08:45:00-04:00",
-      "last_run_at": "2026-05-20T09:19:14.292509-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "ugc_academy_pip_context.py",
-      "no_agent": false,
-      "repeat": {
-        "times": 365,
-        "completed": 2
-      }
-    },
-    {
-      "id": "93e52af74678",
-      "name": "Lisa / EL World email watchdog",
-      "category": "Client \u2014 Lisa / EL World",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 15m",
-      "next_run_at": "2026-05-21T08:45:51.700533-04:00",
-      "last_run_at": "2026-05-21T08:30:51.700533-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "lisa_el_world_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 273
-      }
-    },
-    {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-21T08:50:00-04:00",
-      "last_run_at": "2026-05-21T08:30:48.794857-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 145
-      }
-    },
-    {
       "id": "95b861db50cd",
       "name": "Charlene Maven Payment Plan Watchdog",
       "category": "Admin / Payments",
@@ -1350,6 +1274,25 @@
       "repeat": {
         "times": 365,
         "completed": 12
+      }
+    },
+    {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-21T09:00:00-04:00",
+      "last_run_at": "2026-05-21T08:40:22.871505-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 146
       }
     },
     {
@@ -1407,6 +1350,44 @@
       "repeat": {
         "times": 365,
         "completed": 130
+      }
+    },
+    {
+      "id": "93e52af74678",
+      "name": "Lisa / EL World email watchdog",
+      "category": "Client \u2014 Lisa / EL World",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 15m",
+      "next_run_at": "2026-05-21T09:01:34.436683-04:00",
+      "last_run_at": "2026-05-21T08:46:34.436683-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "lisa_el_world_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 274
+      }
+    },
+    {
+      "id": "16ab4f418fea",
+      "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
+      "category": "Client \u2014 UGC Academy",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-21T09:14:26.105126-04:00",
+      "last_run_at": "2026-05-21T08:44:26.105126-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ugc_academy_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 31
       }
     },
     {
@@ -1733,6 +1714,25 @@
       }
     },
     {
+      "id": "0d37847feb8d",
+      "name": "UGC Academy \u2014 Morning PIP Stats + Creative Ops",
+      "category": "Client \u2014 UGC Academy",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "45 8 * * 1-5",
+      "next_run_at": "2026-05-22T08:45:00-04:00",
+      "last_run_at": "2026-05-21T08:45:29.636070-04:00",
+      "last_status": "error",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ugc_academy_pip_context.py",
+      "no_agent": false,
+      "repeat": {
+        "times": 365,
+        "completed": 3
+      }
+    },
+    {
       "id": "a7632feefe93",
       "name": "Content Machine \u2014 09 Newsletter",
       "category": "Content Machine",
@@ -1967,82 +1967,6 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "16ab4f418fea",
-        "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
-        "category": "Client \u2014 UGC Academy",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-21T08:43:59.542621-04:00",
-        "last_run_at": "2026-05-21T08:13:59.542621-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "ugc_academy_comms_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 30
-        }
-      },
-      {
-        "id": "0d37847feb8d",
-        "name": "UGC Academy \u2014 Morning PIP Stats + Creative Ops",
-        "category": "Client \u2014 UGC Academy",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "45 8 * * 1-5",
-        "next_run_at": "2026-05-21T08:45:00-04:00",
-        "last_run_at": "2026-05-20T09:19:14.292509-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "ugc_academy_pip_context.py",
-        "no_agent": false,
-        "repeat": {
-          "times": 365,
-          "completed": 2
-        }
-      },
-      {
-        "id": "93e52af74678",
-        "name": "Lisa / EL World email watchdog",
-        "category": "Client \u2014 Lisa / EL World",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 15m",
-        "next_run_at": "2026-05-21T08:45:51.700533-04:00",
-        "last_run_at": "2026-05-21T08:30:51.700533-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "lisa_el_world_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 273
-        }
-      },
-      {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-21T08:50:00-04:00",
-        "last_run_at": "2026-05-21T08:30:48.794857-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 145
-        }
-      },
-      {
         "id": "95b861db50cd",
         "name": "Charlene Maven Payment Plan Watchdog",
         "category": "Admin / Payments",
@@ -2059,6 +1983,25 @@
         "repeat": {
           "times": 365,
           "completed": 12
+        }
+      },
+      {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-21T09:00:00-04:00",
+        "last_run_at": "2026-05-21T08:40:22.871505-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 146
         }
       },
       {
@@ -2116,6 +2059,63 @@
         "repeat": {
           "times": 365,
           "completed": 130
+        }
+      },
+      {
+        "id": "93e52af74678",
+        "name": "Lisa / EL World email watchdog",
+        "category": "Client \u2014 Lisa / EL World",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 15m",
+        "next_run_at": "2026-05-21T09:01:34.436683-04:00",
+        "last_run_at": "2026-05-21T08:46:34.436683-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "lisa_el_world_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 274
+        }
+      },
+      {
+        "id": "16ab4f418fea",
+        "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
+        "category": "Client \u2014 UGC Academy",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-21T09:14:26.105126-04:00",
+        "last_run_at": "2026-05-21T08:44:26.105126-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "ugc_academy_comms_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 365,
+          "completed": 31
+        }
+      },
+      {
+        "id": "f1c502409ab1",
+        "name": "Content Machine \u2014 08 Clip Factory",
+        "category": "Content Machine",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "0 */2 * * 1-5",
+        "next_run_at": "2026-05-21T10:00:00-04:00",
+        "last_run_at": "2026-05-21T08:04:55.481745-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": null,
+        "no_agent": false,
+        "repeat": {
+          "times": 365,
+          "completed": 20
         }
       }
     ],
