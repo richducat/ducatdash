@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-21T22:20:11.134202+00:00",
-  "generated_unix": 1779402011,
+  "generated_at": "2026-05-21T22:30:54.627637+00:00",
+  "generated_unix": 1779402654,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,82 +1258,6 @@
   ],
   "jobs": [
     {
-      "id": "a4f58658bf81",
-      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-      "category": "Communications",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-21T18:26:21.952174-04:00",
-      "last_run_at": "2026-05-21T17:56:21.952174-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "gmail_junk_sweeper.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 148
-      }
-    },
-    {
-      "id": "16ab4f418fea",
-      "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
-      "category": "Client \u2014 UGC Academy",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-21T18:27:25.197924-04:00",
-      "last_run_at": "2026-05-21T17:57:25.197924-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "ugc_academy_comms_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 49
-      }
-    },
-    {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-21T18:30:00-04:00",
-      "last_run_at": "2026-05-21T18:10:04.661613-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 203
-      }
-    },
-    {
-      "id": "b38b179ec9a9",
-      "name": "TYFYS RingCentral Recording Watchdog",
-      "category": "TYFYS / OpenClaw",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "30 18 * * 1-5",
-      "next_run_at": "2026-05-21T18:30:00-04:00",
-      "last_run_at": "2026-05-20T18:30:21.692981-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "ringcentral_recording_watchdog.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 6
-      }
-    },
-    {
       "id": "93e52af74678",
       "name": "Lisa / EL World email watchdog",
       "category": "Client \u2014 Lisa / EL World",
@@ -1350,6 +1274,63 @@
       "repeat": {
         "times": null,
         "completed": 310
+      }
+    },
+    {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-21T18:40:00-04:00",
+      "last_run_at": "2026-05-21T18:20:12.650194-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 204
+      }
+    },
+    {
+      "id": "a4f58658bf81",
+      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+      "category": "Communications",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-21T18:57:50.631618-04:00",
+      "last_run_at": "2026-05-21T18:27:50.631618-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "gmail_junk_sweeper.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 149
+      }
+    },
+    {
+      "id": "16ab4f418fea",
+      "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
+      "category": "Client \u2014 UGC Academy",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-21T18:58:54.087707-04:00",
+      "last_run_at": "2026-05-21T18:28:54.087707-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ugc_academy_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 50
       }
     },
     {
@@ -1714,6 +1695,25 @@
       }
     },
     {
+      "id": "b38b179ec9a9",
+      "name": "TYFYS RingCentral Recording Watchdog",
+      "category": "TYFYS / OpenClaw",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "30 18 * * 1-5",
+      "next_run_at": "2026-05-22T18:30:00-04:00",
+      "last_run_at": "2026-05-20T18:30:21.692981-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ringcentral_recording_watchdog.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 6
+      }
+    },
+    {
       "id": "a7632feefe93",
       "name": "Content Machine \u2014 09 Newsletter",
       "category": "Content Machine",
@@ -1948,82 +1948,6 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "a4f58658bf81",
-        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-        "category": "Communications",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-21T18:26:21.952174-04:00",
-        "last_run_at": "2026-05-21T17:56:21.952174-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "gmail_junk_sweeper.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 148
-        }
-      },
-      {
-        "id": "16ab4f418fea",
-        "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
-        "category": "Client \u2014 UGC Academy",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-21T18:27:25.197924-04:00",
-        "last_run_at": "2026-05-21T17:57:25.197924-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "ugc_academy_comms_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 49
-        }
-      },
-      {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-21T18:30:00-04:00",
-        "last_run_at": "2026-05-21T18:10:04.661613-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 203
-        }
-      },
-      {
-        "id": "b38b179ec9a9",
-        "name": "TYFYS RingCentral Recording Watchdog",
-        "category": "TYFYS / OpenClaw",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "30 18 * * 1-5",
-        "next_run_at": "2026-05-21T18:30:00-04:00",
-        "last_run_at": "2026-05-20T18:30:21.692981-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "ringcentral_recording_watchdog.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 6
-        }
-      },
-      {
         "id": "93e52af74678",
         "name": "Lisa / EL World email watchdog",
         "category": "Client \u2014 Lisa / EL World",
@@ -2040,6 +1964,63 @@
         "repeat": {
           "times": null,
           "completed": 310
+        }
+      },
+      {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-21T18:40:00-04:00",
+        "last_run_at": "2026-05-21T18:20:12.650194-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 204
+        }
+      },
+      {
+        "id": "a4f58658bf81",
+        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+        "category": "Communications",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-21T18:57:50.631618-04:00",
+        "last_run_at": "2026-05-21T18:27:50.631618-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "gmail_junk_sweeper.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 365,
+          "completed": 149
+        }
+      },
+      {
+        "id": "16ab4f418fea",
+        "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
+        "category": "Client \u2014 UGC Academy",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-21T18:58:54.087707-04:00",
+        "last_run_at": "2026-05-21T18:28:54.087707-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "ugc_academy_comms_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 365,
+          "completed": 50
         }
       },
       {
@@ -2097,6 +2078,25 @@
         "repeat": {
           "times": 365,
           "completed": 3
+        }
+      },
+      {
+        "id": "61b1db095c3b",
+        "name": "Content Machine \u2014 02 Script Writer",
+        "category": "Content Machine",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "0 6 * * 1-5",
+        "next_run_at": "2026-05-22T06:00:00-04:00",
+        "last_run_at": "2026-05-21T06:04:13.046312-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": null,
+        "no_agent": false,
+        "repeat": {
+          "times": 365,
+          "completed": 2
         }
       }
     ],
