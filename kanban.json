@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-21T07:10:06.789948+00:00",
-  "generated_unix": 1779347406,
+  "generated_at": "2026-05-21T07:20:31.189326+00:00",
+  "generated_unix": 1779348031,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,63 +1258,6 @@
   ],
   "jobs": [
     {
-      "id": "a4f58658bf81",
-      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-      "category": "Communications",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-21T03:13:33.669920-04:00",
-      "last_run_at": "2026-05-21T02:43:33.669920-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "gmail_junk_sweeper.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 119
-      }
-    },
-    {
-      "id": "93e52af74678",
-      "name": "Lisa / EL World email watchdog",
-      "category": "Client \u2014 Lisa / EL World",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 15m",
-      "next_run_at": "2026-05-21T03:13:45.965549-04:00",
-      "last_run_at": "2026-05-21T02:58:45.965549-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "lisa_el_world_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 252
-      }
-    },
-    {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-21T03:20:00-04:00",
-      "last_run_at": "2026-05-21T03:00:47.620216-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 112
-      }
-    },
-    {
       "id": "e37aea919737",
       "name": "DucatDash \u2014 enable HTTPS when cert ready",
       "category": "DucatDash / Systems",
@@ -1350,6 +1293,63 @@
       "repeat": {
         "times": 365,
         "completed": 20
+      }
+    },
+    {
+      "id": "93e52af74678",
+      "name": "Lisa / EL World email watchdog",
+      "category": "Client \u2014 Lisa / EL World",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 15m",
+      "next_run_at": "2026-05-21T03:29:13.078349-04:00",
+      "last_run_at": "2026-05-21T03:14:13.078349-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "lisa_el_world_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 253
+      }
+    },
+    {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-21T03:30:00-04:00",
+      "last_run_at": "2026-05-21T03:10:08.155732-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 113
+      }
+    },
+    {
+      "id": "a4f58658bf81",
+      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+      "category": "Communications",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-21T03:44:30.157910-04:00",
+      "last_run_at": "2026-05-21T03:14:30.157910-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "gmail_junk_sweeper.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 120
       }
     },
     {
@@ -1967,63 +1967,6 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "a4f58658bf81",
-        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-        "category": "Communications",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-21T03:13:33.669920-04:00",
-        "last_run_at": "2026-05-21T02:43:33.669920-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "gmail_junk_sweeper.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 119
-        }
-      },
-      {
-        "id": "93e52af74678",
-        "name": "Lisa / EL World email watchdog",
-        "category": "Client \u2014 Lisa / EL World",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 15m",
-        "next_run_at": "2026-05-21T03:13:45.965549-04:00",
-        "last_run_at": "2026-05-21T02:58:45.965549-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "lisa_el_world_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 252
-        }
-      },
-      {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-21T03:20:00-04:00",
-        "last_run_at": "2026-05-21T03:00:47.620216-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 112
-        }
-      },
-      {
         "id": "e37aea919737",
         "name": "DucatDash \u2014 enable HTTPS when cert ready",
         "category": "DucatDash / Systems",
@@ -2059,6 +2002,63 @@
         "repeat": {
           "times": 365,
           "completed": 20
+        }
+      },
+      {
+        "id": "93e52af74678",
+        "name": "Lisa / EL World email watchdog",
+        "category": "Client \u2014 Lisa / EL World",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 15m",
+        "next_run_at": "2026-05-21T03:29:13.078349-04:00",
+        "last_run_at": "2026-05-21T03:14:13.078349-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "lisa_el_world_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 253
+        }
+      },
+      {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-21T03:30:00-04:00",
+        "last_run_at": "2026-05-21T03:10:08.155732-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 113
+        }
+      },
+      {
+        "id": "a4f58658bf81",
+        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+        "category": "Communications",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-21T03:44:30.157910-04:00",
+        "last_run_at": "2026-05-21T03:14:30.157910-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "gmail_junk_sweeper.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 365,
+          "completed": 120
         }
       },
       {
