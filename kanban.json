@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-21T10:30:23.308515+00:00",
-  "generated_unix": 1779359423,
+  "generated_at": "2026-05-21T10:40:28.603543+00:00",
+  "generated_unix": 1779360028,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1264,8 +1264,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-21T06:40:00-04:00",
-      "last_run_at": "2026-05-21T06:21:16.936027-04:00",
+      "next_run_at": "2026-05-21T06:50:00-04:00",
+      "last_run_at": "2026-05-21T06:30:24.975582-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -1273,26 +1273,7 @@
       "no_agent": true,
       "repeat": {
         "times": 3650,
-        "completed": 132
-      }
-    },
-    {
-      "id": "93e52af74678",
-      "name": "Lisa / EL World email watchdog",
-      "category": "Client \u2014 Lisa / EL World",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 15m",
-      "next_run_at": "2026-05-21T06:40:21.459911-04:00",
-      "last_run_at": "2026-05-21T06:25:21.459911-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "lisa_el_world_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 265
+        "completed": 133
       }
     },
     {
@@ -1312,6 +1293,25 @@
       "repeat": {
         "times": 365,
         "completed": 126
+      }
+    },
+    {
+      "id": "93e52af74678",
+      "name": "Lisa / EL World email watchdog",
+      "category": "Client \u2014 Lisa / EL World",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 15m",
+      "next_run_at": "2026-05-21T06:55:28.379828-04:00",
+      "last_run_at": "2026-05-21T06:25:21.459911-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "lisa_el_world_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 265
       }
     },
     {
@@ -1397,8 +1397,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 30m",
-      "next_run_at": "2026-05-21T07:00:23.096198-04:00",
-      "last_run_at": "2026-05-21T06:00:19.712060-04:00",
+      "next_run_at": "2026-05-21T07:00:25.599599-04:00",
+      "last_run_at": "2026-05-21T06:30:25.599599-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1406,7 +1406,7 @@
       "no_agent": true,
       "repeat": {
         "times": 365,
-        "completed": 26
+        "completed": 27
       }
     },
     {
@@ -1740,7 +1740,7 @@
       "state": "scheduled",
       "schedule": "30 6 * * 1-5",
       "next_run_at": "2026-05-22T06:30:00-04:00",
-      "last_run_at": "2026-05-20T06:32:26.093105-04:00",
+      "last_run_at": "2026-05-21T06:33:27.438562-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -1748,7 +1748,7 @@
       "no_agent": false,
       "repeat": {
         "times": 365,
-        "completed": 1
+        "completed": 2
       }
     },
     {
@@ -1973,8 +1973,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-21T06:40:00-04:00",
-        "last_run_at": "2026-05-21T06:21:16.936027-04:00",
+        "next_run_at": "2026-05-21T06:50:00-04:00",
+        "last_run_at": "2026-05-21T06:30:24.975582-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -1982,26 +1982,7 @@
         "no_agent": true,
         "repeat": {
           "times": 3650,
-          "completed": 132
-        }
-      },
-      {
-        "id": "93e52af74678",
-        "name": "Lisa / EL World email watchdog",
-        "category": "Client \u2014 Lisa / EL World",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 15m",
-        "next_run_at": "2026-05-21T06:40:21.459911-04:00",
-        "last_run_at": "2026-05-21T06:25:21.459911-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "lisa_el_world_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 265
+          "completed": 133
         }
       },
       {
@@ -2021,6 +2002,25 @@
         "repeat": {
           "times": 365,
           "completed": 126
+        }
+      },
+      {
+        "id": "93e52af74678",
+        "name": "Lisa / EL World email watchdog",
+        "category": "Client \u2014 Lisa / EL World",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 15m",
+        "next_run_at": "2026-05-21T06:55:28.379828-04:00",
+        "last_run_at": "2026-05-21T06:25:21.459911-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "lisa_el_world_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 265
         }
       },
       {
@@ -2106,8 +2106,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 30m",
-        "next_run_at": "2026-05-21T07:00:23.096198-04:00",
-        "last_run_at": "2026-05-21T06:00:19.712060-04:00",
+        "next_run_at": "2026-05-21T07:00:25.599599-04:00",
+        "last_run_at": "2026-05-21T06:30:25.599599-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2115,7 +2115,7 @@
         "no_agent": true,
         "repeat": {
           "times": 365,
-          "completed": 26
+          "completed": 27
         }
       }
     ],
