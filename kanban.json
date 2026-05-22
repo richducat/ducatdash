@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-22T11:00:13.768571+00:00",
-  "generated_unix": 1779447613,
+  "generated_at": "2026-05-22T11:10:26.694618+00:00",
+  "generated_unix": 1779448226,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,33 +1258,14 @@
   ],
   "jobs": [
     {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-22T07:10:00-04:00",
-      "last_run_at": "2026-05-22T06:50:35.346458-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 279
-      }
-    },
-    {
       "id": "93e52af74678",
       "name": "Lisa / EL World email watchdog",
       "category": "Client \u2014 Lisa / EL World",
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 15m",
-      "next_run_at": "2026-05-22T07:15:13.412368-04:00",
-      "last_run_at": "2026-05-22T06:44:33.165209-04:00",
+      "next_run_at": "2026-05-22T07:15:18.541301-04:00",
+      "last_run_at": "2026-05-22T07:00:18.541301-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1292,7 +1273,26 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 358
+        "completed": 359
+      }
+    },
+    {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-22T07:20:00-04:00",
+      "last_run_at": "2026-05-22T07:00:15.227709-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 280
       }
     },
     {
@@ -1360,7 +1360,7 @@
       "state": "scheduled",
       "schedule": "0 * * * *",
       "next_run_at": "2026-05-22T08:00:00-04:00",
-      "last_run_at": "2026-05-22T06:01:01.593490-04:00",
+      "last_run_at": "2026-05-22T07:00:34.766504-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1368,7 +1368,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 272
+        "completed": 273
       }
     },
     {
@@ -1683,7 +1683,7 @@
       "state": "scheduled",
       "schedule": "0 7 * * 1-5",
       "next_run_at": "2026-05-25T07:00:00-04:00",
-      "last_run_at": "2026-05-21T07:04:00.792903-04:00",
+      "last_run_at": "2026-05-22T07:05:25.767037-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -1691,7 +1691,7 @@
       "no_agent": false,
       "repeat": {
         "times": 365,
-        "completed": 2
+        "completed": 3
       }
     },
     {
@@ -1702,7 +1702,7 @@
       "state": "scheduled",
       "schedule": "0 7 * * 1-5",
       "next_run_at": "2026-05-25T07:00:00-04:00",
-      "last_run_at": "2026-05-21T07:05:26.115918-04:00",
+      "last_run_at": "2026-05-22T07:03:58.987852-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -1710,7 +1710,7 @@
       "no_agent": false,
       "repeat": {
         "times": 365,
-        "completed": 2
+        "completed": 3
       }
     },
     {
@@ -1948,33 +1948,14 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-22T07:10:00-04:00",
-        "last_run_at": "2026-05-22T06:50:35.346458-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 279
-        }
-      },
-      {
         "id": "93e52af74678",
         "name": "Lisa / EL World email watchdog",
         "category": "Client \u2014 Lisa / EL World",
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 15m",
-        "next_run_at": "2026-05-22T07:15:13.412368-04:00",
-        "last_run_at": "2026-05-22T06:44:33.165209-04:00",
+        "next_run_at": "2026-05-22T07:15:18.541301-04:00",
+        "last_run_at": "2026-05-22T07:00:18.541301-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -1982,7 +1963,26 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 358
+          "completed": 359
+        }
+      },
+      {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-22T07:20:00-04:00",
+        "last_run_at": "2026-05-22T07:00:15.227709-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 280
         }
       },
       {
@@ -2050,7 +2050,7 @@
         "state": "scheduled",
         "schedule": "0 * * * *",
         "next_run_at": "2026-05-22T08:00:00-04:00",
-        "last_run_at": "2026-05-22T06:01:01.593490-04:00",
+        "last_run_at": "2026-05-22T07:00:34.766504-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2058,7 +2058,7 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 272
+          "completed": 273
         }
       },
       {
