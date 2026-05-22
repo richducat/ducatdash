@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-22T07:50:34.605057+00:00",
-  "generated_unix": 1779436234,
+  "generated_at": "2026-05-22T08:00:44.493936+00:00",
+  "generated_unix": 1779436844,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1264,8 +1264,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 15m",
-      "next_run_at": "2026-05-22T03:52:57.886852-04:00",
-      "last_run_at": "2026-05-22T03:37:57.886852-04:00",
+      "next_run_at": "2026-05-22T04:08:43.248017-04:00",
+      "last_run_at": "2026-05-22T03:53:43.248017-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1273,26 +1273,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 346
-      }
-    },
-    {
-      "id": "f1c502409ab1",
-      "name": "Content Machine \u2014 08 Clip Factory",
-      "category": "Content Machine",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "0 */2 * * 1-5",
-      "next_run_at": "2026-05-22T04:00:00-04:00",
-      "last_run_at": "2026-05-22T02:03:47.870526-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": null,
-      "no_agent": false,
-      "repeat": {
-        "times": 365,
-        "completed": 29
+        "completed": 347
       }
     },
     {
@@ -1302,8 +1283,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-22T04:00:00-04:00",
-      "last_run_at": "2026-05-22T03:40:59.779895-04:00",
+      "next_run_at": "2026-05-22T04:10:00-04:00",
+      "last_run_at": "2026-05-22T03:50:35.908180-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -1311,26 +1292,7 @@
       "no_agent": true,
       "repeat": {
         "times": 3650,
-        "completed": 260
-      }
-    },
-    {
-      "id": "10c0e8234c93",
-      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-      "category": "Communications",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "0 * * * *",
-      "next_run_at": "2026-05-22T04:00:00-04:00",
-      "last_run_at": "2026-05-22T03:00:56.364142-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "hourly_comms_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 269
+        "completed": 261
       }
     },
     {
@@ -1359,8 +1321,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 30m",
-      "next_run_at": "2026-05-22T04:20:34.445774-04:00",
-      "last_run_at": "2026-05-22T03:19:42.878780-04:00",
+      "next_run_at": "2026-05-22T04:20:37.647946-04:00",
+      "last_run_at": "2026-05-22T03:50:37.647946-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1368,7 +1330,7 @@
       "no_agent": true,
       "repeat": {
         "times": 365,
-        "completed": 67
+        "completed": 68
       }
     },
     {
@@ -1388,6 +1350,25 @@
       "repeat": {
         "times": 365,
         "completed": 3
+      }
+    },
+    {
+      "id": "10c0e8234c93",
+      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+      "category": "Communications",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 * * * *",
+      "next_run_at": "2026-05-22T05:00:00-04:00",
+      "last_run_at": "2026-05-22T03:00:56.364142-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "hourly_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 269
       }
     },
     {
@@ -1426,6 +1407,25 @@
       "repeat": {
         "times": 365,
         "completed": 2
+      }
+    },
+    {
+      "id": "f1c502409ab1",
+      "name": "Content Machine \u2014 08 Clip Factory",
+      "category": "Content Machine",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 */2 * * 1-5",
+      "next_run_at": "2026-05-22T06:00:00-04:00",
+      "last_run_at": "2026-05-22T02:03:47.870526-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": null,
+      "no_agent": false,
+      "repeat": {
+        "times": 365,
+        "completed": 29
       }
     },
     {
@@ -1954,8 +1954,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 15m",
-        "next_run_at": "2026-05-22T03:52:57.886852-04:00",
-        "last_run_at": "2026-05-22T03:37:57.886852-04:00",
+        "next_run_at": "2026-05-22T04:08:43.248017-04:00",
+        "last_run_at": "2026-05-22T03:53:43.248017-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -1963,26 +1963,7 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 346
-        }
-      },
-      {
-        "id": "f1c502409ab1",
-        "name": "Content Machine \u2014 08 Clip Factory",
-        "category": "Content Machine",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "0 */2 * * 1-5",
-        "next_run_at": "2026-05-22T04:00:00-04:00",
-        "last_run_at": "2026-05-22T02:03:47.870526-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": null,
-        "no_agent": false,
-        "repeat": {
-          "times": 365,
-          "completed": 29
+          "completed": 347
         }
       },
       {
@@ -1992,8 +1973,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-22T04:00:00-04:00",
-        "last_run_at": "2026-05-22T03:40:59.779895-04:00",
+        "next_run_at": "2026-05-22T04:10:00-04:00",
+        "last_run_at": "2026-05-22T03:50:35.908180-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -2001,26 +1982,7 @@
         "no_agent": true,
         "repeat": {
           "times": 3650,
-          "completed": 260
-        }
-      },
-      {
-        "id": "10c0e8234c93",
-        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-        "category": "Communications",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "0 * * * *",
-        "next_run_at": "2026-05-22T04:00:00-04:00",
-        "last_run_at": "2026-05-22T03:00:56.364142-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "hourly_comms_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 269
+          "completed": 261
         }
       },
       {
@@ -2049,8 +2011,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 30m",
-        "next_run_at": "2026-05-22T04:20:34.445774-04:00",
-        "last_run_at": "2026-05-22T03:19:42.878780-04:00",
+        "next_run_at": "2026-05-22T04:20:37.647946-04:00",
+        "last_run_at": "2026-05-22T03:50:37.647946-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2058,7 +2020,7 @@
         "no_agent": true,
         "repeat": {
           "times": 365,
-          "completed": 67
+          "completed": 68
         }
       },
       {
@@ -2081,6 +2043,25 @@
         }
       },
       {
+        "id": "10c0e8234c93",
+        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+        "category": "Communications",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "0 * * * *",
+        "next_run_at": "2026-05-22T05:00:00-04:00",
+        "last_run_at": "2026-05-22T03:00:56.364142-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "hourly_comms_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 269
+        }
+      },
+      {
         "id": "61b1db095c3b",
         "name": "Content Machine \u2014 02 Script Writer",
         "category": "Content Machine",
@@ -2089,6 +2070,25 @@
         "schedule": "0 6 * * 1-5",
         "next_run_at": "2026-05-22T06:00:00-04:00",
         "last_run_at": "2026-05-21T06:04:13.046312-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": null,
+        "no_agent": false,
+        "repeat": {
+          "times": 365,
+          "completed": 2
+        }
+      },
+      {
+        "id": "fc845f886952",
+        "name": "Content Machine \u2014 04 Social Posts",
+        "category": "Content Machine",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "0 6 * * 1-5",
+        "next_run_at": "2026-05-22T06:00:00-04:00",
+        "last_run_at": "2026-05-21T06:03:42.016826-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
