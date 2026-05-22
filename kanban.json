@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-22T06:50:27.686540+00:00",
-  "generated_unix": 1779432627,
+  "generated_at": "2026-05-22T07:00:34.805783+00:00",
+  "generated_unix": 1779433234,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1264,8 +1264,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 15m",
-      "next_run_at": "2026-05-22T02:50:47.708855-04:00",
-      "last_run_at": "2026-05-22T02:35:47.708855-04:00",
+      "next_run_at": "2026-05-22T03:06:34.506446-04:00",
+      "last_run_at": "2026-05-22T02:51:34.506446-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1273,7 +1273,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 342
+        "completed": 343
       }
     },
     {
@@ -1283,8 +1283,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-22T03:00:00-04:00",
-      "last_run_at": "2026-05-22T02:40:49.517434-04:00",
+      "next_run_at": "2026-05-22T03:10:00-04:00",
+      "last_run_at": "2026-05-22T02:50:29.139919-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -1292,26 +1292,7 @@
       "no_agent": true,
       "repeat": {
         "times": 3650,
-        "completed": 254
-      }
-    },
-    {
-      "id": "10c0e8234c93",
-      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-      "category": "Communications",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "0 * * * *",
-      "next_run_at": "2026-05-22T03:00:00-04:00",
-      "last_run_at": "2026-05-22T02:00:58.670111-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "hourly_comms_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 268
+        "completed": 255
       }
     },
     {
@@ -1369,6 +1350,25 @@
       "repeat": {
         "times": 365,
         "completed": 29
+      }
+    },
+    {
+      "id": "10c0e8234c93",
+      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+      "category": "Communications",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 * * * *",
+      "next_run_at": "2026-05-22T04:00:00-04:00",
+      "last_run_at": "2026-05-22T02:00:58.670111-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "hourly_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 268
       }
     },
     {
@@ -1954,8 +1954,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 15m",
-        "next_run_at": "2026-05-22T02:50:47.708855-04:00",
-        "last_run_at": "2026-05-22T02:35:47.708855-04:00",
+        "next_run_at": "2026-05-22T03:06:34.506446-04:00",
+        "last_run_at": "2026-05-22T02:51:34.506446-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -1963,7 +1963,7 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 342
+          "completed": 343
         }
       },
       {
@@ -1973,8 +1973,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-22T03:00:00-04:00",
-        "last_run_at": "2026-05-22T02:40:49.517434-04:00",
+        "next_run_at": "2026-05-22T03:10:00-04:00",
+        "last_run_at": "2026-05-22T02:50:29.139919-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -1982,26 +1982,7 @@
         "no_agent": true,
         "repeat": {
           "times": 3650,
-          "completed": 254
-        }
-      },
-      {
-        "id": "10c0e8234c93",
-        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-        "category": "Communications",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "0 * * * *",
-        "next_run_at": "2026-05-22T03:00:00-04:00",
-        "last_run_at": "2026-05-22T02:00:58.670111-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "hourly_comms_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 268
+          "completed": 255
         }
       },
       {
@@ -2059,6 +2040,25 @@
         "repeat": {
           "times": 365,
           "completed": 29
+        }
+      },
+      {
+        "id": "10c0e8234c93",
+        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+        "category": "Communications",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "0 * * * *",
+        "next_run_at": "2026-05-22T04:00:00-04:00",
+        "last_run_at": "2026-05-22T02:00:58.670111-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "hourly_comms_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 268
         }
       },
       {
