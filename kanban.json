@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-22T01:00:01.695545+00:00",
-  "generated_unix": 1779411601,
+  "generated_at": "2026-05-22T01:10:04.439599+00:00",
+  "generated_unix": 1779412204,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,41 +1258,22 @@
   ],
   "jobs": [
     {
-      "id": "a4f58658bf81",
-      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-      "category": "Communications",
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
       "enabled": true,
       "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-21T21:02:44.433338-04:00",
-      "last_run_at": "2026-05-21T20:32:44.433338-04:00",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-21T21:20:00-04:00",
+      "last_run_at": "2026-05-21T21:00:04.359299-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "gmail_junk_sweeper.py",
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
       "no_agent": true,
       "repeat": {
-        "times": 365,
-        "completed": 153
-      }
-    },
-    {
-      "id": "16ab4f418fea",
-      "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
-      "category": "Client \u2014 UGC Academy",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-21T21:08:48.877145-04:00",
-      "last_run_at": "2026-05-21T20:38:48.877145-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "ugc_academy_comms_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 54
+        "times": 3650,
+        "completed": 220
       }
     },
     {
@@ -1302,7 +1283,7 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 15m",
-      "next_run_at": "2026-05-21T21:09:01.003088-04:00",
+      "next_run_at": "2026-05-21T21:25:04.239887-04:00",
       "last_run_at": "2026-05-21T20:54:01.003088-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
@@ -1315,22 +1296,41 @@
       }
     },
     {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
+      "id": "a4f58658bf81",
+      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+      "category": "Communications",
       "enabled": true,
       "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-21T21:10:00-04:00",
-      "last_run_at": "2026-05-21T20:50:55.533478-04:00",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-21T21:33:59.898690-04:00",
+      "last_run_at": "2026-05-21T21:03:59.898690-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
+      "deliver": "origin",
+      "script": "gmail_junk_sweeper.py",
       "no_agent": true,
       "repeat": {
-        "times": 3650,
-        "completed": 219
+        "times": 365,
+        "completed": 154
+      }
+    },
+    {
+      "id": "16ab4f418fea",
+      "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
+      "category": "Client \u2014 UGC Academy",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-21T21:39:04.232189-04:00",
+      "last_run_at": "2026-05-21T21:09:04.232189-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ugc_academy_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 55
       }
     },
     {
@@ -1360,7 +1360,7 @@
       "state": "scheduled",
       "schedule": "0 * * * *",
       "next_run_at": "2026-05-21T22:00:00-04:00",
-      "last_run_at": "2026-05-21T20:00:59.976845-04:00",
+      "last_run_at": "2026-05-21T21:00:24.509602-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1368,7 +1368,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 262
+        "completed": 263
       }
     },
     {
@@ -1948,41 +1948,22 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "a4f58658bf81",
-        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-        "category": "Communications",
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
         "enabled": true,
         "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-21T21:02:44.433338-04:00",
-        "last_run_at": "2026-05-21T20:32:44.433338-04:00",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-21T21:20:00-04:00",
+        "last_run_at": "2026-05-21T21:00:04.359299-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "gmail_junk_sweeper.py",
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
         "no_agent": true,
         "repeat": {
-          "times": 365,
-          "completed": 153
-        }
-      },
-      {
-        "id": "16ab4f418fea",
-        "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
-        "category": "Client \u2014 UGC Academy",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-21T21:08:48.877145-04:00",
-        "last_run_at": "2026-05-21T20:38:48.877145-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "ugc_academy_comms_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 54
+          "times": 3650,
+          "completed": 220
         }
       },
       {
@@ -1992,7 +1973,7 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 15m",
-        "next_run_at": "2026-05-21T21:09:01.003088-04:00",
+        "next_run_at": "2026-05-21T21:25:04.239887-04:00",
         "last_run_at": "2026-05-21T20:54:01.003088-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
@@ -2005,22 +1986,41 @@
         }
       },
       {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
+        "id": "a4f58658bf81",
+        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+        "category": "Communications",
         "enabled": true,
         "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-21T21:10:00-04:00",
-        "last_run_at": "2026-05-21T20:50:55.533478-04:00",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-21T21:33:59.898690-04:00",
+        "last_run_at": "2026-05-21T21:03:59.898690-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
+        "deliver": "origin",
+        "script": "gmail_junk_sweeper.py",
         "no_agent": true,
         "repeat": {
-          "times": 3650,
-          "completed": 219
+          "times": 365,
+          "completed": 154
+        }
+      },
+      {
+        "id": "16ab4f418fea",
+        "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
+        "category": "Client \u2014 UGC Academy",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-21T21:39:04.232189-04:00",
+        "last_run_at": "2026-05-21T21:09:04.232189-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "ugc_academy_comms_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 365,
+          "completed": 55
         }
       },
       {
@@ -2050,7 +2050,7 @@
         "state": "scheduled",
         "schedule": "0 * * * *",
         "next_run_at": "2026-05-21T22:00:00-04:00",
-        "last_run_at": "2026-05-21T20:00:59.976845-04:00",
+        "last_run_at": "2026-05-21T21:00:24.509602-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2058,7 +2058,7 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 262
+          "completed": 263
         }
       },
       {
