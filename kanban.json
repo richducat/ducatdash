@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-22T12:00:09.508085+00:00",
-  "generated_unix": 1779451209,
+  "generated_at": "2026-05-22T12:10:35.622592+00:00",
+  "generated_unix": 1779451835,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1264,8 +1264,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 15m",
-      "next_run_at": "2026-05-22T08:01:28.729100-04:00",
-      "last_run_at": "2026-05-22T07:46:28.729100-04:00",
+      "next_run_at": "2026-05-22T08:16:34.452281-04:00",
+      "last_run_at": "2026-05-22T08:01:34.452281-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1273,7 +1273,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 362
+        "completed": 363
       }
     },
     {
@@ -1283,8 +1283,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-22T08:10:00-04:00",
-      "last_run_at": "2026-05-22T07:50:30.894765-04:00",
+      "next_run_at": "2026-05-22T08:20:00-04:00",
+      "last_run_at": "2026-05-22T08:00:10.939645-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -1292,7 +1292,7 @@
       "no_agent": true,
       "repeat": {
         "times": 3650,
-        "completed": 285
+        "completed": 286
       }
     },
     {
@@ -1417,7 +1417,7 @@
       "state": "scheduled",
       "schedule": "0 * * * *",
       "next_run_at": "2026-05-22T09:00:00-04:00",
-      "last_run_at": "2026-05-22T07:00:34.766504-04:00",
+      "last_run_at": "2026-05-22T08:00:30.069845-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1425,7 +1425,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 273
+        "completed": 274
       }
     },
     {
@@ -1436,15 +1436,15 @@
       "state": "scheduled",
       "schedule": "0 */2 * * 1-5",
       "next_run_at": "2026-05-22T10:00:00-04:00",
-      "last_run_at": "2026-05-22T06:04:57.229227-04:00",
-      "last_status": "ok",
+      "last_run_at": "2026-05-22T08:00:19.664884-04:00",
+      "last_status": "error",
       "last_delivery_error": null,
       "deliver": "local",
       "script": null,
       "no_agent": false,
       "repeat": {
         "times": 365,
-        "completed": 31
+        "completed": 32
       }
     },
     {
@@ -1721,15 +1721,15 @@
       "state": "scheduled",
       "schedule": "0 8 * * 1-5",
       "next_run_at": "2026-05-25T08:00:00-04:00",
-      "last_run_at": "2026-05-21T08:12:55.403039-04:00",
-      "last_status": "ok",
+      "last_run_at": "2026-05-22T08:00:21.222467-04:00",
+      "last_status": "error",
       "last_delivery_error": null,
       "deliver": "origin",
       "script": null,
       "no_agent": false,
       "repeat": {
         "times": null,
-        "completed": 18
+        "completed": 19
       }
     },
     {
@@ -1954,8 +1954,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 15m",
-        "next_run_at": "2026-05-22T08:01:28.729100-04:00",
-        "last_run_at": "2026-05-22T07:46:28.729100-04:00",
+        "next_run_at": "2026-05-22T08:16:34.452281-04:00",
+        "last_run_at": "2026-05-22T08:01:34.452281-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -1963,7 +1963,7 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 362
+          "completed": 363
         }
       },
       {
@@ -1973,8 +1973,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-22T08:10:00-04:00",
-        "last_run_at": "2026-05-22T07:50:30.894765-04:00",
+        "next_run_at": "2026-05-22T08:20:00-04:00",
+        "last_run_at": "2026-05-22T08:00:10.939645-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -1982,7 +1982,7 @@
         "no_agent": true,
         "repeat": {
           "times": 3650,
-          "completed": 285
+          "completed": 286
         }
       },
       {
