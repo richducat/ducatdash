@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-22T22:20:58.562428+00:00",
-  "generated_unix": 1779488458,
+  "generated_at": "2026-05-22T22:30:04.722049+00:00",
+  "generated_unix": 1779489004,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,52 +1258,14 @@
   ],
   "jobs": [
     {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-22T18:30:00-04:00",
-      "last_run_at": "2026-05-22T18:10:21.678788-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 347
-      }
-    },
-    {
-      "id": "b38b179ec9a9",
-      "name": "TYFYS RingCentral Recording Watchdog",
-      "category": "TYFYS / OpenClaw",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "30 18 * * 1-5",
-      "next_run_at": "2026-05-22T18:30:00-04:00",
-      "last_run_at": "2026-05-21T18:30:56.482232-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "ringcentral_recording_watchdog.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 7
-      }
-    },
-    {
       "id": "93e52af74678",
       "name": "Lisa / EL World email watchdog",
       "category": "Client \u2014 Lisa / EL World",
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 15m",
-      "next_run_at": "2026-05-22T18:35:58.205668-04:00",
-      "last_run_at": "2026-05-22T18:05:19.335959-04:00",
+      "next_run_at": "2026-05-22T18:36:03.919527-04:00",
+      "last_run_at": "2026-05-22T18:21:03.919527-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1311,7 +1273,26 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 402
+        "completed": 403
+      }
+    },
+    {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-22T18:40:00-04:00",
+      "last_run_at": "2026-05-22T18:20:59.903665-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 348
       }
     },
     {
@@ -1340,8 +1321,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 30m",
-      "next_run_at": "2026-05-22T18:50:58.212060-04:00",
-      "last_run_at": "2026-05-22T17:49:47.402304-04:00",
+      "next_run_at": "2026-05-22T18:51:02.188959-04:00",
+      "last_run_at": "2026-05-22T18:21:02.188959-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1349,7 +1330,7 @@
       "no_agent": true,
       "repeat": {
         "times": 365,
-        "completed": 95
+        "completed": 96
       }
     },
     {
@@ -1407,6 +1388,25 @@
       "repeat": {
         "times": 365,
         "completed": 3
+      }
+    },
+    {
+      "id": "b38b179ec9a9",
+      "name": "TYFYS RingCentral Recording Watchdog",
+      "category": "TYFYS / OpenClaw",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "30 18 * * 1-5",
+      "next_run_at": "2026-05-25T18:30:00-04:00",
+      "last_run_at": "2026-05-21T18:30:56.482232-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ringcentral_recording_watchdog.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 7
       }
     },
     {
@@ -1948,52 +1948,14 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-22T18:30:00-04:00",
-        "last_run_at": "2026-05-22T18:10:21.678788-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 347
-        }
-      },
-      {
-        "id": "b38b179ec9a9",
-        "name": "TYFYS RingCentral Recording Watchdog",
-        "category": "TYFYS / OpenClaw",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "30 18 * * 1-5",
-        "next_run_at": "2026-05-22T18:30:00-04:00",
-        "last_run_at": "2026-05-21T18:30:56.482232-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "ringcentral_recording_watchdog.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 7
-        }
-      },
-      {
         "id": "93e52af74678",
         "name": "Lisa / EL World email watchdog",
         "category": "Client \u2014 Lisa / EL World",
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 15m",
-        "next_run_at": "2026-05-22T18:35:58.205668-04:00",
-        "last_run_at": "2026-05-22T18:05:19.335959-04:00",
+        "next_run_at": "2026-05-22T18:36:03.919527-04:00",
+        "last_run_at": "2026-05-22T18:21:03.919527-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2001,7 +1963,26 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 402
+          "completed": 403
+        }
+      },
+      {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-22T18:40:00-04:00",
+        "last_run_at": "2026-05-22T18:20:59.903665-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 348
         }
       },
       {
@@ -2030,8 +2011,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 30m",
-        "next_run_at": "2026-05-22T18:50:58.212060-04:00",
-        "last_run_at": "2026-05-22T17:49:47.402304-04:00",
+        "next_run_at": "2026-05-22T18:51:02.188959-04:00",
+        "last_run_at": "2026-05-22T18:21:02.188959-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2039,7 +2020,7 @@
         "no_agent": true,
         "repeat": {
           "times": 365,
-          "completed": 95
+          "completed": 96
         }
       },
       {
@@ -2097,6 +2078,25 @@
         "repeat": {
           "times": 365,
           "completed": 3
+        }
+      },
+      {
+        "id": "b38b179ec9a9",
+        "name": "TYFYS RingCentral Recording Watchdog",
+        "category": "TYFYS / OpenClaw",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "30 18 * * 1-5",
+        "next_run_at": "2026-05-25T18:30:00-04:00",
+        "last_run_at": "2026-05-21T18:30:56.482232-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "ringcentral_recording_watchdog.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 365,
+          "completed": 7
         }
       }
     ],
