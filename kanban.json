@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-22T19:00:38.661969+00:00",
-  "generated_unix": 1779476438,
+  "generated_at": "2026-05-22T19:10:01.907382+00:00",
+  "generated_unix": 1779477001,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,25 +1258,6 @@
   ],
   "jobs": [
     {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-22T15:10:00-04:00",
-      "last_run_at": "2026-05-22T14:50:32.624197-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 327
-      }
-    },
-    {
       "id": "a4f58658bf81",
       "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
       "category": "Communications",
@@ -1334,6 +1315,25 @@
       }
     },
     {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-22T15:20:00-04:00",
+      "last_run_at": "2026-05-22T15:00:40.088709-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 328
+      }
+    },
+    {
       "id": "10c0e8234c93",
       "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
       "category": "Communications",
@@ -1341,7 +1341,7 @@
       "state": "scheduled",
       "schedule": "0 * * * *",
       "next_run_at": "2026-05-22T16:00:00-04:00",
-      "last_run_at": "2026-05-22T14:00:56.561576-04:00",
+      "last_run_at": "2026-05-22T15:01:00.391057-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1349,7 +1349,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 280
+        "completed": 281
       }
     },
     {
@@ -1948,25 +1948,6 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-22T15:10:00-04:00",
-        "last_run_at": "2026-05-22T14:50:32.624197-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 327
-        }
-      },
-      {
         "id": "a4f58658bf81",
         "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
         "category": "Communications",
@@ -2024,6 +2005,25 @@
         }
       },
       {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-22T15:20:00-04:00",
+        "last_run_at": "2026-05-22T15:00:40.088709-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 328
+        }
+      },
+      {
         "id": "10c0e8234c93",
         "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
         "category": "Communications",
@@ -2031,7 +2031,7 @@
         "state": "scheduled",
         "schedule": "0 * * * *",
         "next_run_at": "2026-05-22T16:00:00-04:00",
-        "last_run_at": "2026-05-22T14:00:56.561576-04:00",
+        "last_run_at": "2026-05-22T15:01:00.391057-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2039,7 +2039,7 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 280
+          "completed": 281
         }
       },
       {
