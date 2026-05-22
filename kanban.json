@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-22T00:00:36.895675+00:00",
-  "generated_unix": 1779408036,
+  "generated_at": "2026-05-22T00:10:56.307957+00:00",
+  "generated_unix": 1779408656,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,22 +1258,22 @@
   ],
   "jobs": [
     {
-      "id": "16ab4f418fea",
-      "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
-      "category": "Client \u2014 UGC Academy",
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
       "enabled": true,
       "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-21T20:01:21.316380-04:00",
-      "last_run_at": "2026-05-21T19:31:21.316380-04:00",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-21T20:20:00-04:00",
+      "last_run_at": "2026-05-21T20:00:38.347238-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "ugc_academy_comms_watch.py",
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
       "no_agent": true,
       "repeat": {
-        "times": 365,
-        "completed": 52
+        "times": 3650,
+        "completed": 214
       }
     },
     {
@@ -1283,8 +1283,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 15m",
-      "next_run_at": "2026-05-21T20:03:34.516201-04:00",
-      "last_run_at": "2026-05-21T19:48:34.516201-04:00",
+      "next_run_at": "2026-05-21T20:22:55.807714-04:00",
+      "last_run_at": "2026-05-21T20:07:55.807714-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1292,26 +1292,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 316
-      }
-    },
-    {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-21T20:10:00-04:00",
-      "last_run_at": "2026-05-21T19:50:36.129825-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 213
+        "completed": 317
       }
     },
     {
@@ -1321,8 +1302,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 30m",
-      "next_run_at": "2026-05-21T20:30:36.602987-04:00",
-      "last_run_at": "2026-05-21T19:30:18.116501-04:00",
+      "next_run_at": "2026-05-21T20:31:13.002510-04:00",
+      "last_run_at": "2026-05-21T20:01:13.002510-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1330,7 +1311,26 @@
       "no_agent": true,
       "repeat": {
         "times": 365,
-        "completed": 151
+        "completed": 152
+      }
+    },
+    {
+      "id": "16ab4f418fea",
+      "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
+      "category": "Client \u2014 UGC Academy",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-21T20:37:53.933746-04:00",
+      "last_run_at": "2026-05-21T20:07:53.933746-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ugc_academy_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 53
       }
     },
     {
@@ -1341,7 +1341,7 @@
       "state": "scheduled",
       "schedule": "0 * * * *",
       "next_run_at": "2026-05-21T21:00:00-04:00",
-      "last_run_at": "2026-05-21T19:01:22.319007-04:00",
+      "last_run_at": "2026-05-21T20:00:59.976845-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1349,7 +1349,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 261
+        "completed": 262
       }
     },
     {
@@ -1360,7 +1360,7 @@
       "state": "scheduled",
       "schedule": "0 */2 * * 1-5",
       "next_run_at": "2026-05-21T22:00:00-04:00",
-      "last_run_at": "2026-05-21T18:05:02.130470-04:00",
+      "last_run_at": "2026-05-21T20:06:49.150232-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -1368,7 +1368,7 @@
       "no_agent": false,
       "repeat": {
         "times": 365,
-        "completed": 25
+        "completed": 26
       }
     },
     {
@@ -1948,22 +1948,22 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "16ab4f418fea",
-        "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
-        "category": "Client \u2014 UGC Academy",
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
         "enabled": true,
         "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-21T20:01:21.316380-04:00",
-        "last_run_at": "2026-05-21T19:31:21.316380-04:00",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-21T20:20:00-04:00",
+        "last_run_at": "2026-05-21T20:00:38.347238-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "ugc_academy_comms_watch.py",
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
         "no_agent": true,
         "repeat": {
-          "times": 365,
-          "completed": 52
+          "times": 3650,
+          "completed": 214
         }
       },
       {
@@ -1973,8 +1973,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 15m",
-        "next_run_at": "2026-05-21T20:03:34.516201-04:00",
-        "last_run_at": "2026-05-21T19:48:34.516201-04:00",
+        "next_run_at": "2026-05-21T20:22:55.807714-04:00",
+        "last_run_at": "2026-05-21T20:07:55.807714-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -1982,26 +1982,7 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 316
-        }
-      },
-      {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-21T20:10:00-04:00",
-        "last_run_at": "2026-05-21T19:50:36.129825-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 213
+          "completed": 317
         }
       },
       {
@@ -2011,8 +1992,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 30m",
-        "next_run_at": "2026-05-21T20:30:36.602987-04:00",
-        "last_run_at": "2026-05-21T19:30:18.116501-04:00",
+        "next_run_at": "2026-05-21T20:31:13.002510-04:00",
+        "last_run_at": "2026-05-21T20:01:13.002510-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2020,7 +2001,26 @@
         "no_agent": true,
         "repeat": {
           "times": 365,
-          "completed": 151
+          "completed": 152
+        }
+      },
+      {
+        "id": "16ab4f418fea",
+        "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
+        "category": "Client \u2014 UGC Academy",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-21T20:37:53.933746-04:00",
+        "last_run_at": "2026-05-21T20:07:53.933746-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "ugc_academy_comms_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 365,
+          "completed": 53
         }
       },
       {
@@ -2031,7 +2031,7 @@
         "state": "scheduled",
         "schedule": "0 * * * *",
         "next_run_at": "2026-05-21T21:00:00-04:00",
-        "last_run_at": "2026-05-21T19:01:22.319007-04:00",
+        "last_run_at": "2026-05-21T20:00:59.976845-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2039,7 +2039,7 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 261
+          "completed": 262
         }
       },
       {
@@ -2050,7 +2050,7 @@
         "state": "scheduled",
         "schedule": "0 */2 * * 1-5",
         "next_run_at": "2026-05-21T22:00:00-04:00",
-        "last_run_at": "2026-05-21T18:05:02.130470-04:00",
+        "last_run_at": "2026-05-21T20:06:49.150232-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -2058,7 +2058,7 @@
         "no_agent": false,
         "repeat": {
           "times": 365,
-          "completed": 25
+          "completed": 26
         }
       },
       {
