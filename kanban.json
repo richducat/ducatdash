@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23T09:20:16.800791+00:00",
-  "generated_unix": 1779528016,
+  "generated_at": "2026-05-23T09:30:23.471540+00:00",
+  "generated_unix": 1779528623,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,33 +1258,14 @@
   ],
   "jobs": [
     {
-      "id": "93e52af74678",
-      "name": "Lisa / EL World email watchdog",
-      "category": "Client \u2014 Lisa / EL World",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 15m",
-      "next_run_at": "2026-05-23T05:26:15.432959-04:00",
-      "last_run_at": "2026-05-23T05:11:15.432959-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "lisa_el_world_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 445
-      }
-    },
-    {
       "id": "126bd65ee907",
       "name": "DucatDash \u2014 publish Kanban snapshot",
       "category": "DucatDash / Systems",
       "enabled": true,
       "state": "scheduled",
       "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-23T05:30:00-04:00",
-      "last_run_at": "2026-05-23T05:11:10.566620-04:00",
+      "next_run_at": "2026-05-23T05:40:00-04:00",
+      "last_run_at": "2026-05-23T05:20:17.939078-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -1292,7 +1273,7 @@
       "no_agent": true,
       "repeat": {
         "times": 3650,
-        "completed": 413
+        "completed": 414
       }
     },
     {
@@ -1331,6 +1312,25 @@
       "repeat": {
         "times": 365,
         "completed": 117
+      }
+    },
+    {
+      "id": "93e52af74678",
+      "name": "Lisa / EL World email watchdog",
+      "category": "Client \u2014 Lisa / EL World",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 15m",
+      "next_run_at": "2026-05-23T05:41:22.871479-04:00",
+      "last_run_at": "2026-05-23T05:26:22.871479-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "lisa_el_world_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 446
       }
     },
     {
@@ -1948,33 +1948,14 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "93e52af74678",
-        "name": "Lisa / EL World email watchdog",
-        "category": "Client \u2014 Lisa / EL World",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 15m",
-        "next_run_at": "2026-05-23T05:26:15.432959-04:00",
-        "last_run_at": "2026-05-23T05:11:15.432959-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "lisa_el_world_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 445
-        }
-      },
-      {
         "id": "126bd65ee907",
         "name": "DucatDash \u2014 publish Kanban snapshot",
         "category": "DucatDash / Systems",
         "enabled": true,
         "state": "scheduled",
         "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-23T05:30:00-04:00",
-        "last_run_at": "2026-05-23T05:11:10.566620-04:00",
+        "next_run_at": "2026-05-23T05:40:00-04:00",
+        "last_run_at": "2026-05-23T05:20:17.939078-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -1982,7 +1963,7 @@
         "no_agent": true,
         "repeat": {
           "times": 3650,
-          "completed": 413
+          "completed": 414
         }
       },
       {
@@ -2021,6 +2002,25 @@
         "repeat": {
           "times": 365,
           "completed": 117
+        }
+      },
+      {
+        "id": "93e52af74678",
+        "name": "Lisa / EL World email watchdog",
+        "category": "Client \u2014 Lisa / EL World",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 15m",
+        "next_run_at": "2026-05-23T05:41:22.871479-04:00",
+        "last_run_at": "2026-05-23T05:26:22.871479-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "lisa_el_world_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 446
         }
       },
       {
