@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23T14:21:14.977431+00:00",
-  "generated_unix": 1779546074,
+  "generated_at": "2026-05-23T14:30:20.888547+00:00",
+  "generated_unix": 1779546620,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,33 +1258,14 @@
   ],
   "jobs": [
     {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-23T10:30:00-04:00",
-      "last_run_at": "2026-05-23T10:10:35.673733-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 443
-      }
-    },
-    {
       "id": "93e52af74678",
       "name": "Lisa / EL World email watchdog",
       "category": "Client \u2014 Lisa / EL World",
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 15m",
-      "next_run_at": "2026-05-23T10:36:14.693747-04:00",
-      "last_run_at": "2026-05-23T10:05:33.358490-04:00",
+      "next_run_at": "2026-05-23T10:36:20.580907-04:00",
+      "last_run_at": "2026-05-23T10:21:20.580907-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1292,7 +1273,26 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 464
+        "completed": 465
+      }
+    },
+    {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-23T10:40:00-04:00",
+      "last_run_at": "2026-05-23T10:21:16.384357-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 444
       }
     },
     {
@@ -1321,8 +1321,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 30m",
-      "next_run_at": "2026-05-23T10:51:14.703275-04:00",
-      "last_run_at": "2026-05-23T09:50:02.227884-04:00",
+      "next_run_at": "2026-05-23T10:51:18.476943-04:00",
+      "last_run_at": "2026-05-23T10:21:18.476943-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1330,7 +1330,7 @@
       "no_agent": true,
       "repeat": {
         "times": 365,
-        "completed": 126
+        "completed": 127
       }
     },
     {
@@ -1948,33 +1948,14 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-23T10:30:00-04:00",
-        "last_run_at": "2026-05-23T10:10:35.673733-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 443
-        }
-      },
-      {
         "id": "93e52af74678",
         "name": "Lisa / EL World email watchdog",
         "category": "Client \u2014 Lisa / EL World",
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 15m",
-        "next_run_at": "2026-05-23T10:36:14.693747-04:00",
-        "last_run_at": "2026-05-23T10:05:33.358490-04:00",
+        "next_run_at": "2026-05-23T10:36:20.580907-04:00",
+        "last_run_at": "2026-05-23T10:21:20.580907-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -1982,7 +1963,26 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 464
+          "completed": 465
+        }
+      },
+      {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-23T10:40:00-04:00",
+        "last_run_at": "2026-05-23T10:21:16.384357-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 444
         }
       },
       {
@@ -2011,8 +2011,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 30m",
-        "next_run_at": "2026-05-23T10:51:14.703275-04:00",
-        "last_run_at": "2026-05-23T09:50:02.227884-04:00",
+        "next_run_at": "2026-05-23T10:51:18.476943-04:00",
+        "last_run_at": "2026-05-23T10:21:18.476943-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2020,7 +2020,7 @@
         "no_agent": true,
         "repeat": {
           "times": 365,
-          "completed": 126
+          "completed": 127
         }
       },
       {
