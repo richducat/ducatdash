@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23T10:30:18.564514+00:00",
-  "generated_unix": 1779532218,
+  "generated_at": "2026-05-23T10:40:20.174056+00:00",
+  "generated_unix": 1779532820,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,25 +1258,6 @@
   ],
   "jobs": [
     {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-23T06:40:00-04:00",
-      "last_run_at": "2026-05-23T06:20:13.141541-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 420
-      }
-    },
-    {
       "id": "a4f58658bf81",
       "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
       "category": "Communications",
@@ -1331,6 +1312,25 @@
       "repeat": {
         "times": null,
         "completed": 450
+      }
+    },
+    {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-23T06:50:00-04:00",
+      "last_run_at": "2026-05-23T06:30:19.745067-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 421
       }
     },
     {
@@ -1948,25 +1948,6 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-23T06:40:00-04:00",
-        "last_run_at": "2026-05-23T06:20:13.141541-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 420
-        }
-      },
-      {
         "id": "a4f58658bf81",
         "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
         "category": "Communications",
@@ -2021,6 +2002,25 @@
         "repeat": {
           "times": null,
           "completed": 450
+        }
+      },
+      {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-23T06:50:00-04:00",
+        "last_run_at": "2026-05-23T06:30:19.745067-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 421
         }
       },
       {
