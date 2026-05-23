@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23T15:20:43.756729+00:00",
-  "generated_unix": 1779549643,
+  "generated_at": "2026-05-23T15:30:31.694921+00:00",
+  "generated_unix": 1779550231,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,52 +1258,14 @@
   ],
   "jobs": [
     {
-      "id": "a4f58658bf81",
-      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-      "category": "Communications",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-23T11:21:08.416445-04:00",
-      "last_run_at": "2026-05-23T10:51:08.416445-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "gmail_junk_sweeper.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 227
-      }
-    },
-    {
-      "id": "16ab4f418fea",
-      "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
-      "category": "Client \u2014 UGC Academy",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-23T11:22:12.049682-04:00",
-      "last_run_at": "2026-05-23T10:52:12.049682-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "ugc_academy_comms_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 128
-      }
-    },
-    {
       "id": "93e52af74678",
       "name": "Lisa / EL World email watchdog",
       "category": "Client \u2014 Lisa / EL World",
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 15m",
-      "next_run_at": "2026-05-23T11:22:41.155849-04:00",
-      "last_run_at": "2026-05-23T11:07:41.155849-04:00",
+      "next_run_at": "2026-05-23T11:38:30.474170-04:00",
+      "last_run_at": "2026-05-23T11:23:30.474170-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1311,7 +1273,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 468
+        "completed": 469
       }
     },
     {
@@ -1321,8 +1283,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-23T11:30:00-04:00",
-      "last_run_at": "2026-05-23T11:10:43.435138-04:00",
+      "next_run_at": "2026-05-23T11:40:00-04:00",
+      "last_run_at": "2026-05-23T11:20:44.955766-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -1330,7 +1292,45 @@
       "no_agent": true,
       "repeat": {
         "times": 3650,
-        "completed": 449
+        "completed": 450
+      }
+    },
+    {
+      "id": "a4f58658bf81",
+      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+      "category": "Communications",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-23T11:52:24.454251-04:00",
+      "last_run_at": "2026-05-23T11:22:24.454251-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "gmail_junk_sweeper.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 228
+      }
+    },
+    {
+      "id": "16ab4f418fea",
+      "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
+      "category": "Client \u2014 UGC Academy",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-23T11:53:28.074750-04:00",
+      "last_run_at": "2026-05-23T11:23:28.074750-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ugc_academy_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 129
       }
     },
     {
@@ -1948,52 +1948,14 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "a4f58658bf81",
-        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-        "category": "Communications",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-23T11:21:08.416445-04:00",
-        "last_run_at": "2026-05-23T10:51:08.416445-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "gmail_junk_sweeper.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 227
-        }
-      },
-      {
-        "id": "16ab4f418fea",
-        "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
-        "category": "Client \u2014 UGC Academy",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-23T11:22:12.049682-04:00",
-        "last_run_at": "2026-05-23T10:52:12.049682-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "ugc_academy_comms_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 128
-        }
-      },
-      {
         "id": "93e52af74678",
         "name": "Lisa / EL World email watchdog",
         "category": "Client \u2014 Lisa / EL World",
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 15m",
-        "next_run_at": "2026-05-23T11:22:41.155849-04:00",
-        "last_run_at": "2026-05-23T11:07:41.155849-04:00",
+        "next_run_at": "2026-05-23T11:38:30.474170-04:00",
+        "last_run_at": "2026-05-23T11:23:30.474170-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2001,7 +1963,7 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 468
+          "completed": 469
         }
       },
       {
@@ -2011,8 +1973,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-23T11:30:00-04:00",
-        "last_run_at": "2026-05-23T11:10:43.435138-04:00",
+        "next_run_at": "2026-05-23T11:40:00-04:00",
+        "last_run_at": "2026-05-23T11:20:44.955766-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -2020,7 +1982,45 @@
         "no_agent": true,
         "repeat": {
           "times": 3650,
-          "completed": 449
+          "completed": 450
+        }
+      },
+      {
+        "id": "a4f58658bf81",
+        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+        "category": "Communications",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-23T11:52:24.454251-04:00",
+        "last_run_at": "2026-05-23T11:22:24.454251-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "gmail_junk_sweeper.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 365,
+          "completed": 228
+        }
+      },
+      {
+        "id": "16ab4f418fea",
+        "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
+        "category": "Client \u2014 UGC Academy",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-23T11:53:28.074750-04:00",
+        "last_run_at": "2026-05-23T11:23:28.074750-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "ugc_academy_comms_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 365,
+          "completed": 129
         }
       },
       {
