@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23T12:50:58.551089+00:00",
-  "generated_unix": 1779540658,
+  "generated_at": "2026-05-23T13:00:01.164068+00:00",
+  "generated_unix": 1779541201,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,63 +1258,6 @@
   ],
   "jobs": [
     {
-      "id": "95b861db50cd",
-      "name": "Charlene Maven Payment Plan Watchdog",
-      "category": "Admin / Payments",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "0 9 * * *",
-      "next_run_at": "2026-05-23T09:00:00-04:00",
-      "last_run_at": "2026-05-22T09:00:03.440047-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "charlene_maven_payment_watchdog.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 14
-      }
-    },
-    {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-23T09:00:00-04:00",
-      "last_run_at": "2026-05-23T08:40:17.150389-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 434
-      }
-    },
-    {
-      "id": "10c0e8234c93",
-      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-      "category": "Communications",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "0 * * * *",
-      "next_run_at": "2026-05-23T09:00:00-04:00",
-      "last_run_at": "2026-05-23T08:01:18.394699-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "hourly_comms_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 298
-      }
-    },
-    {
       "id": "93e52af74678",
       "name": "Lisa / EL World email watchdog",
       "category": "Client \u2014 Lisa / EL World",
@@ -1331,6 +1274,25 @@
       "repeat": {
         "times": null,
         "completed": 459
+      }
+    },
+    {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-23T09:10:00-04:00",
+      "last_run_at": "2026-05-23T08:50:59.822184-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 435
       }
     },
     {
@@ -1369,6 +1331,44 @@
       "repeat": {
         "times": 365,
         "completed": 124
+      }
+    },
+    {
+      "id": "10c0e8234c93",
+      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+      "category": "Communications",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 * * * *",
+      "next_run_at": "2026-05-23T10:00:00-04:00",
+      "last_run_at": "2026-05-23T08:01:18.394699-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "hourly_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 298
+      }
+    },
+    {
+      "id": "95b861db50cd",
+      "name": "Charlene Maven Payment Plan Watchdog",
+      "category": "Admin / Payments",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 9 * * *",
+      "next_run_at": "2026-05-24T09:00:00-04:00",
+      "last_run_at": "2026-05-22T09:00:03.440047-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "charlene_maven_payment_watchdog.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 14
       }
     },
     {
@@ -1948,63 +1948,6 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "95b861db50cd",
-        "name": "Charlene Maven Payment Plan Watchdog",
-        "category": "Admin / Payments",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "0 9 * * *",
-        "next_run_at": "2026-05-23T09:00:00-04:00",
-        "last_run_at": "2026-05-22T09:00:03.440047-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "charlene_maven_payment_watchdog.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 14
-        }
-      },
-      {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-23T09:00:00-04:00",
-        "last_run_at": "2026-05-23T08:40:17.150389-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 434
-        }
-      },
-      {
-        "id": "10c0e8234c93",
-        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-        "category": "Communications",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "0 * * * *",
-        "next_run_at": "2026-05-23T09:00:00-04:00",
-        "last_run_at": "2026-05-23T08:01:18.394699-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "hourly_comms_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 298
-        }
-      },
-      {
         "id": "93e52af74678",
         "name": "Lisa / EL World email watchdog",
         "category": "Client \u2014 Lisa / EL World",
@@ -2021,6 +1964,25 @@
         "repeat": {
           "times": null,
           "completed": 459
+        }
+      },
+      {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-23T09:10:00-04:00",
+        "last_run_at": "2026-05-23T08:50:59.822184-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 435
         }
       },
       {
@@ -2059,6 +2021,44 @@
         "repeat": {
           "times": 365,
           "completed": 124
+        }
+      },
+      {
+        "id": "10c0e8234c93",
+        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+        "category": "Communications",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "0 * * * *",
+        "next_run_at": "2026-05-23T10:00:00-04:00",
+        "last_run_at": "2026-05-23T08:01:18.394699-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "hourly_comms_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 298
+        }
+      },
+      {
+        "id": "95b861db50cd",
+        "name": "Charlene Maven Payment Plan Watchdog",
+        "category": "Admin / Payments",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "0 9 * * *",
+        "next_run_at": "2026-05-24T09:00:00-04:00",
+        "last_run_at": "2026-05-22T09:00:03.440047-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "charlene_maven_payment_watchdog.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 365,
+          "completed": 14
         }
       },
       {
