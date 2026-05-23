@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23T09:40:26.282080+00:00",
-  "generated_unix": 1779529226,
+  "generated_at": "2026-05-23T09:50:04.529273+00:00",
+  "generated_unix": 1779529804,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,33 +1258,14 @@
   ],
   "jobs": [
     {
-      "id": "16ab4f418fea",
-      "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
-      "category": "Client \u2014 UGC Academy",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-23T05:41:13.343213-04:00",
-      "last_run_at": "2026-05-23T05:11:13.343213-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "ugc_academy_comms_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 117
-      }
-    },
-    {
       "id": "93e52af74678",
       "name": "Lisa / EL World email watchdog",
       "category": "Client \u2014 Lisa / EL World",
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 15m",
-      "next_run_at": "2026-05-23T05:41:22.871479-04:00",
-      "last_run_at": "2026-05-23T05:26:22.871479-04:00",
+      "next_run_at": "2026-05-23T05:57:03.429880-04:00",
+      "last_run_at": "2026-05-23T05:42:03.429880-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1292,7 +1273,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 446
+        "completed": 447
       }
     },
     {
@@ -1302,8 +1283,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-23T05:50:00-04:00",
-      "last_run_at": "2026-05-23T05:30:24.692031-04:00",
+      "next_run_at": "2026-05-23T06:00:00-04:00",
+      "last_run_at": "2026-05-23T05:40:27.502788-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -1311,7 +1292,7 @@
       "no_agent": true,
       "repeat": {
         "times": 3650,
-        "completed": 415
+        "completed": 416
       }
     },
     {
@@ -1340,8 +1321,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 30m",
-      "next_run_at": "2026-05-23T06:10:26.068574-04:00",
-      "last_run_at": "2026-05-23T05:10:09.097594-04:00",
+      "next_run_at": "2026-05-23T06:10:57.029945-04:00",
+      "last_run_at": "2026-05-23T05:40:57.029945-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1349,7 +1330,26 @@
       "no_agent": true,
       "repeat": {
         "times": 365,
-        "completed": 216
+        "completed": 217
+      }
+    },
+    {
+      "id": "16ab4f418fea",
+      "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
+      "category": "Client \u2014 UGC Academy",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-23T06:12:01.723831-04:00",
+      "last_run_at": "2026-05-23T05:42:01.723831-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ugc_academy_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 118
       }
     },
     {
@@ -1948,33 +1948,14 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "16ab4f418fea",
-        "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
-        "category": "Client \u2014 UGC Academy",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-23T05:41:13.343213-04:00",
-        "last_run_at": "2026-05-23T05:11:13.343213-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "ugc_academy_comms_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 117
-        }
-      },
-      {
         "id": "93e52af74678",
         "name": "Lisa / EL World email watchdog",
         "category": "Client \u2014 Lisa / EL World",
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 15m",
-        "next_run_at": "2026-05-23T05:41:22.871479-04:00",
-        "last_run_at": "2026-05-23T05:26:22.871479-04:00",
+        "next_run_at": "2026-05-23T05:57:03.429880-04:00",
+        "last_run_at": "2026-05-23T05:42:03.429880-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -1982,7 +1963,7 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 446
+          "completed": 447
         }
       },
       {
@@ -1992,8 +1973,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-23T05:50:00-04:00",
-        "last_run_at": "2026-05-23T05:30:24.692031-04:00",
+        "next_run_at": "2026-05-23T06:00:00-04:00",
+        "last_run_at": "2026-05-23T05:40:27.502788-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -2001,7 +1982,7 @@
         "no_agent": true,
         "repeat": {
           "times": 3650,
-          "completed": 415
+          "completed": 416
         }
       },
       {
@@ -2030,8 +2011,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 30m",
-        "next_run_at": "2026-05-23T06:10:26.068574-04:00",
-        "last_run_at": "2026-05-23T05:10:09.097594-04:00",
+        "next_run_at": "2026-05-23T06:10:57.029945-04:00",
+        "last_run_at": "2026-05-23T05:40:57.029945-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2039,7 +2020,26 @@
         "no_agent": true,
         "repeat": {
           "times": 365,
-          "completed": 216
+          "completed": 217
+        }
+      },
+      {
+        "id": "16ab4f418fea",
+        "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
+        "category": "Client \u2014 UGC Academy",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-23T06:12:01.723831-04:00",
+        "last_run_at": "2026-05-23T05:42:01.723831-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "ugc_academy_comms_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 365,
+          "completed": 118
         }
       },
       {
