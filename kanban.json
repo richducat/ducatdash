@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23T19:50:47.628997+00:00",
-  "generated_unix": 1779565847,
+  "generated_at": "2026-05-23T20:00:50.283804+00:00",
+  "generated_unix": 1779566450,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,63 +1258,6 @@
   ],
   "jobs": [
     {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-23T16:00:00-04:00",
-      "last_run_at": "2026-05-23T15:40:41.422809-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 476
-      }
-    },
-    {
-      "id": "10c0e8234c93",
-      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-      "category": "Communications",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "0 * * * *",
-      "next_run_at": "2026-05-23T16:00:00-04:00",
-      "last_run_at": "2026-05-23T15:00:49.228655-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "hourly_comms_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 305
-      }
-    },
-    {
-      "id": "a4f58658bf81",
-      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-      "category": "Communications",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-23T16:00:33.960297-04:00",
-      "last_run_at": "2026-05-23T15:30:33.960297-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "gmail_junk_sweeper.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 236
-      }
-    },
-    {
       "id": "16ab4f418fea",
       "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
       "category": "Client \u2014 UGC Academy",
@@ -1350,6 +1293,63 @@
       "repeat": {
         "times": null,
         "completed": 486
+      }
+    },
+    {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-23T16:10:00-04:00",
+      "last_run_at": "2026-05-23T15:50:48.954532-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 477
+      }
+    },
+    {
+      "id": "a4f58658bf81",
+      "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+      "category": "Communications",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-23T16:30:50.063363-04:00",
+      "last_run_at": "2026-05-23T15:30:33.960297-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "gmail_junk_sweeper.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 236
+      }
+    },
+    {
+      "id": "10c0e8234c93",
+      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+      "category": "Communications",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 * * * *",
+      "next_run_at": "2026-05-23T17:00:00-04:00",
+      "last_run_at": "2026-05-23T15:00:49.228655-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "hourly_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 305
       }
     },
     {
@@ -1948,63 +1948,6 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-23T16:00:00-04:00",
-        "last_run_at": "2026-05-23T15:40:41.422809-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 476
-        }
-      },
-      {
-        "id": "10c0e8234c93",
-        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-        "category": "Communications",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "0 * * * *",
-        "next_run_at": "2026-05-23T16:00:00-04:00",
-        "last_run_at": "2026-05-23T15:00:49.228655-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "hourly_comms_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 305
-        }
-      },
-      {
-        "id": "a4f58658bf81",
-        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
-        "category": "Communications",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-23T16:00:33.960297-04:00",
-        "last_run_at": "2026-05-23T15:30:33.960297-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "gmail_junk_sweeper.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 236
-        }
-      },
-      {
         "id": "16ab4f418fea",
         "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
         "category": "Client \u2014 UGC Academy",
@@ -2040,6 +1983,63 @@
         "repeat": {
           "times": null,
           "completed": 486
+        }
+      },
+      {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-23T16:10:00-04:00",
+        "last_run_at": "2026-05-23T15:50:48.954532-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 477
+        }
+      },
+      {
+        "id": "a4f58658bf81",
+        "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
+        "category": "Communications",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-23T16:30:50.063363-04:00",
+        "last_run_at": "2026-05-23T15:30:33.960297-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "gmail_junk_sweeper.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 365,
+          "completed": 236
+        }
+      },
+      {
+        "id": "10c0e8234c93",
+        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+        "category": "Communications",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "0 * * * *",
+        "next_run_at": "2026-05-23T17:00:00-04:00",
+        "last_run_at": "2026-05-23T15:00:49.228655-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "hourly_comms_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 305
         }
       },
       {
