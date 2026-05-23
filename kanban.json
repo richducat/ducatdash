@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23T14:50:30.891005+00:00",
-  "generated_unix": 1779547830,
+  "generated_at": "2026-05-23T15:00:14.790410+00:00",
+  "generated_unix": 1779548414,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,33 +1258,14 @@
   ],
   "jobs": [
     {
-      "id": "16ab4f418fea",
-      "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
-      "category": "Client \u2014 UGC Academy",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 30m",
-      "next_run_at": "2026-05-23T10:51:18.476943-04:00",
-      "last_run_at": "2026-05-23T10:21:18.476943-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "ugc_academy_comms_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 365,
-        "completed": 127
-      }
-    },
-    {
       "id": "93e52af74678",
       "name": "Lisa / EL World email watchdog",
       "category": "Client \u2014 Lisa / EL World",
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 15m",
-      "next_run_at": "2026-05-23T10:51:27.603185-04:00",
-      "last_run_at": "2026-05-23T10:36:27.603185-04:00",
+      "next_run_at": "2026-05-23T11:07:13.948000-04:00",
+      "last_run_at": "2026-05-23T10:52:13.948000-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1292,7 +1273,7 @@
       "no_agent": true,
       "repeat": {
         "times": null,
-        "completed": 466
+        "completed": 467
       }
     },
     {
@@ -1302,8 +1283,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-23T11:00:00-04:00",
-      "last_run_at": "2026-05-23T10:40:29.159860-04:00",
+      "next_run_at": "2026-05-23T11:10:00-04:00",
+      "last_run_at": "2026-05-23T10:50:32.250244-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "local",
@@ -1311,26 +1292,7 @@
       "no_agent": true,
       "repeat": {
         "times": 3650,
-        "completed": 446
-      }
-    },
-    {
-      "id": "10c0e8234c93",
-      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-      "category": "Communications",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "0 * * * *",
-      "next_run_at": "2026-05-23T11:00:00-04:00",
-      "last_run_at": "2026-05-23T10:00:27.874182-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "hourly_comms_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 300
+        "completed": 447
       }
     },
     {
@@ -1340,8 +1302,8 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 30m",
-      "next_run_at": "2026-05-23T11:20:30.672966-04:00",
-      "last_run_at": "2026-05-23T10:20:14.533277-04:00",
+      "next_run_at": "2026-05-23T11:21:08.416445-04:00",
+      "last_run_at": "2026-05-23T10:51:08.416445-04:00",
       "last_status": "ok",
       "last_delivery_error": null,
       "deliver": "origin",
@@ -1349,7 +1311,45 @@
       "no_agent": true,
       "repeat": {
         "times": 365,
-        "completed": 226
+        "completed": 227
+      }
+    },
+    {
+      "id": "16ab4f418fea",
+      "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
+      "category": "Client \u2014 UGC Academy",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 30m",
+      "next_run_at": "2026-05-23T11:22:12.049682-04:00",
+      "last_run_at": "2026-05-23T10:52:12.049682-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "ugc_academy_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 365,
+        "completed": 128
+      }
+    },
+    {
+      "id": "10c0e8234c93",
+      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+      "category": "Communications",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 * * * *",
+      "next_run_at": "2026-05-23T12:00:00-04:00",
+      "last_run_at": "2026-05-23T10:00:27.874182-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "hourly_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 300
       }
     },
     {
@@ -1948,33 +1948,14 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "16ab4f418fea",
-        "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
-        "category": "Client \u2014 UGC Academy",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 30m",
-        "next_run_at": "2026-05-23T10:51:18.476943-04:00",
-        "last_run_at": "2026-05-23T10:21:18.476943-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "ugc_academy_comms_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 365,
-          "completed": 127
-        }
-      },
-      {
         "id": "93e52af74678",
         "name": "Lisa / EL World email watchdog",
         "category": "Client \u2014 Lisa / EL World",
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 15m",
-        "next_run_at": "2026-05-23T10:51:27.603185-04:00",
-        "last_run_at": "2026-05-23T10:36:27.603185-04:00",
+        "next_run_at": "2026-05-23T11:07:13.948000-04:00",
+        "last_run_at": "2026-05-23T10:52:13.948000-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -1982,7 +1963,7 @@
         "no_agent": true,
         "repeat": {
           "times": null,
-          "completed": 466
+          "completed": 467
         }
       },
       {
@@ -1992,8 +1973,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-23T11:00:00-04:00",
-        "last_run_at": "2026-05-23T10:40:29.159860-04:00",
+        "next_run_at": "2026-05-23T11:10:00-04:00",
+        "last_run_at": "2026-05-23T10:50:32.250244-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "local",
@@ -2001,26 +1982,7 @@
         "no_agent": true,
         "repeat": {
           "times": 3650,
-          "completed": 446
-        }
-      },
-      {
-        "id": "10c0e8234c93",
-        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-        "category": "Communications",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "0 * * * *",
-        "next_run_at": "2026-05-23T11:00:00-04:00",
-        "last_run_at": "2026-05-23T10:00:27.874182-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "hourly_comms_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 300
+          "completed": 447
         }
       },
       {
@@ -2030,8 +1992,8 @@
         "enabled": true,
         "state": "scheduled",
         "schedule": "every 30m",
-        "next_run_at": "2026-05-23T11:20:30.672966-04:00",
-        "last_run_at": "2026-05-23T10:20:14.533277-04:00",
+        "next_run_at": "2026-05-23T11:21:08.416445-04:00",
+        "last_run_at": "2026-05-23T10:51:08.416445-04:00",
         "last_status": "ok",
         "last_delivery_error": null,
         "deliver": "origin",
@@ -2039,7 +2001,45 @@
         "no_agent": true,
         "repeat": {
           "times": 365,
-          "completed": 226
+          "completed": 227
+        }
+      },
+      {
+        "id": "16ab4f418fea",
+        "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
+        "category": "Client \u2014 UGC Academy",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 30m",
+        "next_run_at": "2026-05-23T11:22:12.049682-04:00",
+        "last_run_at": "2026-05-23T10:52:12.049682-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "ugc_academy_comms_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 365,
+          "completed": 128
+        }
+      },
+      {
+        "id": "10c0e8234c93",
+        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+        "category": "Communications",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "0 * * * *",
+        "next_run_at": "2026-05-23T12:00:00-04:00",
+        "last_run_at": "2026-05-23T10:00:27.874182-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "hourly_comms_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 300
         }
       },
       {
