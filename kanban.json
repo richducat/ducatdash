@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23T08:50:11.762978+00:00",
-  "generated_unix": 1779526211,
+  "generated_at": "2026-05-23T09:00:19.434074+00:00",
+  "generated_unix": 1779526819,
   "version": "lifeos-v1",
   "note": "Public-safe LifeOS snapshot. Private task bodies, comments, customer details, local paths, secrets, results, and errors are intentionally excluded.",
   "posture": {
@@ -1258,63 +1258,6 @@
   ],
   "jobs": [
     {
-      "id": "93e52af74678",
-      "name": "Lisa / EL World email watchdog",
-      "category": "Client \u2014 Lisa / EL World",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 15m",
-      "next_run_at": "2026-05-23T04:55:11.455310-04:00",
-      "last_run_at": "2026-05-23T04:40:11.455310-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "lisa_el_world_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 443
-      }
-    },
-    {
-      "id": "126bd65ee907",
-      "name": "DucatDash \u2014 publish Kanban snapshot",
-      "category": "DucatDash / Systems",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "*/10 * * * *",
-      "next_run_at": "2026-05-23T05:00:00-04:00",
-      "last_run_at": "2026-05-23T04:40:07.388880-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "local",
-      "script": "ducatdash_publish.py",
-      "no_agent": true,
-      "repeat": {
-        "times": 3650,
-        "completed": 410
-      }
-    },
-    {
-      "id": "10c0e8234c93",
-      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-      "category": "Communications",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "0 * * * *",
-      "next_run_at": "2026-05-23T05:00:00-04:00",
-      "last_run_at": "2026-05-23T04:00:44.621674-04:00",
-      "last_status": "ok",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "script": "hourly_comms_watch.py",
-      "no_agent": true,
-      "repeat": {
-        "times": null,
-        "completed": 294
-      }
-    },
-    {
       "id": "a4f58658bf81",
       "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
       "category": "Communications",
@@ -1334,6 +1277,25 @@
       }
     },
     {
+      "id": "126bd65ee907",
+      "name": "DucatDash \u2014 publish Kanban snapshot",
+      "category": "DucatDash / Systems",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "*/10 * * * *",
+      "next_run_at": "2026-05-23T05:10:00-04:00",
+      "last_run_at": "2026-05-23T04:50:12.990895-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "script": "ducatdash_publish.py",
+      "no_agent": true,
+      "repeat": {
+        "times": 3650,
+        "completed": 411
+      }
+    },
+    {
       "id": "16ab4f418fea",
       "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
       "category": "Client \u2014 UGC Academy",
@@ -1350,6 +1312,44 @@
       "repeat": {
         "times": 365,
         "completed": 116
+      }
+    },
+    {
+      "id": "93e52af74678",
+      "name": "Lisa / EL World email watchdog",
+      "category": "Client \u2014 Lisa / EL World",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 15m",
+      "next_run_at": "2026-05-23T05:10:18.480265-04:00",
+      "last_run_at": "2026-05-23T04:55:18.480265-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "lisa_el_world_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 444
+      }
+    },
+    {
+      "id": "10c0e8234c93",
+      "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+      "category": "Communications",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 * * * *",
+      "next_run_at": "2026-05-23T06:00:00-04:00",
+      "last_run_at": "2026-05-23T04:00:44.621674-04:00",
+      "last_status": "ok",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "script": "hourly_comms_watch.py",
+      "no_agent": true,
+      "repeat": {
+        "times": null,
+        "completed": 294
       }
     },
     {
@@ -1948,63 +1948,6 @@
     "queued": [],
     "next_jobs": [
       {
-        "id": "93e52af74678",
-        "name": "Lisa / EL World email watchdog",
-        "category": "Client \u2014 Lisa / EL World",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "every 15m",
-        "next_run_at": "2026-05-23T04:55:11.455310-04:00",
-        "last_run_at": "2026-05-23T04:40:11.455310-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "lisa_el_world_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 443
-        }
-      },
-      {
-        "id": "126bd65ee907",
-        "name": "DucatDash \u2014 publish Kanban snapshot",
-        "category": "DucatDash / Systems",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "*/10 * * * *",
-        "next_run_at": "2026-05-23T05:00:00-04:00",
-        "last_run_at": "2026-05-23T04:40:07.388880-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "local",
-        "script": "ducatdash_publish.py",
-        "no_agent": true,
-        "repeat": {
-          "times": 3650,
-          "completed": 410
-        }
-      },
-      {
-        "id": "10c0e8234c93",
-        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
-        "category": "Communications",
-        "enabled": true,
-        "state": "scheduled",
-        "schedule": "0 * * * *",
-        "next_run_at": "2026-05-23T05:00:00-04:00",
-        "last_run_at": "2026-05-23T04:00:44.621674-04:00",
-        "last_status": "ok",
-        "last_delivery_error": null,
-        "deliver": "origin",
-        "script": "hourly_comms_watch.py",
-        "no_agent": true,
-        "repeat": {
-          "times": null,
-          "completed": 294
-        }
-      },
-      {
         "id": "a4f58658bf81",
         "name": "Gmail Junk Sweeper \u2014 sales/marketing auto-trash",
         "category": "Communications",
@@ -2024,6 +1967,25 @@
         }
       },
       {
+        "id": "126bd65ee907",
+        "name": "DucatDash \u2014 publish Kanban snapshot",
+        "category": "DucatDash / Systems",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "*/10 * * * *",
+        "next_run_at": "2026-05-23T05:10:00-04:00",
+        "last_run_at": "2026-05-23T04:50:12.990895-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "local",
+        "script": "ducatdash_publish.py",
+        "no_agent": true,
+        "repeat": {
+          "times": 3650,
+          "completed": 411
+        }
+      },
+      {
         "id": "16ab4f418fea",
         "name": "UGC Academy \u2014 Comms Watch + Source Alerts",
         "category": "Client \u2014 UGC Academy",
@@ -2040,6 +2002,44 @@
         "repeat": {
           "times": 365,
           "completed": 116
+        }
+      },
+      {
+        "id": "93e52af74678",
+        "name": "Lisa / EL World email watchdog",
+        "category": "Client \u2014 Lisa / EL World",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "every 15m",
+        "next_run_at": "2026-05-23T05:10:18.480265-04:00",
+        "last_run_at": "2026-05-23T04:55:18.480265-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "lisa_el_world_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 444
+        }
+      },
+      {
+        "id": "10c0e8234c93",
+        "name": "Hourly Comms Watch \u2014 Slack Email iMessage",
+        "category": "Communications",
+        "enabled": true,
+        "state": "scheduled",
+        "schedule": "0 * * * *",
+        "next_run_at": "2026-05-23T06:00:00-04:00",
+        "last_run_at": "2026-05-23T04:00:44.621674-04:00",
+        "last_status": "ok",
+        "last_delivery_error": null,
+        "deliver": "origin",
+        "script": "hourly_comms_watch.py",
+        "no_agent": true,
+        "repeat": {
+          "times": null,
+          "completed": 294
         }
       },
       {
